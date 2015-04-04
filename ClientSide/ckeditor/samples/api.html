@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Corrector Ortográfico Online para el Quechua Cusqueño</title>
+	<script src="../ckeditor.js"></script>
+	<link href="sample.css" rel="stylesheet">
+	<script>
+
+// The instanceReady event is fired, when an instance of CKEditor has finished
+// its initialization.
+CKEDITOR.on( 'instanceReady', function( ev ) {
+	// Show the editor name and description in the browser status bar.
+	// Show this sample buttons.
+	//CKEDITOR.instances.editor1.execCommand( 'scaytcheck' );
+	//CKEDITOR.instances.editor1.config.scayt_autoStartup = true;
+});
+
+function InsertHTML() {
+	// Get the editor instance that we want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+	var value = document.getElementById( 'htmlArea' ).value;
+
+	// Check the active editing mode.
+	if ( editor.mode == 'wysiwyg' )
+	{
+		// Insert HTML code.
+		// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-insertHtml
+		editor.insertHtml( value );
+	}
+	else
+		alert( 'You must be in WYSIWYG mode!' );
+}
+
+function InsertText() {
+	// Get the editor instance that we want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+	var value = document.getElementById( 'txtArea' ).value;
+
+	// Check the active editing mode.
+	if ( editor.mode == 'wysiwyg' )
+	{
+		// Insert as plain text.
+		// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-insertText
+		editor.insertText( value );
+	}
+	else
+		alert( 'You must be in WYSIWYG mode!' );
+}
+
+function SetContents() {
+	// Get the editor instance that we want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+	var value = document.getElementById( 'htmlArea' ).value;
+
+	// Set editor contents (replace current contents).
+	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-setData
+	editor.setData( value );
+}
+
+function GetContents() {
+	// Get the editor instance that you want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+
+	// Get editor contents
+	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-getData
+	alert( editor.getData() );
+}
+
+function ExecuteCommand( commandName ) {
+	// Get the editor instance that we want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+
+	// Check the active editing mode.
+	if ( editor.mode == 'wysiwyg' )
+	{
+		// Execute the command.
+		// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-execCommand
+		editor.execCommand( commandName );
+	}
+	else
+		alert( 'You must be in WYSIWYG mode!' );
+}
+
+function CheckDirty() {
+	// Get the editor instance that we want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+	// Checks whether the current editor contents present changes when compared
+	// to the contents loaded into the editor at startup
+	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-checkDirty
+	alert( editor.checkDirty() );
+}
+
+function ResetDirty() {
+	// Get the editor instance that we want to interact with.
+	var editor = CKEDITOR.instances.editor1;
+	// Resets the "dirty state" of the editor (see CheckDirty())
+	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-resetDirty
+	editor.resetDirty();
+	alert( 'The "IsDirty" status has been reset' );
+}
+
+function Focus() {
+	CKEDITOR.instances.editor1.focus();
+}
+
+function onFocus() {
+}
+
+function onBlur() {
+}
+
+	</script>
+
+</head>
+<body>
+	<div class="description">
+	<p>
+	<h3 class="samples"><a href="http://hinantin.com">Allin Qillqay</a> &raquo; Corrector Ortográfico Online para el Quechua Cusqueño</h3>
+	<p>
+		Esta es una DEMO del <a class="samples" href="http://kitt.cl.uzh.ch/kitt/quechua/spellcheck.html">Corrector Ortográfico para el Quechua Cusqueño</a> implementado con <a class="samples" href="https://code.google.com/p/foma/">Foma</a> por <a class="samples" href="http://www.cl.uzh.ch/people/team/arios.html">Annette Rios</a>. Esta DEMO  
+		hace uso de <a class="samples" href="http://www.webspellchecker.net/demo.html">SCAYT</a>, <a class="samples" href="http://dojotoolkit.org/">Dojo</a> para enviar las consultas y recibir los resultados del algoritmo de búsqueda <a class="samples" href="http://hnk.ffzg.hr/bibl/ltc2011/book/papers/MPLRL-3.pdf">MED "Distancia Mínima de Edición"</a>. También se hace uso del <a class="samples" href="http://ckeditor.com/">CKEditor</a>, una interface web similar a la de un Procesador de Textos. Para mayor información sobre la implementación de este <a class="samples" href="http://en.wikipedia.org/wiki/Web_service">Servicio Web</a> escribir a <a class="samples" href="http://unsaac.academia.edu/RichardAlexanderCastroMamani">Richard A. Castro Mamani</a> con el siguiente correo <a class="samples" href="mailto:rcastro@hinantin.com">rcastro@hinantin.com</a>.
+	</p>
+	</p>
+	</div>
+
+	<!-- This <div> holds alert messages to be display in the sample page. -->
+	<div id="alerts">
+		<noscript>
+			<p>
+				<strong>CKEditor requires JavaScript to run</strong>. In a browser with no JavaScript
+				support, like yours, you should still see the contents (HTML data) and you should
+				be able to edit it normally, without a rich editor interface.
+			</p>
+		</noscript>
+	</div>
+	<form action="../../../samples/sample_posteddata.php" method="post">
+		<textarea cols="100" id="editor1" name="editor1" rows="10">
+			&lt;p style="text-align: center;"&gt;&lt;span style="font-size:18px"&gt;&lt;strong&gt;Kuka K&rsquo;intucha&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;p style="text-align: center;"&gt;Kuka k&rsquo;intucha&lt;br /&gt;
+			Muyu raphicha&lt;br /&gt;
+			Qansi yachanki kausayninmanta&lt;br /&gt;
+			Chiripi wayrapi waqasqallayta (kuti)&lt;br /&gt;
+			Inti haykupun killa wa&ntilde;upun (kuti)&lt;br /&gt;
+			Ima huchaymanta &ntilde;ak&rsquo;arillani&lt;br /&gt;
+			Noqachu karani mamay waqachiq (kuti)&lt;br /&gt;
+			Aya punku choqe chaqllayuq (kuti)&lt;br /&gt;
+			Punkuchaykita kichaykullaway&lt;br /&gt;
+			Icharaq mamaywan tupaykullayman (kuti)&lt;br /&gt;
+&nbsp;&lt;/p&gt;
+		</textarea>
+
+		<script>
+			// Replace the <textarea id="editor1"> with an CKEditor instance.
+			CKEDITOR.replace( 'editor1', {
+				scayt_autoStartup: true,
+				on: {
+					focus: onFocus,
+					blur: onBlur,
+					// Check for availability of corresponding plugins.
+					pluginsLoaded: function( evt ) {
+						var doc = CKEDITOR.document, ed = evt.editor;
+						if ( !ed.getCommand( 'bold' ) )
+							doc.getById( 'exec-bold' ).hide();
+						if ( !ed.getCommand( 'link' ) )
+							doc.getById( 'exec-link' ).hide();
+					}
+				}
+			});
+		</script>
+	<br>
+	<div class="description">
+	<table>
+	<thead><tr><th colspan="3"><h3>MANUAL DE USO</h3></th></tr>
+	</thead>
+	<tbody>
+		<tr><td colspan="3" align="center"><b>CAMBIAR EL IDIOMA DEL CORRECTOR ORTOGRÁFICA</b></td></tr>
+		<tr><td width="33%"><b>1. </b>PARA CAMBIAR DE FORMATO DE ESCRITURA PRESIONA EL BOTÓN DE CORRECCIÓN ORTOGRÁFICA.</td>
+		<td width="33%"><b>2. </b>SELECCIONAR LA OPCIÓN IDIOMAS.</td>
+		<td width="33%"><b>3. </b>ELEGIR EL ESTÁNDAR DE ESCRITURA Y PRESIONAR EL BOTÓN ACEPTAR.</td>
+		</tr>
+		<tr>
+		<td valign="top"><img src="assets/button120x121.jpg"></td>
+		<td valign="top"><img src="assets/dropdown_200x195.jpg" width="150"></td>
+		<td valign="top"><img src="assets/languageslist.jpg" width="230"></td></tr>
+		<tr><td colspan="3" align="center"><b>CORREGIR TEXTOS</b></td></tr>
+		<tr><td width="33%"><b>4. </b>HACER CLIC DERECHO EN LA PALABRA SUBRAYADA CON ROJO.</td>
+		<td width="33%"><b>5. </b>ELEGIR LA ALTERNATIVA CORRECTA.</td>
+		<td width="33%"><b>6. </b>AGREGAR AL DICCIONARIO DE USUARIO.</td>
+		</tr>
+		<tr>
+		<td valign="top"><img src="assets/incorrect.jpg"></td>
+		<td valign="top"><img src="assets/suggestions.jpg" width="230"></td>
+		<td valign="top"><img src="assets/add_word.jpg" width="230"></td></tr>
+	</tbody></table>
+	</div>
+	</form>
+	<div id="footer">
+		<hr>
+		<p>
+			Actualizado por última vez el 23 de Febrero del 2015.
+		</p>
+		<p id="copy">
+			Copyright &copy; 2003-2015, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico
+			Knabben. All rights reserved.
+		</p>
+	</div>
+</body>
+</html>
