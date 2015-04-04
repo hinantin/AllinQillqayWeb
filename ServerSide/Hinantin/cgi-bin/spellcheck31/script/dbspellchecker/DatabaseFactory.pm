@@ -8,14 +8,14 @@ sub new {
 	my $self = {};
 	my $CONFIG =
 	  Config::IniFiles->new( -file =>
-		  "/usr/lib/cgi-bin/svc/spellcheck31/script/dbspellchecker/ConfigFile.ini"
+		  "/usr/lib/cgi-bin/spellcheck31/script/dbspellchecker/ConfigFile.ini"
 	  );
-	$self->{PLATFORM} = $CONFIG->val( 'PRODUCTION_SPELLCHECK', 'PLATFORM' );
-	$self->{DATABASE} = $CONFIG->val( 'PRODUCTION_SPELLCHECK', 'DATABASE' );
-	$self->{HOST}     = $CONFIG->val( 'PRODUCTION_SPELLCHECK', 'HOST' );
-	$self->{PORT}     = $CONFIG->val( 'PRODUCTION_SPELLCHECK', 'PORT' );
-	$self->{USER}     = $CONFIG->val( 'PRODUCTION_SPELLCHECK', 'USER' );
-	$self->{PASSWORD} = $CONFIG->val( 'PRODUCTION_SPELLCHECK', 'PASSWORD' );
+	$self->{PLATFORM} = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'PLATFORM' );
+	$self->{DATABASE} = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'DATABASE' );
+	$self->{HOST}     = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'HOST' );
+	$self->{PORT}     = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'PORT' );
+	$self->{USER}     = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'USER' );
+	$self->{PASSWORD} = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'PASSWORD' );
 	bless($self);
 	return $self;
 }
