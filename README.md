@@ -19,3 +19,13 @@ See the `INSTALL.md` file.
   * SQUOIA Project, website: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
   * Arno Teigseth, e-mail: arno AT teigseth.no, website: http://arno.homelinux.org/
   * ILLA, website: http://www.illa-a.org/
+
+##### Citing
+
+```
+@article{allinqillqay2014,
+  title={Allin Qillqay! A Free On-Line Web spell checking Service for Quechua},
+  author={Castro Mamani, Richard A. and Rios Gonzales, Annette},
+  year={2014}
+}
+```
