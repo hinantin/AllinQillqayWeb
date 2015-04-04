@@ -2,6 +2,7 @@
 ### Set Up Apache Virtual Host
 
 #### Change the url `allinqillqay.localhost` if that is not the url want.
+#### Change the path `/home/richard/Documents` to the path where `AllinQillqayWeb` is located.
 
 ##### Step 1. Install Apache, and necessary programs
 
