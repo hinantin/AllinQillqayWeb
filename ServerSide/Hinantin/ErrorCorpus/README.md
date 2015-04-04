@@ -1,15 +1,22 @@
 COMPILING/INSTALLING THE DSC
 ============================
+```
+// some code
+// another line of code
+```
 
 `$ dpkg-source -x basex_7.9-1.dsc`
+
 `$ cd basex_7.9-1/`
+
 `$ dpkg-buildpackage -rfakeroot -b`
+
 `$ cd ..`
 
 In this step you should solve all the issues the installer points you out,
 in order to obtain the deb file.
 
-sudo dpkg -i basex_7.9-1.deb
+`$ sudo dpkg -i basex_7.9-1.deb`
 
 RUNNING ON STARTUP - UBUNTU
 ===========================
