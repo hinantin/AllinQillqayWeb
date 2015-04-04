@@ -50,14 +50,39 @@ The first step is to insert a line for the ServerName under the ServerAdmin line
 The next step is to fill in the correct Document Root. 
 
 ```
-DocumentRoot /var/www/allinqillqay.localhost/public_html 
+  DocumentRoot /var/www/allinqillqay.localhost/public_html 
 ```
 
 The last step is to activate the host, with the built in apache shortcut:
 
 ```
 $ sudo a2ensite allinqillqay.localhost
+
+$ sudo service apache2 restart
 ```
 
+##### Step 6. Setting Up the Local Hosts
+
+```
+$ nano /etc/hosts 
+```
+
+You can add the local hosts details to this file, as seen in the example below. As long as that line is there, directing your browser toward, say, allinqillqay.localhost will give you all the virtual host details for the corresponding IP address.
+
+```
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+
+#Virtual Hosts 
+127.0.0.1       allinqillqay.localhost
+
+```
+
+##### Step . See Your Virtual Host in Action
+Once you have finished setting up your virtual host, you can see how it looks online. Type your ip address into the browser (ie. http://allinqillqay.localhost)
 
 
