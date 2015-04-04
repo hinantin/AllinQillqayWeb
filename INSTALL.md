@@ -1,10 +1,13 @@
 ## Set Up The Server Side
 ### Set Up Apache Virtual Host
 
-##### Step 1. Install Apache
+##### Step 1. Install Apache, and necessary programs
 
 ```
 $ sudo apt-get install apache2
+$ sudo apt-get install libio-captureoutput-perl
+$ sudo apt-get install libconfig-inifiles-perl
+$ sudo apt-get install libdatetime-perl
 ```
 
 ##### Step 2. Create a New Directory
@@ -27,12 +30,18 @@ $ sudo ln -s /home/richard/Documents/AllinQillqayWeb/ClientSide/ckeditor \
 
 $ sudo ln -s /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/allinqillqay.localhost/public_html/spellcheck31
-
-$ sudo ln -s /home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31 \
-/usr/lib/cgi-bin/spellcheck31
 ```
 
-##### Step 5. Create the New Virtual Host File
+#### Step 5. Configure cgi-bin
+
+```
+$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin 
+$ sudo cp -a spellcheck31 /usr/lib/cgi-bin/
+$ cd /usr/lib/cgi-bin/spellcheck31/script/
+$ sudo chmod o+x ssrv.cgi
+```
+
+##### Step 6. Create the New Virtual Host File
 
 ```
 $ sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/allinqillqay.localhost
@@ -62,7 +71,7 @@ $ sudo a2ensite allinqillqay.localhost
 $ sudo service apache2 restart
 ```
 
-##### Step 6. Setting Up the Local Hosts
+##### Step 7. Setting Up the Local Hosts
 
 ```
 $ nano /etc/hosts 
@@ -83,10 +92,30 @@ You can add the local hosts details to this file, as seen in the example below. 
 
 ```
 
-##### Step 7. See Your Virtual Host in Action
+##### Step 8. See Your Virtual Host in Action
 Once you have finished setting up your virtual host, you can see how it looks online. Type your ip address into the browser (ie. http://allinqillqay.localhost)
+
+#### Step 8. Change URL
+
+```
+nano /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31/lf/scayt3/ckscayt/ckscayt.js
+```
+
+###### Note: checking last cgi errors
+
+```
+$ tail -f /var/log/apache2/error.log
+
+```
+
 
 ## Set Up The Client Side
 ### Redirect to url
+
+#### Step 1. Change URL
+
+```
+nano /home/richard/Documents/AllinQillqayWeb/ClientSide/ckeditor/ckeditor.js
+```
 
 
