@@ -3,7 +3,7 @@
 use File::Temp qw/ tempdir /;
 use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
-use lib '/usr/lib/cgi-bin/svc/spellcheck31/script';
+use lib '/usr/lib/cgi-bin/spellcheck31/script';
 use CSpellChecker;
 my $query = new CGI();
 print $query -> header(
@@ -32,9 +32,6 @@ if ($cmd eq "get_lang_list") {
   $run_mode = $query->param('run_mode');
   $slang = $query->param('slang');
   print $callback . '({langList:{ltr: {"qu_QUZ3" : "Quechua Cusqueño", "qu_SRNCP" : "Quechua Sureño"},rtl: {}},verLang : 6})';
-  # print $callback . '({langList:{ltr: {"qu_QUZ3" : "Quechua Cusqueño", "qu_SRNCP" : "Quechua Sureño", "qu_EC" : "Kichwa Ecuatoriano", "qu_BO" : "Quechua Boliviano", "qu_SPA" : "Quechua Sureño (mejorado)", "cni" : "Asháninka"},rtl: {}},verLang : 6})';
-  # print $callback . '({langList:{ltr: {"en_US" : "American English","fr_FR" : "French","de_DE" : "German","it_IT" : "Italian","es_ES" : "Spanish","en_GB" : "British English","en_GB" : "British English","la_VA" : "Latin","pt_BR" : "Brazilian Portuguese","da_DK" : "Danish","nl_NL" : "Dutch","nb_NO" : "Norwegian","pt_PT" : "Portuguese","sv_SE" : "Swedish","el_GR" : "Greek","en_CA" : "Canadian English","fr_CA" : "Canadian French","fi_FI" : "Finnish"},rtl: {}},verLang : 6})';
-  # print $callback . 'scayt.opt({langList:{ltr: {"qu_QUZ3" : "Quechua cusqueño", "qu_SRNCP" : "Quechua sureño unificado<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;por Cerrón Palomino", "qu_EC" : "Kichwa ecuatoriano<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Hunspell)", "qu_BO" : "Quechua boliviano<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Myspell)", "qu_SPA" : "Quechua sureño unificado,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;más raices españolas y<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normalización automática", "cni" : "Asháninka"},rtl: {}},verLang : 6})';
 }
 elsif ($cmd eq "getbanner") { 
   $callback = $query->param('callback');
