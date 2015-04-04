@@ -126,7 +126,7 @@ Once you have finished setting up your virtual host, you can see how it looks on
 
 #### Step 9. Change URL (Optional)
 
-Change the url `allinqillqay.localhost` within the file to a the one you want.
+Change the url `allinqillqay.localhost` within the file to the one you want.
 
 ```
 nano /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31/lf/scayt3/ckscayt/ckscayt.js
@@ -145,7 +145,7 @@ $ tail -f /var/log/apache2/error.log
 
 #### Step 1. Change URL
 
-Change the url `allinqillqay.localhost` within the file to a the one you want.
+Change the url `allinqillqay.localhost` within the file to the one you want.
 
 ```
 nano /home/richard/Documents/AllinQillqayWeb/ClientSide/ckeditor/ckeditor.js
