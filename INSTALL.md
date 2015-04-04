@@ -9,6 +9,7 @@
 ```
 $ sudo apt-get install apache2
 $ sudo apt-get install zlib1g-dev flex bison libreadline-dev
+$ sudo apt-get install hunspell
 $ sudo apt-get install libio-captureoutput-perl
 $ sudo apt-get install libconfig-inifiles-perl
 $ sudo apt-get install libdatetime-perl
@@ -144,7 +145,7 @@ $ tail -f /var/log/apache2/error.log
 ## Set Up The Client Side
 ### Redirect to url
 
-#### Step 1. Change URL
+#### Step 1. Change URL (Optional)
 
 Change the url `allinqillqay.localhost` within the file to the one you want.
 
