@@ -19,7 +19,7 @@ CFLAGS = -O3 -Wall -D_GNU_SOURCE -std=c99 -fvisibility=hidden -fPIC
 FOMAOBJS = foma.o stack.o iface.o lex.interface.o
 LIBOBJS = int_stack.o define.o determinize.o apply.o rewrite.o lexcread.o topsort.o flags.o minimize.o reverse.o extract.o sigma.o io.o structures.o constructions.o coaccessible.o utf8.o spelling.o dynarray.o mem.o stringhash.o trie.o lex.lexc.o lex.yy.o lex.cmatrix.o regex.tab.o
 
-all: libfoma foma flookup cgflookup
+all: libfoma foma flookup cgflookup compile
 
 foma: $(FOMAOBJS) $(LIBOBJS)
 	$(CC) $(CFLAGS) $(FOMAOBJS) $(LIBOBJS) $(LDFLAGS) -o $@
@@ -106,8 +106,9 @@ regex.tab.c regex.tab.h: regex.y
 	$(YACC) $<
 
 clean:
-	$(RM) foma flookup cgflookup $(FOMAOBJS) $(LIBOBJS) flookup.o cgflookup.o regex.tab.h regex.tab.c regex.output lex.yy.c lex.lexc.c lex.interface.c lex.cmatrix.c *.so* *.dylib* *.a
+	$(RM) foma flookup cgflookup $(FOMAOBJS) $(LIBOBJS) flookup.o cgflookup.o regex.tab.h regex.tab.c regex.output lex.yy.c lex.lexc.c lex.interface.c lex.cmatrix.c *.so* *.dylib* *.a fmed suggestions
 
 compile:
-	@gcc -o fmed fmed.c libfoma.a -lz 
+	$(CC) -o fmed fmed.c libfoma.a -lz 
+	$(CC) -o suggestions suggestions.c libfoma.a -lz 
 
