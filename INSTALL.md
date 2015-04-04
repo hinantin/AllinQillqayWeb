@@ -126,7 +126,7 @@ You can add the local hosts details to this file, as seen in the example below. 
 ##### Step 8. See Your Virtual Host in Action
 Once you have finished setting up your virtual host, you can see how it looks online. Type your ip address into the browser (ie. http://allinqillqay.localhost)
 
-#### Step 9. Change URL (Optional)
+##### Step 9. Change URL (Optional)
 
 Change the url `allinqillqay.localhost` within the file to the one you want.
 
@@ -145,7 +145,7 @@ $ tail -f /var/log/apache2/error.log
 ## Set Up The Client Side
 ### Redirect to url
 
-#### Step 1. Change URL (Optional)
+##### Step 1. Change URL (Optional)
 
 Change the url `allinqillqay.localhost` within the file to the one you want.
 
