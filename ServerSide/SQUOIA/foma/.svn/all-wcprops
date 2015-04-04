@@ -1,0 +1,515 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/richartk/Runa_Simi/!svn/ver/81/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only
+END
+determinize.c
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/determinize.c
+END
+flookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/flookup.c
+END
+cmatrix.l
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/cmatrix.l
+END
+minimize.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/minimize.c
+END
+stack.o
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/stack.o
+END
+fomalibconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/fomalibconf.h
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/81/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/.gitignore
+END
+lexcread.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lexcread.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/COPYING
+END
+spelling.o
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/spelling.o
+END
+define.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/define.c
+END
+determinize.o
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/determinize.o
+END
+flookup.o
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/flookup.o
+END
+minimize.o
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/minimize.o
+END
+lex.cmatrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.cmatrix.c
+END
+libfoma.so.0.9.17
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/libfoma.so.0.9.17
+END
+lexcread.o
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lexcread.o
+END
+define.o
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/define.o
+END
+libfoma.a
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/libfoma.a
+END
+io.c
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/io.c
+END
+iface.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/iface.c
+END
+lex.cmatrix.o
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.cmatrix.o
+END
+fmed.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/fmed.c
+END
+constructions.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/constructions.c
+END
+rewrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/rewrite.c
+END
+io.o
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/io.o
+END
+iface.o
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/iface.o
+END
+regex.output
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/regex.output
+END
+constructions.o
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/constructions.o
+END
+cgflookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/cgflookup.c
+END
+dynarray.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/dynarray.c
+END
+flags.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/flags.c
+END
+rewrite.o
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/rewrite.o
+END
+trie.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/trie.c
+END
+cgflookup.o
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/cgflookup.o
+END
+dynarray.o
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/dynarray.o
+END
+flags.o
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/flags.o
+END
+fomalib.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/fomalib.h
+END
+int_stack.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/int_stack.c
+END
+trie.o
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/trie.o
+END
+lex.lexc.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.lexc.c
+END
+structures.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/structures.c
+END
+utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/utf8.c
+END
+lex.interface.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.interface.c
+END
+int_stack.o
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/int_stack.o
+END
+lex.lexc.o
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.lexc.o
+END
+structures.o
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/structures.o
+END
+lexc.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lexc.h
+END
+sigma.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/sigma.c
+END
+utf8.o
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/utf8.o
+END
+lex.interface.o
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.interface.o
+END
+README.symbols
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/README.symbols
+END
+lexc.l
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lexc.l
+END
+extract.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/extract.c
+END
+stringhash.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/stringhash.c
+END
+topsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/topsort.c
+END
+reverse.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/reverse.c
+END
+sigma.o
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/sigma.o
+END
+mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/mem.c
+END
+regex.tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/regex.tab.c
+END
+coaccessible.c
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/coaccessible.c
+END
+README.cmatrix
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/README.cmatrix
+END
+foma.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/foma.c
+END
+regex.l
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/regex.l
+END
+regex.tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/regex.tab.h
+END
+apply.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/apply.c
+END
+extract.o
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/extract.o
+END
+stringhash.o
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/stringhash.o
+END
+topsort.o
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/topsort.o
+END
+foma.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/foma.h
+END
+reverse.o
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/reverse.o
+END
+lex.yy.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.yy.c
+END
+mem.o
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/mem.o
+END
+regex.tab.o
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/regex.tab.o
+END
+coaccessible.o
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/coaccessible.o
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/Makefile
+END
+foma.o
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/foma.o
+END
+regex.y
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/regex.y
+END
+apply.o
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/apply.o
+END
+lex.yy.o
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/lex.yy.o
+END
+stack.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/stack.c
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/CHANGELOG
+END
+interface.l
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/interface.l
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/README
+END
+spelling.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/richartk/Runa_Simi/!svn/ver/78/trunk/01_Corrector_Ortografico/01_Codigo/squoia/02_Descompreso/foma-read-only/spelling.c
+END
