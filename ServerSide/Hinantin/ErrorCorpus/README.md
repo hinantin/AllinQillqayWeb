@@ -32,12 +32,18 @@ $ sudo update-rc.d basex defaults
    /etc/rc5.d/S20basex -> ../init.d/basex
 ```
 
-In this case the prefix of type [SK]?? is equal to S20 
-
-This prefix should be added to the basex startup script like this:
-
-pid_file="/var/run/S20$name.pid"
 
 ```
-$ basexclient -nlocalhost -Uadmin -Padmin
+$ basexclient -nlocalhost -Uuser -Ppassword
+
+CREATE DB HNTQhichwaErrorCorpus
+SET AUTOFLUSH false
+ADD example.xml
+SET ADDCACHE true
+ADD /path/to/xml/documents
+STORE TO images/ 123.jpg
+FLUSH
+DELETE /
+
 ```
+
