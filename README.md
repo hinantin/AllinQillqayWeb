@@ -8,7 +8,7 @@
   * Richard Castro, e-mail: rcastro AT hinantin.com
   * Annette Rios, e-mail: rios AT cl.uzh.ch
 
-##### Installation
+##### Installation on Ubuntu
 
 See the `INSTALL.md` file.
 
