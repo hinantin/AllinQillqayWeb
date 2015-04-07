@@ -49,7 +49,6 @@ You will need to restart your system
 
 ```
 $ sudo reboot
-
 ```
 
 ##### Step 3. Creating the *HNTErrorCorpus* XML Database
