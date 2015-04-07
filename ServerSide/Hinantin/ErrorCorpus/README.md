@@ -36,18 +36,25 @@ $ sudo update-rc.d basex defaults
    /etc/rc5.d/S20basex -> ../init.d/basex
 ```
 
+##### Step 3. Creating the *HNTErrorCorpus* XML Database
 
 ```
 $ basexclient -nlocalhost -Uuser -Ppassword
 
-CREATE DB HNTQhichwaErrorCorpus
-SET AUTOFLUSH false
-ADD example.xml
-SET ADDCACHE true
-ADD /path/to/xml/documents
-STORE TO images/ 123.jpg
-FLUSH
-DELETE /
+> CREATE DB HNTErrorCorpus
+Database 'HNTErrorCorpus' created in 281.39 ms.
+
+> SET AUTOFLUSH false
+> ADD example.xml
+> SET ADDCACHE true
+> ADD /path/to/xml/documents
+> STORE TO images/ 123.jpg
+> FLUSH
+> DELETE /
+
+> exit 
+
+$ 
 
 ```
 
