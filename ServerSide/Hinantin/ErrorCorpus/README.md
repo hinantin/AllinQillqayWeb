@@ -7,11 +7,9 @@ Download the necessary files (.dsc, orig.tar.gz and debian.tar.xz) from https://
 or ...
 
 ```
-
 $ wget https://launchpad.net/ubuntu/+archive/primary/+files/basex_7.9-1.dsc
 $ wget https://launchpad.net/ubuntu/+archive/primary/+files/basex_7.9.orig.tar.gz
 $ wget https://launchpad.net/ubuntu/+archive/primary/+files/basex_7.9-1.debian.tar.xz
-
 ```
 
 ###### Compiling or installing using a dsc files
