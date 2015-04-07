@@ -44,6 +44,10 @@ $ sudo update-rc.d basex defaults
    /etc/rc3.d/S20basex -> ../init.d/basex
    /etc/rc4.d/S20basex -> ../init.d/basex
    /etc/rc5.d/S20basex -> ../init.d/basex
+
+# You will need to restart your system
+$ sudo reboot
+
 ```
 
 ##### Step 3. Creating the *HNTErrorCorpus* XML Database
