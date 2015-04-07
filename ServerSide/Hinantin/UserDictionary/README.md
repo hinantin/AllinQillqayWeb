@@ -36,7 +36,7 @@ mysql>
 
 ```
 
-Create Database and User (**Note**: The 'user' and 'password' can be adjausted to your preferences, change them as you may.)
+Create the *HNTUserDictionary* database and a *user* (**Note**: The 'user' and 'password' can be adjausted to your preferences, change them as you may.)
 
 ```
 mysql> CREATE DATABASE HNTUserDictionary;
