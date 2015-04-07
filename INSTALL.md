@@ -134,12 +134,20 @@ Change the url `allinqillqay.localhost` within the file to the one you want.
 nano /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31/lf/scayt3/ckscayt/ckscayt.js
 ```
 
-###### Note: checking last cgi errors
+###### Note: checking last php/cgi errors
 
 ```
 $ tail -f /var/log/apache2/error.log
 
 ```
+### Installing Advance features (Optional)
+##### Step 10. Activating User Dictionary characteristics
+
+See `AllinQillqayWeb/ServerSide/Hinantin/UserDictionary/README.md` for a detailed installation guide.
+
+##### Step 11. Activating Error Corpora functionalities
+
+See `AllinQillqayWeb/ServerSide/Hinantin/ErrorCorpus/README.md` for a detailed installation guide.
 
 
 ## Set Up The Client Side
