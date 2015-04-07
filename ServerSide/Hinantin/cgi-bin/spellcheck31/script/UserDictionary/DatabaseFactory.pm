@@ -8,7 +8,7 @@ sub new {
 	my $self = {};
 	my $CONFIG =
 	  Config::IniFiles->new( -file =>
-		  "/usr/lib/cgi-bin/spellcheck31/script/dbspellchecker/ConfigFile.ini"
+		  "/usr/lib/cgi-bin/spellcheck31/script/ConfigFile.ini"
 	  );
 	$self->{PLATFORM} = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'PLATFORM' );
 	$self->{DATABASE} = $CONFIG->val( 'PRODUCTION_MYSQL_HNTUserDictionary', 'DATABASE' );

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Encode qw(encode_utf8);
 use IO::CaptureOutput qw/capture/;
-use lib '/usr/lib/cgi-bin/spellcheck31/script/dbspellchecker';
+use lib '/usr/lib/cgi-bin/spellcheck31/script/UserDictionary';
 use IncorrectEntryDao;
 use CIncorrectEntry;
 use CorrectEntryDao;
