@@ -2,6 +2,18 @@
 
 ##### Step 1. Install BaseX XML Database (>= 7.8)
 
+Download the necessary files (.dsc, orig.tar.gz and debian.tar.xz) from https://launchpad.net/ubuntu/+source/basex/7.9-1
+
+or ...
+
+```
+
+$ wget https://launchpad.net/ubuntu/+archive/primary/+files/basex_7.9-1.dsc
+$ wget https://launchpad.net/ubuntu/+archive/primary/+files/basex_7.9.orig.tar.gz
+$ wget https://launchpad.net/ubuntu/+archive/primary/+files/basex_7.9-1.debian.tar.xz
+
+```
+
 ###### Compiling or installing using a dsc files
 
 ```
