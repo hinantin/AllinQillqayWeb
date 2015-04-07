@@ -1,4 +1,4 @@
-### Installing the *User Distionary* on Ubuntu 12.04
+### Installing the *User Dictionary* on Ubuntu 12.04
 
 ##### Step 1. Install MySQL
 
