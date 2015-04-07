@@ -17,6 +17,8 @@ of doing it later. I would recommend you find a decent password generator too
 Log into MySQL:
 
 ```
+$ cd /your/own/path/AllinQillqayWeb/ServerSide/Hinantin/UserDictionary
+
 $ mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -36,10 +38,14 @@ mysql>
 
 ```
 
-Create the *HNTUserDictionary* database and a *user* (**Note**: The 'user' and 'password' can be adjausted to your preferences, change them as you may.)
+Create the *HNTUserDictionary* database and a *user* (**Note**: The 'user' 
+and 'password' can be adjausted to your preferences, change them as you may.)
 
 ```
-mysql> CREATE DATABASE HNTUserDictionary;
+mysql> DROP DATABASE IF EXISTS `HNTUserDictionary`;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> CREATE DATABASE `HNTUserDictionary` CHARACTER SET UTF8 COLLATE utf8_spanish_ci;
 Query OK, 1 row affected (0.00 sec)
 
 mysql> CREATE USER user@localhost;
@@ -48,11 +54,19 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> SET PASSWORD FOR user@localhost= PASSWORD("password");
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> GRANT ALL PRIVILEGES ON HNTUserDictionary.* TO user@localhost IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON `HNTUserDictionary`.* TO user@localhost IDENTIFIED BY 'password';
 Query OK, 0 rows affected (0.00 sec)
 
 mysql> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.00 sec)
+```
+
+Run the scripts:
+
+```
+mysql> source HNTUserDictionary_CreationScript.sql
+
+mysql> source HNTUserDictionary_Procedures.sql
 
 mysql> exit
 ```

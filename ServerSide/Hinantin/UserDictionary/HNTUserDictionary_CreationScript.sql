@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS `HNTUserDictionary`;
-CREATE DATABASE `HNTUserDictionary` CHARACTER SET UTF8 COLLATE utf8_spanish_ci;
+-- DROP DATABASE IF EXISTS `HNTUserDictionary`;
+-- CREATE DATABASE `HNTUserDictionary` CHARACTER SET UTF8 COLLATE utf8_spanish_ci;
 USE `HNTUserDictionary`;
 
 DROP TABLE IF EXISTS `TUserDictionary`;
