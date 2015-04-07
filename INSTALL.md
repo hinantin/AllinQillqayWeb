@@ -1,4 +1,4 @@
-## Set Up The Server Side
+## Set Up The Server Side on Ubuntu 12.04
 ### Set Up Apache Virtual Host
 
 #### Change the url `allinqillqay.localhost` if that is not the url want.
