@@ -1,4 +1,4 @@
-### Installing the uni_extended_foma
+### Installing the Southern Unified Quechua, with an extended Spanish lexicon and a large set of correction rules spellchecker
 
 Navigate to the following folder.
 
