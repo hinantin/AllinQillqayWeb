@@ -2,6 +2,12 @@
 
 **Installing MySpell and HunSpell spellcheckers**
 
+You need to have hunspell installed.
+
+```
+sudo apt-get install hunspell
+```
+
 Navigate to the folder where the *.oxt files are.
 
 ```
