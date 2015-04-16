@@ -1,6 +1,7 @@
 ### Installing the uni_extended_foma
 
 Navigate to the following folder.
+
 **Note:** In order to compile the transducers you need at least 4GB RAM. 
 Otherwise it may crashed your computer or slow it down.
 
