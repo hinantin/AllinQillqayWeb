@@ -33,6 +33,7 @@ $ cd foma
 $ make
 $ sudo cp tcpServer /usr/bin/
 $ sudo chmod +x /usr/bin/tcpServer
+$ cd ..
 ```
 
 ### Installing the service on port 8888
