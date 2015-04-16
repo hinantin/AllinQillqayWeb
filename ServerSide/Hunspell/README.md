@@ -1,5 +1,4 @@
-### Installing Bolivia Quechua &
-### Ecuadorian Kichwa spellcheckers
+### Installing Bolivia Quechua & Ecuadorian Kichwa spellcheckers
 
 **Installing MySpell and HunSpell spellcheckers**
 
