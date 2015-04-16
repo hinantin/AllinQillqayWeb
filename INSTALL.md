@@ -140,7 +140,7 @@ nano /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellche
 $ tail -f /var/log/apache2/error.log
 
 ```
-### Installing Advance features (Optional)
+### Installing the advanced features (Optional)
 ##### Step 10. Activating User Dictionary characteristics
 
 See `AllinQillqayWeb/ServerSide/Hinantin/UserDictionary/README.md` for a detailed installation guide.
@@ -149,6 +149,13 @@ See `AllinQillqayWeb/ServerSide/Hinantin/UserDictionary/README.md` for a detaile
 
 See `AllinQillqayWeb/ServerSide/Hinantin/ErrorCorpus/README.md` for a detailed installation guide.
 
+##### Step 12. Activating the Bolivia Quechua & Ecuadorian Kichwa spellcheckers
+
+See `AllinQillqayWeb/ServerSide/Hunspell/README.md` for a detailed installation guide.
+
+##### Step 13. Activating the improved version of the southern unfied quechua spellchecker
+
+See `AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/README.md` for a detailed installation guide.
 
 ## Set Up The Client Side
 ### Redirect to url
