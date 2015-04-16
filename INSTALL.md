@@ -153,7 +153,7 @@ See `AllinQillqayWeb/ServerSide/Hinantin/ErrorCorpus/README.md` for a detailed i
 
 See `AllinQillqayWeb/ServerSide/Hunspell/README.md` for a detailed installation guide.
 
-##### Step 13. Activating the improved version of the southern unfied quechua spellchecker
+##### Step 13. Activating the improved version of the southern unified quechua spellchecker
 
 See `AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/README.md` for a detailed installation guide.
 
