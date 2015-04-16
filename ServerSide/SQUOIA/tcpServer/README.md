@@ -24,6 +24,15 @@ $ sudo cp spellChecker/analyzer/spellcheckUnificado.bin /usr/share/squoia/
 $ sudo cp spellChecker/normalizer/chain.bin /usr/share/squoia/
 ```
 
+### Compiling the tcpServer
+
+```
+$ cd foma
+$ make
+$ sudo cp tcpServer /usr/bin/
+$ sudo chmod +x /usr/bin/tcpServer
+```
+
 ### Installing the service on port 8888
 
 ```
