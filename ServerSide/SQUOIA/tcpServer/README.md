@@ -29,11 +29,11 @@ $ sudo cp spellChecker/normalizer/chain.bin /usr/share/squoia/
 ### Compiling the tcpServer
 
 ```
-$ cd foma
+$ cd ../foma
 $ make
 $ sudo cp tcpServer /usr/bin/
 $ sudo chmod +x /usr/bin/tcpServer
-$ cd ..
+$ cd ../tcpServer
 ```
 
 ### Installing the service on port 8888
