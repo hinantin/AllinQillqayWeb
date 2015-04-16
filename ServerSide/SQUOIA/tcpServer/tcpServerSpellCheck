@@ -13,10 +13,10 @@ dir="/usr/bin"
 dictPath="/usr/share/squoia/"
 user="root"
 # -A: host, -P: port number
-cmd="tcpServer -A 127.0.0.1 -P 8888 $dictPath/analyzeUnificado.bin $dictPath/chain.bin $dictPath/spellcheckUnificado.bin"
+cmd="tcpServer -P 8888 $dictPath/analyzeUnificado.bin $dictPath/chain.bin $dictPath/spellcheckUnificado.bin"
 
 #name=`basename $0`
-name="basex"
+name="tcpserverspellcheck"
 pid_file="/var/run/$name.pid"
 stdout_log="/var/log/$name.log"
 stderr_log="/var/log/$name.err"
