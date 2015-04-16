@@ -55,4 +55,27 @@ You will need to restart your system
 $ sudo reboot
 ```
 
+### Testing the connection
+
+Run the following command:
+
+```
+$ chmod +x tcpclient.pl 
+```
+
+In case the connection is not established:
+
+```
+$ ./tcpclient.pl 
+cannot connect to the server Connection refused
+```
+
+In case the connection works:
+
+```
+$ ./tcpclient.pl 
+connected to the server
+sent data of length 6
+received response: incorrect:ñawis,ñawim,ñawiy|correct:
+```
 
