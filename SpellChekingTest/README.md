@@ -1,4 +1,15 @@
-# Test
+# Allin Qillqay - Testing Spellcheckers
+# Testing
+
+The following tests require Python.
+The tests were runned on Ubuntu 12.04.
+
+### Installing NLTK
+
+```
+$ sudo apt-get install python-nltk
+```
+### Making 
 
 Below we illustrate the process to calculate SER in programming language Python with NLTK.
 
