@@ -68,16 +68,16 @@ $ chmod +x tcpclient.pl
 In case the connection is not established:
 
 ```
-$ ./tcpclient.pl 
+$ ./tcpclient.pl --word "alqochan"
 cannot connect to the server Connection refused
 ```
 
 In case the connection works:
 
 ```
-$ ./tcpclient.pl 
+$ ./tcpclient.pl --word "alqochan"
 connected to the server
 sent data of length 6
-received response: incorrect:ñawis,ñawim,ñawiy|correct:
+incorrect:allquchan,allquchan,allqucham|correct:
 ```
 
