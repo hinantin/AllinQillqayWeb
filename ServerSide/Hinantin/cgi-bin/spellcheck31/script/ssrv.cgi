@@ -70,8 +70,8 @@ elsif ($cmd eq "check_spelling") {
   }
   foreach $word (@listWords) {
     $word =~ s/^\s+|\s+$//g; # trimming string
-    $spellcheck = $object->SpellCheck($word);
-    if ($spellcheck) { # the word is misspelled
+    $correct = $object->SpellCheck($word);
+    if (not $correct) { # the word is misspelled
       my $suggestions = $object->Suggestions($word);
       $suggestions = substr($suggestions , 0, length($suggestions) - 2);
       #print $object->FormatSpellCheckOutput($sug);
