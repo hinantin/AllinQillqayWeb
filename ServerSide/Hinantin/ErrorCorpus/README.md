@@ -53,6 +53,8 @@ $ sudo reboot
 
 ##### Step 3. Creating the *HNTErrorCorpus* XML Database
 
+By default *BaseX* creates the user *admin* with password *admin*, so if you did not modified those values you can employ them in the following instructions.
+
 ```
 $ basexclient -nlocalhost -Uuser -Ppassword
 
