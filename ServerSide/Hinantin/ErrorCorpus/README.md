@@ -59,14 +59,6 @@ $ basexclient -nlocalhost -Uuser -Ppassword
 > CREATE DB HNTErrorCorpus
 Database 'HNTErrorCorpus' created in 281.39 ms.
 
-> SET AUTOFLUSH false
-> ADD example.xml
-> SET ADDCACHE true
-> ADD /path/to/xml/documents
-> STORE TO images/ 123.jpg
-> FLUSH
-> DELETE /
-
 > exit 
 
 $ 
