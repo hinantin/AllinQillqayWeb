@@ -60,16 +60,16 @@ elsif ($cmd eq "check_spelling") {
   
   @listWords = split( ',', $text );
   if ($slang eq "qu_SRNCP") {
-    $object = CSpellChecker->new( "spellcheckUnificado.fst", $slang );
+    $object = CSpellChecker->new( 'FstFile' => "spellcheckUnificado.fst", 'SLang' => $slang );
   }
   else { # By default we use Cuzco Quechua
-    $object = CSpellChecker->new( "spellcheck.fst", $slang );
+    $object = CSpellChecker->new( 'FstFile' => "spellcheck.fst", 'SLang' => $slang );
   }
   foreach $word (@listWords) {
-    $word =~ s/^\s+|\s+$//g;
+    $word =~ s/^\s+|\s+$//g; # trimming string
     $spellcheck = $object->SpellCheck($word);
-    $spellcheck =~ s/^\s+|\s+$//g;
-    if ( "$spellcheck" =~ /\+\?/ ) { # Error 
+    $spellcheck =~ s/^\s+|\s+$//g; # trimming string
+    if ( "$spellcheck" =~ /\+\?/ ) { # the word is misspelled
       my $suggestions = $object->Suggestions($word);
       $suggestions = substr($suggestions , 0, length($suggestions) - 2);
       #print $object->FormatSpellCheckOutput($sug);
