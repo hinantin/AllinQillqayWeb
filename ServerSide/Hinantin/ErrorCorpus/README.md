@@ -45,6 +45,7 @@ $ sudo update-rc.d basex defaults
    /etc/rc4.d/S20basex -> ../init.d/basex
    /etc/rc5.d/S20basex -> ../init.d/basex
 ```
+
 You will need to restart your system
 
 ```

@@ -31,7 +31,7 @@ if ($cmd eq "get_lang_list") {
   $customerid = $query->param('customerid');
   $run_mode = $query->param('run_mode');
   $slang = $query->param('slang');
-  print $callback . '({langList:{ltr: {"qu_QUZ3" : "Quechua Cusqueño", "qu_SRNCP" : "Quechua Sureño"},rtl: {}},verLang : 6})';
+  print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido"},rtl: {}},verLang : 6})';
 }
 elsif ($cmd eq "getbanner") { 
   $callback = $query->param('callback');
@@ -59,17 +59,19 @@ elsif ($cmd eq "check_spelling") {
   my $result = "";
   
   @listWords = split( ',', $text );
-  if ($slang eq "qu_SRNCP") {
-    $object = CSpellChecker->new( 'FstFile' => "spellcheckUnificado.fst", 'SLang' => $slang );
+  if ($slang eq "uni_simple_foma") {
+    $object = CSpellChecker->new( "spellcheckUnificado.fst", $slang, "cmd" );
   }
-  else { # By default we use Cuzco Quechua
-    $object = CSpellChecker->new( 'FstFile' => "spellcheck.fst", 'SLang' => $slang );
+  elsif ($slang eq "cuz_simple_foma") { # By default we use Cuzco Quechua
+    $object = CSpellChecker->new( "spellcheck.fst", $slang, "cmd" );
+  }
+  else { # uni_extended_foma
+    
   }
   foreach $word (@listWords) {
     $word =~ s/^\s+|\s+$//g; # trimming string
     $spellcheck = $object->SpellCheck($word);
-    $spellcheck =~ s/^\s+|\s+$//g; # trimming string
-    if ( "$spellcheck" =~ /\+\?/ ) { # the word is misspelled
+    if ($spellcheck) { # the word is misspelled
       my $suggestions = $object->Suggestions($word);
       $suggestions = substr($suggestions , 0, length($suggestions) - 2);
       #print $object->FormatSpellCheckOutput($sug);

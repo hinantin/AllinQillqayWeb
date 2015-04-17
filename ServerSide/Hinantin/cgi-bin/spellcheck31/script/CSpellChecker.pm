@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 package CSpellChecker;
 
 use strict;
@@ -13,8 +14,8 @@ use DateTime;
 
 sub new {
    my $class = shift;
-   my($FstFile,$SLang) = @_;
-   my $self = {"FstFile"=>$FstFile,"SLang"=>$SLang,};
+   my($FstFile,$SLang,$Type) = @_;
+   my $self = {"FstFile"=>$FstFile,"SLang"=>$SLang,"Type"=>$Type,};
    #print "File: " . $FstFile . "\n";
    bless($self, $class);
    return $self;
@@ -76,6 +77,7 @@ sub AnalyzeCuzco {
   return $stdout;
 }
 
+# AllinQillqayWeb
 sub SpellCheck {
   my $self = shift;
   my $words = undef;  
@@ -84,7 +86,13 @@ sub SpellCheck {
   capture sub {
     system("echo \"$words\" | flookup -bx $self->{FstFile}");
   } => \$stdout, \$stderr;
-  return $stdout;
+  $stdout =~ s/^\s+|\s+$//g; # trimming string
+  if ( "$stdout" =~ /\+\?/ ) { # the word is misspelled
+    return 0;
+  }
+  else {
+    return 1;
+  }
 }
 
 sub FMed {
@@ -99,6 +107,7 @@ sub FMed {
   return $stdout;
 }
 
+# AllinQillqayWeb
 sub Suggestions {
   my $self = shift;
   my $words = undef;

@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+package CXmlDocument;
 
 use BaseXClient;
 use XML::Writer;
