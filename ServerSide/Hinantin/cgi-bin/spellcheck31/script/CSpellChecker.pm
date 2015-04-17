@@ -88,10 +88,10 @@ sub SpellCheck {
   } => \$stdout, \$stderr;
   $stdout =~ s/^\s+|\s+$//g; # trimming string
   if ( "$stdout" =~ /\+\?/ ) { # the word is misspelled
-    return 0;
+    return 1;
   }
   else {
-    return 1;
+    return 0;
   }
 }
 
