@@ -9,7 +9,15 @@ The tests were runned on Ubuntu 12.04.
 ```
 $ sudo apt-get install python-nltk
 ```
-### Making 
+
+### Installing gnuplot (optional)
+If you wish to visualize graphically the results install gnuplot.
+
+```
+$ sudo apt-get install gnuplot
+```
+
+### Making a simple test
 
 Below we illustrate the process to calculate SER in programming language Python with NLTK.
 
