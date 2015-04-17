@@ -13,12 +13,12 @@ sub new {
 	  Config::IniFiles->new( -file =>
 		  "/usr/lib/cgi-bin/spellcheck31/script/ConfigFile.ini"
 	  );
-	$self->{PLATFORM} = $CONFIG->val( 'PRODUCTION_BASEX_HNTQhichwaErrorCorpus', 'PLATFORM' );
-	$self->{DATABASE} = $CONFIG->val( 'PRODUCTION_BASEX_HNTQhichwaErrorCorpus', 'DATABASE' );
-	$self->{HOST}     = $CONFIG->val( 'PRODUCTION_BASEX_HNTQhichwaErrorCorpus', 'HOST' );
-	$self->{PORT}     = $CONFIG->val( 'PRODUCTION_BASEX_HNTQhichwaErrorCorpus', 'PORT' );
-	$self->{USER}     = $CONFIG->val( 'PRODUCTION_BASEX_HNTQhichwaErrorCorpus', 'USER' );
-	$self->{PASSWORD} = $CONFIG->val( 'PRODUCTION_BASEX_HNTQhichwaErrorCorpus', 'PASSWORD' );
+	$self->{PLATFORM} = $CONFIG->val( 'PRODUCTION_BASEX_HNTErrorCorpus', 'PLATFORM' );
+	$self->{DATABASE} = $CONFIG->val( 'PRODUCTION_BASEX_HNTErrorCorpus', 'DATABASE' );
+	$self->{HOST}     = $CONFIG->val( 'PRODUCTION_BASEX_HNTErrorCorpus', 'HOST' );
+	$self->{PORT}     = $CONFIG->val( 'PRODUCTION_BASEX_HNTErrorCorpus', 'PORT' );
+	$self->{USER}     = $CONFIG->val( 'PRODUCTION_BASEX_HNTErrorCorpus', 'USER' );
+	$self->{PASSWORD} = $CONFIG->val( 'PRODUCTION_BASEX_HNTErrorCorpus', 'PASSWORD' );
 	bless($self);
 	return $self;
 }
@@ -29,5 +29,10 @@ sub CreateSessionXmlDatabase {
 		$self->{PLATFORM}, $self->{PORT}, $self->{USER}, $self->{PASSWORD}
 	)
 	or die "Connection Error::errstr\n";
+}
+
+sub getDatabase {
+	my( $self ) = @_;
+	return $self->{DATABASE};
 }
 1;

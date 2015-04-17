@@ -13,6 +13,7 @@ $ sudo apt-get install hunspell
 $ sudo apt-get install libio-captureoutput-perl
 $ sudo apt-get install libconfig-inifiles-perl
 $ sudo apt-get install libdatetime-perl
+$ sudo apt-get install libxml-writer-perl
 ```
 
 ##### Step 2. Create a New Directory
