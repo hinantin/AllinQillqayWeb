@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spelltestresult>
+  <header>
+    <tool lexversion="Ecuadorian Normalized Kichwa" toolversion="Hunspell" engine="SCE02"/>
+    <document>COMTEL2013.pdf</document>
+    <date>20140623</date>
+  </header>
+  <results>
+    <word>
+      <original>Rimay</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimanki</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimashanki</original>
+      <expected>Rimashkanki</expected>
+      <edit_dist>1</edit_dist>
+      <status>SplErr</status>
+      <position>1</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="3">
+        <suggestion expected="yes" miss="yes">Rimashkanki</suggestion>
+        <suggestion miss="yes">Rimashkani</suggestion>
+        <suggestion miss="yes">Imashinashi</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharanki</original>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Imashashunchik</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankin</original>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Imashashunchik</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraq</original>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Imashashunchik</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqmi</original>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Imashashunchik</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqchu</original>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Imashashunchik</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqchusina</original>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Imashashunchik</suggestion>
+      </suggestions>
+    </word>
+  </results>
+</spelltestresult>

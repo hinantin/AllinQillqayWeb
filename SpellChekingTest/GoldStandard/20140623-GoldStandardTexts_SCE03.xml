@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spelltestresult>
+  <header>
+    <tool lexversion="Bolivian Quechua" toolversion="MySpell" engine="SCE03"/>
+    <document>COMTEL2013.pdf</document>
+    <date>20140623</date>
+  </header>
+  <results>
+    <word>
+      <original>Rimay</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimanki</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimashanki</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimasharanki</original>
+      <expected>Rimasharqanki</expected>
+      <edit_dist>1</edit_dist>
+      <status>SplErr</status>
+      <position>1</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion expected="yes" miss="yes">Rimasharqanki</suggestion>
+        <suggestion miss="yes">Rimashawanki</suggestion>
+        <suggestion miss="yes">Khashkarimunki</suggestion>
+        <suggestion miss="yes">Kimsancharinki</suggestion>
+        <suggestion miss="yes">Rimarichinki</suggestion>
+        <suggestion miss="yes">Rankhayarimunki</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankin</original>
+      <expected>Rimasharqankimi</expected>
+      <edit_dist>3</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="2">
+        <suggestion miss="yes">Kimsancharin</suggestion>
+        <suggestion miss="yes">Rankhayarin</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraq</original>
+      <expected>Rimasharqankiraq</expected>
+      <edit_dist>1</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Rankhayarimuy</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqmi</original>
+      <expected>Rimasharqankiraqmi</expected>
+      <edit_dist>1</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Marankiru</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqchu</original>
+      <expected>Rimasharqankiraqchu</expected>
+      <edit_dist>1</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Charancharimuychu</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqchusina</original>
+      <expected>Rimasharqankiraqchusina</expected>
+      <edit_dist>1</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="1">
+        <suggestion miss="yes">Wariwiraqocharunasina</suggestion>
+      </suggestions>
+    </word>
+  </results>
+</spelltestresult>

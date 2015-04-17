@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spelltestresult>
+  <header>
+    <tool lexversion="Southern Unified Quechua" toolversion="Foma Toolkit 0.9.17" engine="SCE01"/>
+    <document>COMTEL2013.pdf</document>
+    <date>20140623</date>
+  </header>
+  <results>
+    <word>
+      <original>Rimay</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimanki</original>
+      <status>SplCor</status>
+    </word>
+    <word>
+      <original>Rimashanki</original>
+      <expected>Rimachkanki</expected>
+      <edit_dist>2</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">rimasqanki</suggestion>
+        <suggestion miss="yes">Rimasqanki</suggestion>
+        <suggestion miss="yes">rimachanki</suggestion>
+        <suggestion miss="yes">Rimachanki</suggestion>
+        <suggestion miss="yes">rimasqanku</suggestion>
+        <suggestion miss="yes">rimasqanka</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharanki</original>
+      <expected>Rimachkarqanki</expected>
+      <edit_dist>3</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">rimacharanki</suggestion>
+        <suggestion miss="yes">Rimacharanki</suggestion>
+        <suggestion miss="yes">rimacharanku</suggestion>
+        <suggestion miss="yes">rimacharankis</suggestion>
+        <suggestion miss="yes">rimacharankim</suggestion>
+        <suggestion miss="yes">Rimacharanku</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankin</original>
+      <expected>Rimachkarqankim</expected>
+      <edit_dist>4</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">rimacharanki</suggestion>
+        <suggestion miss="yes">rimacharankis</suggestion>
+        <suggestion miss="yes">rimacharankim</suggestion>
+        <suggestion miss="yes">Rimacharanki</suggestion>
+        <suggestion miss="yes">Rimacharankis</suggestion>
+        <suggestion miss="yes">Rimacharankim</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraq</original>
+      <expected>Rimachkarqankiraq</expected>
+      <edit_dist>3</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">rimacharankiraq</suggestion>
+        <suggestion miss="yes">Rimacharankiraq</suggestion>
+        <suggestion miss="yes">rimacharankitaq</suggestion>
+        <suggestion miss="yes">Rimacharankitaq</suggestion>
+        <suggestion miss="yes">rimacharankuraq</suggestion>
+        <suggestion miss="yes">Rimacharankuraq</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqmi</original>
+      <expected>Rimachkarqankiraqmi</expected>
+      <edit_dist>3</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">Rimacharankiraqmi</suggestion>
+        <suggestion miss="yes">rimacharankiraqmi</suggestion>
+        <suggestion miss="yes">rimacharankiraqmá</suggestion>
+        <suggestion miss="yes">Rimacharankiraqmá</suggestion>
+        <suggestion miss="yes">rimacharankiraqsi</suggestion>
+        <suggestion miss="yes">rimacharankiraqri</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqchu</original>
+      <expected>Rimachkarqankiraqchu</expected>
+      <edit_dist>3</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">Rimacharankiraqchu</suggestion>
+        <suggestion miss="yes">rimacharankiraqchu</suggestion>
+        <suggestion miss="yes">rimacharankiraqchá</suggestion>
+        <suggestion miss="yes">rimacharankiraqchus</suggestion>
+        <suggestion miss="yes">rimacharankiraqcha</suggestion>
+        <suggestion miss="yes">rimacharankiraqchum</suggestion>
+      </suggestions>
+    </word>
+    <word>
+      <original>Rimasharankiraqchusina</original>
+      <expected>Rimachkarqankiraqchusina</expected>
+      <edit_dist>3</edit_dist>
+      <status>SplErr</status>
+      <position>0</position>
+      <!-- 0 means that no alternative is the correct one -->
+      <suggestions count="6">
+        <suggestion miss="yes">Rimacharankiraqchusina</suggestion>
+        <suggestion miss="yes">rimacharankiraqchusina</suggestion>
+        <suggestion miss="yes">rimacharankiraqchusuna</suggestion>
+        <suggestion miss="yes">Rimacharankiraqchusuna</suggestion>
+        <suggestion miss="yes">rimacharankitaqchusina</suggestion>
+        <suggestion miss="yes">Rimacharankitaqchusina</suggestion>
+      </suggestions>
+    </word>
+  </results>
+</spelltestresult>
