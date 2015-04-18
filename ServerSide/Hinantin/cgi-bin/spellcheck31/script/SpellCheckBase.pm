@@ -21,6 +21,8 @@ sub getSuggestions {
 no Moose;
 
 package SpellCheckFiniteStateCmd;
+use Encode qw(encode_utf8);
+use IO::CaptureOutput qw/capture/;
 use Moose;
 extends 'SpellCheckBase';
 
@@ -29,7 +31,7 @@ sub SpellCheck {
   my $words = undef;  
   ($words) = @_;
   my ($stdout, $stderr);
-  my fstfile = $self->FstFile();
+  my $fstfile = $self->FstFile();
   capture sub {
     system("echo \"$words\" | flookup -bx $fstfile");
   } => \$stdout, \$stderr;
@@ -48,7 +50,7 @@ sub getSuggestions {
   my $number = "15"; #number of suggestions 
   ($words) = @_; 
   my ($stdout, $stderr);
-  my fstfile = $self->FstFile();
+  my $fstfile = $self->FstFile();
   capture sub {
     system("echo \"$words\" | suggestions -l $number $fstfile");
   } => \$stdout, \$stderr;
@@ -136,6 +138,7 @@ sub getSuggestions {
   $response = $listWords[1];
   @listWords = split( ',', $response );
   $response = "";
+  my $word = "";
   foreach $word (@listWords) {
     $word =~ s/^\s+|\s+$//g; # trimming string
     $response = $response + "\"$word\", ";
@@ -147,6 +150,8 @@ sub getSuggestions {
 no Moose;
 
 package SpellCheckFiniteStateNSpell;
+use Encode qw(encode_utf8);
+use IO::CaptureOutput qw/capture/;
 use Moose;
 extends 'SpellCheckBase';
 
@@ -180,6 +185,7 @@ sub getSuggestions {
   $stdout =~ s/^\s+|\s+$//g; # trimming string
   @listWords = split( ',', $response );
   $response = "";
+  my $word = "";
   foreach $word (@listWords) {
     $word =~ s/^\s+|\s+$//g; # trimming string
     $response = $response + "\"$word\", ";
@@ -190,3 +196,4 @@ sub getSuggestions {
 
 no Moose;
 
+1;
