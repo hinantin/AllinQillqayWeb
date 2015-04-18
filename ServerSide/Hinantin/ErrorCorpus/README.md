@@ -67,7 +67,7 @@ Database 'HNTErrorCorpus' created in 281.39 ms.
 $ 
 ```
 
-##### Step 4. Create a folder *tmp* folder, grating writing permissions for www-data
+##### Step 4. Create a *tmp* folder, granting writing permissions for www-data
 
 ```
 $ mkdir -p /usr/lib/cgi-bin/spellcheck31/script/ErrorCorpus/tmp/
