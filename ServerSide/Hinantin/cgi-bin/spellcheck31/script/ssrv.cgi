@@ -10,7 +10,7 @@ print $query -> header(
 -type => 'text/javascript; charset=UTF-8',
 );
 use Encode;
-my $squoiapath = "/usr/share/squoia"
+my $squoiapath = "/usr/share/squoia";
 
 # First command
 my $cmd = $query->param('cmd');
