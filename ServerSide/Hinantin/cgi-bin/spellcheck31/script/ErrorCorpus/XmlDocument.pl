@@ -5,7 +5,7 @@ use BaseXClient;
 use XML::Writer;
 use IO::File;
 use CErrorCorpus;
-use lib '/home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31/script';
+use lib 'usr/lib/cgi-bin/spellcheck31/script';
 use SpellCheckBase;
 #use SpellChecker;
 use CXmlDocument;
@@ -13,7 +13,6 @@ use CXmlDocument;
 eval {
   # Input variables
   my $text = "wasi, wasiiy, qan, ñawi, manamm";
-  my $tmpdir = "/home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31/script/ErrorCorpus/tmp/";
   my $squoiapath = "/usr/share/squoia";
   my $engine = "cuz_simple_foma";
   my $version = "v1.0-beta.1";
