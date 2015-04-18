@@ -14,6 +14,7 @@ $ sudo apt-get install libio-captureoutput-perl
 $ sudo apt-get install libconfig-inifiles-perl
 $ sudo apt-get install libdatetime-perl
 $ sudo apt-get install libxml-writer-perl
+$ sudo apt-get install libmoose-perl
 ```
 
 ##### Step 2. Create a New Directory
