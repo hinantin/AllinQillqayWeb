@@ -5,7 +5,7 @@ use BaseXClient;
 use XML::Writer;
 use IO::File;
 use CErrorCorpus;
-use lib '/home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31/script';
+use lib '/usr/lib/cgi-bin/spellcheck31/script';
 use CSpellChecker;
 
 sub new {
