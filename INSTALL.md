@@ -52,7 +52,9 @@ $ sudo chmod o+x ssrv.cgi
 ```
 $ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA/foma/
 $ make
-$ sudo cp suggestions /usr/lib/cgi-bin/spellcheck31/script/
+$ make install
+$ sudo cp suggestions /usr/bin/
+$ sudo chmod +x /usr/bin/suggestions
 ```
 
 **Compiling transducers**
