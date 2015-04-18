@@ -1,14 +1,8 @@
 #!/usr/bin/perl
 package CXmlDocument;
 
-use utf8;
 use strict;
 use warnings;
-
-binmode(STDIN,  ':encoding(utf-8)');
-binmode(STDOUT, ':encoding(utf-8)');
-binmode(STDERR, ':encoding(utf-8)');
-
 use BaseXClient;
 use XML::Writer;
 use IO::File;
@@ -28,7 +22,7 @@ sub new {
 
 sub CreateXmlFile {
   my $self = shift;
-  my ( $text, $path ) = @_;
+  my ( $text ) = @_;
   my $spellcheck_engine = $self->{Sc}->EngineName();
   my $spellcheck_engine_version = $self->{Sc}->EngineVersion();
 
@@ -39,12 +33,12 @@ sub CreateXmlFile {
   my $timestamp = sprintf("%04d%02d%02d%02d%02d%02d",$year+1900,$mon+1,$mday,$hour,$min,$sec);
   my $filename = "doc_$timestamp.xml";
   #print "$path/$filename\n";
-  my $output;
-  open($output, '>:encoding(UTF-8)', "$path/$filename") or die "Unable to open output file: $!";
+  #my $output;
+  #open($output, '>', "$path/$filename") or die "Unable to open output file: $!";
 
   #my $output = IO::File->new("$path/$filename", "w");
-
-  my $writer = XML::Writer->new(OUTPUT => $output);
+  my $s;
+  my $writer = XML::Writer->new(OUTPUT => \$s);
   $writer->xmlDecl("UTF-8");
   $writer->startTag("document", "id" => "doc_$timestamp");
   $writer->startTag("text");
@@ -72,6 +66,7 @@ sub CreateXmlFile {
         foreach $suggestion (@listSuggestions) {
           $suggestion =~ s/^\s+|\s+$//g; # trimming string
           $suggestion =~ s/"//g; # deleting the double quotes
+          #print $suggestion;
           $writer->startTag("suggestion"); $writer->characters($suggestion); $writer->endTag("suggestion");
         }
       $writer->endTag("suggestions");
@@ -86,14 +81,15 @@ sub CreateXmlFile {
   $writer->endTag("check_spelling");
   $writer->endTag("document");
   $writer->end();
-  $output->close();
-  return ($path,$filename);
+  #$output->close();
+  #print $s;
+  return ($filename, $s);
 }
 
 sub Add
 {
   my $self = shift;
-  my ( $path, $filename ) = @_;
-  $self->{Ec}->Add($path, $filename);
+  my ( $filename, $xmlcontent ) = @_;
+  $self->{Ec}->Add($filename, $xmlcontent);
 }
 1;

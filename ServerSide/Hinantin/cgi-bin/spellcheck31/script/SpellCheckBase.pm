@@ -22,7 +22,6 @@ sub getSuggestions {
 no Moose;
 
 package SpellCheckFiniteStateCmd;
-use Encode qw(encode_utf8);
 use IO::CaptureOutput qw/capture/;
 use Moose;
 extends 'SpellCheckBase';
@@ -34,7 +33,7 @@ sub SpellCheck {
   my ($stdout, $stderr);
   my $fstfile = $self->FstFile();
   capture sub {
-    system("export LANG=en_US.utf8; echo \"$words\" | flookup -bx $fstfile");
+    system("echo \"$words\" | flookup -bx $fstfile");
   } => \$stdout, \$stderr;
   $stdout =~ s/^\s+|\s+$//g; # trimming string
   if ( "$stdout" =~ /\+\?/ ) { # the word is misspelled
@@ -53,16 +52,16 @@ sub getSuggestions {
   my ($stdout, $stderr);
   my $fstfile = $self->FstFile();
   capture sub {
-    system("export LANG=en_US.utf8; echo \"$words\" | suggestions -l $number $fstfile");
+    system("echo \"$words\" | suggestions -l $number $fstfile");
   } => \$stdout, \$stderr;
-  $stdout = substr($stdout , 0, length($stdout) - 2);
+  $stdout =~ s/,$//g; # trimming string
+  #$stdout = substr($stdout , 0, length($stdout) - 1);
   return $stdout;
 }
 
 no Moose;
 
 package SpellCheckFiniteStateCTcp;
-use Encode qw(encode_utf8);
 use IO::Socket::INET;
 use Moose;
 extends 'SpellCheckBase';
@@ -152,7 +151,6 @@ sub getSuggestions {
 no Moose;
 
 package SpellCheckFiniteStateNSpell;
-use Encode qw(encode_utf8);
 use IO::CaptureOutput qw/capture/;
 use Moose;
 extends 'SpellCheckBase';
@@ -163,7 +161,7 @@ sub SpellCheck {
   ($words) = @_; 
   my ($stdout, $stderr);
   capture sub {
-    system("export LANG=en_US.utf8; echo \"$words\" | hunspell -G -d $self->{SLang}");
+    system("echo \"$words\" | hunspell -G -d $self->{SLang}");
   } => \$stdout, \$stderr;
   if ( "$stdout" eq "" ) { # the word is misspelled
     return 0;
@@ -179,7 +177,7 @@ sub getSuggestions {
   ($words) = @_; 
   my ($stdout, $stderr);
   capture sub {
-    system("export LANG=en_US.utf8; echo \"$words\" | hunspell -d $self->{SLang}");
+    system("echo \"$words\" | hunspell -d $self->{SLang}");
   } => \$stdout, \$stderr;
   my @listWords = ();
   @listWords = split( ':', $stdout );

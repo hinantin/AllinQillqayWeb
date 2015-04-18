@@ -14,7 +14,7 @@ sub new {
 }
 
 sub Add {
-  my ( $self, $path, $xmlfile ) = @_; 
+  my ( $self, $filename, $xmlcontent ) = @_; 
   # create session
   my $Xdf = new XmlDatabaseFactory();
   my $session = $Xdf->CreateSessionXmlDatabase();
@@ -22,7 +22,7 @@ sub Add {
   # create empty database
   $session->execute("OPEN $databasename");
   # add document
-  $session->execute("ADD $path/$xmlfile");
+  $session->add($filename, $xmlcontent);
   # close session
   $session->close();
 }

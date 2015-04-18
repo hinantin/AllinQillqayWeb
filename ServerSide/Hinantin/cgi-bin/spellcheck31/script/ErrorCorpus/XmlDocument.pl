@@ -4,7 +4,6 @@
 use BaseXClient;
 use XML::Writer;
 use IO::File;
-use Encode qw(encode_utf8);
 use CErrorCorpus;
 use lib '/home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31/script';
 use SpellCheckBase;
@@ -13,7 +12,7 @@ use CXmlDocument;
 
 eval {
   # Input variables
-  my $text = "wasi, wasiiy, qan, d, manamm";
+  my $text = "wasi, wasiiy, qan, ñawi, manamm";
   my $tmpdir = "/home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31/script/ErrorCorpus/tmp/";
   my $squoiapath = "/usr/share/squoia";
   my $engine = "cuz_simple_foma";
@@ -26,9 +25,9 @@ eval {
   );
   #my $object = CSpellChecker->new( "$squoiapath/spellcheck.fst", $engine, $version, "cmd" );
   my $xmldoc = new CXmlDocument($object);
-  my ($path, $filename) = $xmldoc->CreateXmlFile($text, $tmpdir);
-  $xmldoc->Add($path, $filename);
-  unlink "$path/$filename";
+  my ($filename, $xmlcontent) = $xmldoc->CreateXmlFile($text);
+  $xmldoc->Add($filename, $xmlcontent);
+  #unlink "$path/$filename";
 };
 
 # print exception
