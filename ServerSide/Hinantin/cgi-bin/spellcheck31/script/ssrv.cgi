@@ -61,10 +61,10 @@ elsif ($cmd eq "check_spelling") {
   
   @listWords = split( ',', $text );
   if ($slang eq "uni_simple_foma") {
-    $object = CSpellChecker->new( "$squoiapath/spellcheckUnificado.fst", $slang, "cmd" );
+    $object = CSpellChecker->new( "$squoiapath/spellcheckUnificado.fst", $slang, "v1.0", "cmd" );
   }
   elsif ($slang eq "cuz_simple_foma") { # By default we use Cuzco Quechua
-    $object = CSpellChecker->new( "$squoiapath/spellcheck.fst", $slang, "cmd" );
+    $object = CSpellChecker->new( "$squoiapath/spellcheck.fst", $slang, "v1.0", "cmd" );
   }
   else { # uni_extended_foma
     
