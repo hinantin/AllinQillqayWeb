@@ -1,34 +1,29 @@
 #!/usr/bin/perl
 package CErrorCorpus;
 
-use strict;
-use warnings;
-use Encode qw(encode_utf8);
-
 use XmlDatabaseFactory;
-use CIncorrectEntry;
 
 sub new {
-   my $self = {};
-   my $Xdf = new XmlDatabaseFactory();
-   $self->{Xdf} = $Xdf->CreateSessionXmlDatabase();
-   bless($self);
-   return $self;
+    my $class = shift;
+    my $self = {
+        _Session => shift,
+        _DatabaseName => shift
+    };
+    bless $self, $class;
+    return $self;
 }
 
-Add {
-  #reading file
-  open(FILE, '/usr/lib/cgi-bin/spellcheck31/script/ErrorCorpus/HNTErrorCorpus_Add.xq') or die "Can't read file 'filename' [$!]\n";  
-  local $/;
-  my $input = <FILE>; 
-  close (FILE);
-  
-  # create query instance
-  my $query = $self->{Xdf}->query($input);
-  my $str = $query->execute();
-  # close query
-  $query->close();
+sub Add {
+  my ( $self, $path, $xmlfile ) = @_; 
+  # create session
+  my $Xdf = new XmlDatabaseFactory();
+  my $session = $Xdf->CreateSessionXmlDatabase();
+  my $databasename = $Xdf->getDatabase();
+  # create empty database
+  $session->execute("OPEN $databasename");
+  # add document
+  $session->execute("ADD $path/$xmlfile");
   # close session
-  $self->{Xdf}->close();
+  $session->close();
 }
 1;

@@ -26,7 +26,7 @@ sub new {
 sub CreateSessionXmlDatabase {
 	my $self = shift;
 	return Session->new(
-		$self->{PLATFORM}, $self->{PORT}, $self->{USER}, $self->{PASSWORD}
+		"$self->{HOST}", $self->{PORT}, "$self->{USER}", "$self->{PASSWORD}"
 	)
 	or die "Connection Error::errstr\n";
 }
