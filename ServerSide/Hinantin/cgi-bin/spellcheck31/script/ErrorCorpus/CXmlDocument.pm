@@ -1,12 +1,21 @@
 #!/usr/bin/perl
 package CXmlDocument;
 
+use utf8;
+use strict;
+use warnings;
+
+binmode(STDIN,  ':encoding(utf-8)');
+binmode(STDOUT, ':encoding(utf-8)');
+binmode(STDERR, ':encoding(utf-8)');
+
 use BaseXClient;
 use XML::Writer;
 use IO::File;
 use CErrorCorpus;
 use lib '/home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin/spellcheck31/script';
-use CSpellChecker;
+#use CSpellChecker;
+use SpellCheckBase;
 
 sub new {
   my $class = shift;
@@ -20,8 +29,8 @@ sub new {
 sub CreateXmlFile {
   my $self = shift;
   my ( $text, $path ) = @_;
-  my $spellcheck_engine = $self->{Sc}->getEngineName();
-  my $spellcheck_engine_version = $self->{Sc}->getEngineVersion();
+  my $spellcheck_engine = $self->{Sc}->EngineName();
+  my $spellcheck_engine_version = $self->{Sc}->EngineVersion();
 
   my @listWords = ();
   @listWords = split( ',', $text );
@@ -30,7 +39,10 @@ sub CreateXmlFile {
   my $timestamp = sprintf("%04d%02d%02d%02d%02d%02d",$year+1900,$mon+1,$mday,$hour,$min,$sec);
   my $filename = "doc_$timestamp.xml";
   #print "$path/$filename\n";
-  my $output = IO::File->new(">$filename");
+  my $output;
+  open($output, '>:encoding(UTF-8)', "$path/$filename") or die "Unable to open output file: $!";
+
+  #my $output = IO::File->new("$path/$filename", "w");
 
   my $writer = XML::Writer->new(OUTPUT => $output);
   $writer->xmlDecl("UTF-8");
@@ -40,21 +52,23 @@ sub CreateXmlFile {
   $writer->endTag("text");
   $writer->startTag("check_spelling", "engine_id" => $spellcheck_engine, "engine_version" => $spellcheck_engine_version);
   my $index = 0;
+  my $word = "";
   foreach $word (@listWords) {
     $index = $index + 1;
     $word =~ s/^\s+|\s+$//g; # trimming string
-    $correct = $self->{Sc}->SpellCheck($word);
+    my $correct = $self->{Sc}->SpellCheck($word);
     if (not $correct) { # the word is misspelled
       $writer->startTag("entry", "type" => "misspelling", "id" => $index);
       $writer->startTag("word"); $writer->characters($word); $writer->endTag("word");
       #$writer->startTag("position"); $writer->characters("11"); $writer->endTag("position");
       $writer->startTag("length"); $writer->characters(length($word)); $writer->endTag("length");
       $writer->startTag("suggestions"); 
-        my $suggestions = $self->{Sc}->Suggestions($word);
+        my $suggestions = $self->{Sc}->getSuggestions($word);
         #print $suggestions;
         $suggestions = substr($suggestions , 0, length($suggestions) - 2);
         my @listSuggestions = ();
         @listSuggestions = split( ',', $suggestions );
+        my $suggestion = "";
         foreach $suggestion (@listSuggestions) {
           $suggestion =~ s/^\s+|\s+$//g; # trimming string
           $suggestion =~ s/"//g; # deleting the double quotes

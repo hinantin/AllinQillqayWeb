@@ -1,4 +1,5 @@
 package SpellCheckBase;
+use Encode qw(encode_utf8);
 use Moose;
 
 has 'FstFile' => ( is => 'rw', isa => 'Str', required => 1 );
@@ -33,7 +34,7 @@ sub SpellCheck {
   my ($stdout, $stderr);
   my $fstfile = $self->FstFile();
   capture sub {
-    system("echo \"$words\" | flookup -bx $fstfile");
+    system("export LANG=en_US.utf8; echo \"$words\" | flookup -bx $fstfile");
   } => \$stdout, \$stderr;
   $stdout =~ s/^\s+|\s+$//g; # trimming string
   if ( "$stdout" =~ /\+\?/ ) { # the word is misspelled
@@ -52,7 +53,7 @@ sub getSuggestions {
   my ($stdout, $stderr);
   my $fstfile = $self->FstFile();
   capture sub {
-    system("echo \"$words\" | suggestions -l $number $fstfile");
+    system("export LANG=en_US.utf8; echo \"$words\" | suggestions -l $number $fstfile");
   } => \$stdout, \$stderr;
   $stdout = substr($stdout , 0, length($stdout) - 2);
   return $stdout;
@@ -61,8 +62,9 @@ sub getSuggestions {
 no Moose;
 
 package SpellCheckFiniteStateCTcp;
-use Moose;
+use Encode qw(encode_utf8);
 use IO::Socket::INET;
+use Moose;
 extends 'SpellCheckBase';
 
 has 'PeerHost' => ( is => 'rw', isa => 'Str', required => 1 );
@@ -161,7 +163,7 @@ sub SpellCheck {
   ($words) = @_; 
   my ($stdout, $stderr);
   capture sub {
-    system("echo \"$words\" | hunspell -G -d $self->{SLang}");
+    system("export LANG=en_US.utf8; echo \"$words\" | hunspell -G -d $self->{SLang}");
   } => \$stdout, \$stderr;
   if ( "$stdout" eq "" ) { # the word is misspelled
     return 0;
@@ -177,7 +179,7 @@ sub getSuggestions {
   ($words) = @_; 
   my ($stdout, $stderr);
   capture sub {
-    system("echo \"$words\" | hunspell -d $self->{SLang}");
+    system("export LANG=en_US.utf8; echo \"$words\" | hunspell -d $self->{SLang}");
   } => \$stdout, \$stderr;
   my @listWords = ();
   @listWords = split( ':', $stdout );
