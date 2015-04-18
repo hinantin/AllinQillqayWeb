@@ -14,11 +14,20 @@ use DateTime;
 
 sub new {
    my $class = shift;
-   my($FstFile,$SLang,$Type) = @_;
-   my $self = {"FstFile"=>$FstFile,"SLang"=>$SLang,"Type"=>$Type,};
-   #print "File: " . $FstFile . "\n";
+   my($FstFile,$Engine,$Version,$Type) = @_;
+   my $self = {"FstFile"=>$FstFile,"EngineName"=>$Engine,"EngineVersion"=>$Version,"Type"=>$Type,};
    bless($self, $class);
    return $self;
+}
+
+sub getEngineName {
+  my $self = shift;
+  return $self->{EngineName};
+}
+
+sub getEngineVersion {
+  my $self = shift;
+  return $self->{EngineVersion};
 }
 
 sub ListWrongSpellings {

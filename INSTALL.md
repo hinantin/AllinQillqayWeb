@@ -52,9 +52,14 @@ $ sudo chmod o+x ssrv.cgi
 ```
 $ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA/foma/
 $ make
-$ make install
+$ sudo make install
 $ sudo cp suggestions /usr/bin/
 $ sudo chmod +x /usr/bin/suggestions
+```
+**Create the default folder for the transducers**
+
+```
+$ sudo mkdir -p /usr/share/squoia/
 ```
 
 **Compiling transducers**
@@ -65,14 +70,14 @@ $ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA
 $ tar -xvf squoiaSpellCheckCuzco.tar
 $ cd spellcheckCuzco_foma
 $ foma -f spellcheck.foma
-$ sudo cp spellcheck.fst /usr/lib/cgi-bin/spellcheck31/script/
+$ sudo cp spellcheck.fst /usr/share/squoia/
 
 # Southern Unified Quechua
 $ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA
 $ tar -xvf squoiaSpellCheckUnificado.tar
 $ cd spellcheckUnificado_foma
 $ foma -f spellcheckUnificado.foma
-$ cp spellcheckUnificado.fst /usr/lib/cgi-bin/spellcheck31/script/
+$ cp spellcheckUnificado.fst /usr/share/squoia/
 ```
 
 ##### Step 6. Create the New Virtual Host File
