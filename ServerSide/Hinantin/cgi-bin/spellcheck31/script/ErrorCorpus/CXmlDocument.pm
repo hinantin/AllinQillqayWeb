@@ -14,7 +14,7 @@ sub new {
    return $self;
 }
 
-Add {
+sub Add {
   my $text = "a, b, c, d";
   my $spellcheck_engine = "bol_myspell";
   my $spellcheck_engine_version = "v1.5-beta.1";

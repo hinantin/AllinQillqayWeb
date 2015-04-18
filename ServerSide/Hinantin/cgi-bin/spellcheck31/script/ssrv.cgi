@@ -10,6 +10,7 @@ print $query -> header(
 -type => 'text/javascript; charset=UTF-8',
 );
 use Encode;
+my $squoiapath = "/usr/share/squoia"
 
 # First command
 my $cmd = $query->param('cmd');
@@ -60,10 +61,10 @@ elsif ($cmd eq "check_spelling") {
   
   @listWords = split( ',', $text );
   if ($slang eq "uni_simple_foma") {
-    $object = CSpellChecker->new( "spellcheckUnificado.fst", $slang, "cmd" );
+    $object = CSpellChecker->new( "$squoiapath/spellcheckUnificado.fst", $slang, "cmd" );
   }
   elsif ($slang eq "cuz_simple_foma") { # By default we use Cuzco Quechua
-    $object = CSpellChecker->new( "spellcheck.fst", $slang, "cmd" );
+    $object = CSpellChecker->new( "$squoiapath/spellcheck.fst", $slang, "cmd" );
   }
   else { # uni_extended_foma
     

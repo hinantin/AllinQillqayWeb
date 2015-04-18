@@ -115,7 +115,7 @@ sub Suggestions {
   ($words) = @_; 
   my ($stdout, $stderr);
   capture sub {
-    system("echo \"$words\" | ./suggestions -l $number $self->{FstFile}");
+    system("echo \"$words\" | suggestions -l $number $self->{FstFile}");
   } => \$stdout, \$stderr;
   return $stdout;
 }
