@@ -30,28 +30,3 @@ END //
 
 DELIMITER ;
 
-DELIMITER //
-DROP PROCEDURE IF EXISTS `SaveUserDictionary`;
-CREATE PROCEDURE `SaveUserDictionary`
-(
-	IN IN_cpUserDictionaryId INT(11), 
-	IN IN_cpSLang VARCHAR(30), 
-	IN IN_cpEntry VARCHAR(1000), 
-	IN IN_cpDate TIMESTAMP, 
-	IN IN_cpUser VARCHAR(50) 
-)
-BEGIN 
-    DECLARE TMP_cpFrecuency INT DEFAULT 0;
-    IF NOT EXISTS(SELECT * FROM `TUserDictionary` WHERE `cpEntry` = IN_cpEntry AND `cpSLang` = IN_cpSLang) THEN 
-    BEGIN
-	INSERT INTO `TUserDictionary` (`cpSLang`, `cpEntry`, `cpDate`, `cpUser`) 
-		VALUES (IN_cpSLang, IN_cpEntry, CURRENT_TIMESTAMP, IN_cpUser);
-	-- Returning the primary key of the last inserted record.
-	SELECT AUTO_INCREMENT FROM information_schema.tables WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'TUserDictionary';
-    END;
-    ELSE
-	SELECT `cpUserDictionaryId` FROM `TUserDictionary` WHERE `cpEntry` = IN_cpEntry AND `cpSLang` = IN_cpSLang;
-    END IF;
-END //
-
-DELIMITER ;
