@@ -1,5 +1,13 @@
 <?php
 include("BaseXClient.php");
+?>
+<!DOCTYPE unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Allin Qillqay - Hinantin Management System</title>
+</head>
+<body>
+<?php
 try {
   $ini_array = parse_ini_file("/usr/lib/cgi-bin/spellcheck31/script/ConfigFile.ini", true);
   $HOST = $ini_array["PRODUCTION_BASEX_HNTErrorCorpus"]["HOST"];
@@ -34,3 +42,5 @@ try {
 }
 
 ?>
+</body>
+</html>
