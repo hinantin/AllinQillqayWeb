@@ -41,11 +41,15 @@ DELIMITER ;
 
 DROP FUNCTION IF EXISTS `DoesUserDictionaryContainEntry`;
 DELIMITER //
-CREATE FUNCTION `DoesUserDictionaryContainEntry`(IN_cpEntry VARCHAR(1000)) RETURNS TINYINT(1)
+CREATE FUNCTION `DoesUserDictionaryContainEntry`
+(
+  IN_cpSLang VARCHAR(30), 
+  IN_cpEntry VARCHAR(1000)
+) RETURNS TINYINT(1)
 BEGIN
   DECLARE ENTRY_EXIST TINYINT(1) DEFAULT 0;
 
-  IF NOT EXISTS(SELECT * FROM `TUserDictionary` WHERE `cpEntry` = IN_cpEntry) THEN 
+  IF EXISTS(SELECT * FROM `TUserDictionary` WHERE `cpSLang` = IN_cpSLang AND `cpEntry` = IN_cpEntry) THEN 
   BEGIN
     SET ENTRY_EXIST := 1;
   END;

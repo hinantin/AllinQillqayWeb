@@ -1,4 +1,12 @@
 package SpellCheckBase;
+use XML::Writer;
+use IO::File;
+use lib '/usr/lib/cgi-bin/spellcheck31/script/ErrorCorpus';
+use BaseXClient;
+use CXmlDocument;
+use lib '/usr/lib/cgi-bin/spellcheck31/script/UserDictionary';
+use CUserDictionary;
+use UserDictionaryDao;
 use Encode qw(encode_utf8);
 use Moose;
 
@@ -6,6 +14,70 @@ has 'FstFile' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'EngineName' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'EngineVersion' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'Type' => ( is => 'rw', isa => 'Str', required => 1 );
+
+# ################################### #
+#          User Dictionary            #
+# ################################### #
+sub AddEntryUserDictionary {
+  my $self = shift;
+  my ($entry) = @_;
+  my $userdict = new UserDictionaryDao();
+  my $slang = $self->EngineName();
+  my $object = CUserDictionary->new(
+    cpUserDictionaryId => 0,
+    cpSLang => "$slang",
+    cpEntry => "$entry",
+    cpDate => "",
+    cpUser => "rcastro",
+  );
+  $userdict->Save($object);
+}
+
+sub DeleteEntryUserDictionary {
+  my $self = shift;
+  my ($entry) = @_;
+  my $userdict = new UserDictionaryDao();
+  my $slang = $self->EngineName();
+  my $object = CUserDictionary->new(
+    cpUserDictionaryId => 0,
+    cpSLang => "$slang",
+    cpEntry => "$entry",
+    cpDate => "",
+    cpUser => "rcastro",
+  );
+  $userdict->Delete($object);
+}
+
+sub DoesUserDictionaryContainEntry {
+  my $self = shift;
+  my ($entry) = @_;
+  my $userdict = new UserDictionaryDao();
+  my $slang = $self->EngineName();
+  my $object = CUserDictionary->new(
+    cpUserDictionaryId => 0,
+    cpSLang => "$slang",
+    cpEntry => "$entry",
+    cpDate => "",
+    cpUser => "rcastro",
+  );
+  return $userdict->DoesUserDictionaryContainEntry($object);
+}
+
+# ################################### #
+#          Error Corpus               #
+# ################################### #
+
+sub AddDocumentToErrorCorpus {
+  my $self = shift;
+  my ($text) = @_;
+  my $xmldoc = new CXmlDocument($self);
+  my ($filename, $xmlcontent) = $xmldoc->CreateXmlFile($text);
+  $xmldoc->Add($filename, $xmlcontent);
+}
+
+# ################################### #
+#          Spell Checking             #
+# ################################### #
 
 sub SpellCheck {
   my $self = shift;
