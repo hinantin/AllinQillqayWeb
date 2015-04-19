@@ -84,7 +84,7 @@ $ cp spellcheckUnificado.fst /usr/share/squoia/
 
 See `AllinQillqayWeb/ServerSide/Hunspell/README.md` for a detailed installation guide.
 
-**Step 13. Activating the improved version of the southern unified quechua spellchecker**
+**Activating the improved version of the southern unified quechua spellchecker**
 
 See `AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/README.md` for a detailed installation guide.
 
