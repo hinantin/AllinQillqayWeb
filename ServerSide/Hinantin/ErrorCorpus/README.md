@@ -67,12 +67,87 @@ Database 'HNTErrorCorpus' created in 281.39 ms.
 $ 
 ```
 
-##### Step 4. Create a *tmp* folder, granting writing permissions for www-data
+##### Step 4. Unccomment 
+
+Open the following file:
+```
+$ gedit /usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi
+```
+Uncomment the line that says:
+```
+  # $object->AddDocumentToErrorCorpus($text);
+```
+
+Notice that this will slow down your application.
+
+In order to see the error corpus entries log into *BaseX* and type *xquery collection('HNTErrorCorpus')*
 
 ```
-$ mkdir -p /usr/lib/cgi-bin/spellcheck31/script/ErrorCorpus/tmp/
-$ cd /usr/lib/cgi-bin/spellcheck31/script/ErrorCorpus/
-$ sudo chmod -R 777 tmp
-$ sudo chown www-data.www-data tmp
+$ basexclient              
+Username: admin
+Password: 
+BaseX 7.9 [Client]
+Try help to get more information.
+
+> xquery collection('HNTErrorCorpus')
 ```
 
+You will see something like this:
+
+```
+</document><document id="doc_20150419014112">
+  <text>mamay, waqachiq, punku, choqe, chaqllayuq, Punkuchaykita, kichaykullaway, Icharaq, mamaywan, tupaykullayman</text>
+  <check_spelling engine_id="uni_simple_foma" engine_version="v1.0-beta.1">
+    <entry type="spelled-correctly" id="1">
+      <word>mamay</word>
+    </entry>
+    <entry type="spelled-correctly" id="2">
+      <word>waqachiq</word>
+    </entry>
+    <entry type="spelled-correctly" id="3">
+      <word>punku</word>
+    </entry>
+    <entry type="misspelling" id="4">
+      <word>choqe</word>
+      <length>5</length>
+      <suggestions>
+        <suggestion>chuqi</suggestion>
+        <suggestion>chupi</suggestion>
+        <suggestion>chupa</suggestion>
+        <suggestion>chhuqu</suggestion>
+        <suggestion>chuqin</suggestion>
+        <suggestion>chhuqu</suggestion>
+        <suggestion>chuqiy</suggestion>
+        <suggestion>chuqis</suggestion>
+        <suggestion>chuqim</suggestion>
+        <suggestion>chuqip</suggestion>
+        <suggestion>churi</suggestion>
+        <suggestion>chusi</suggestion>
+        <suggestion>chuki</suggestion>
+        <suggestion>ch'aqi</suggestion>
+        <suggestion>ch'iqi</suggestion>
+      </suggestions>
+    </entry>
+    <entry type="spelled-correctly" id="5">
+      <word>chaqllayuq</word>
+    </entry>
+    <entry type="spelled-correctly" id="6">
+      <word>Punkuchaykita</word>
+    </entry>
+    <entry type="spelled-correctly" id="7">
+      <word>kichaykullaway</word>
+    </entry>
+    <entry type="spelled-correctly" id="8">
+      <word>Icharaq</word>
+    </entry>
+    <entry type="spelled-correctly" id="9">
+      <word>mamaywan</word>
+    </entry>
+    <entry type="spelled-correctly" id="10">
+      <word>tupaykullayman</word>
+    </entry>
+  </check_spelling>
+</document>
+Query executed in 313.64 ms.
+
+```
