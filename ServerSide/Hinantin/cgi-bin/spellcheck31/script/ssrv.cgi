@@ -171,10 +171,11 @@ elsif ($cmd eq "check_spelling") {
       $result = $result . "{ \"word\": \"$word\", \"ud\": \"$ud\", \"suggestions\": $suggestions}," ;
     }
   }
-
-  #$custom_dictionary = $query->param('custom_dictionary');
-  #$user_dictionary = $query->param('user_dictionary');
-  #$user_wordlist = $query->param('user_wordlist'); 
+  # ########################### #
+  #        Error corpus         #
+  # ########################### #
+  # Uncommenting the following line will slow down the application considerably 
+  # $object->AddDocumentToErrorCorpus($text);
   $result = substr($result , 0, length($result) - 1);
   print $callback . "([$result])";
 }
