@@ -68,6 +68,8 @@ mysql> source HNTUserDictionary_CreationScript.sql
 
 mysql> source HNTUserDictionary_Procedures.sql
 
+mysql> source UserDictionary.sql
+
 mysql> exit
 ```
 
