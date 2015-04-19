@@ -16,7 +16,7 @@
 
 Go to our download page to get the latest stable release:
 
-`https://github.com/hinantin/AllinQillqayWeb/releases`
+https://github.com/hinantin/AllinQillqayWeb/releases
 
 See the `INSTALL.md` file.
 
