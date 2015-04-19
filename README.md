@@ -14,6 +14,10 @@
 
 ##### Installation on Ubuntu 12.04 LTS 
 
+Go to our download page to get the latest stable release:
+
+`https://github.com/hinantin/AllinQillqayWeb/releases`
+
 See the `INSTALL.md` file.
 
 ##### Acknowledgements
