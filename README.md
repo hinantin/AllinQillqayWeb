@@ -29,6 +29,7 @@ See the `INSTALL.md` file.
 ```
 @article{allinqillqay2014,
   title={Allin Qillqay! A Free On-Line Web spell checking Service for Quechua},
+  journal={VI Congreso Internacional de Computaci\'{o}n y Telecomunicaciones - Memoria COMTEL 2014},
   author={Castro Mamani, Richard A. and Rios Gonzales, Annette},
   year={2014},
   pages={23--30}
