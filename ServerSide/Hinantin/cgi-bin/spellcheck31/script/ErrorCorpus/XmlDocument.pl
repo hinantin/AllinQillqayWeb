@@ -5,7 +5,7 @@ use BaseXClient;
 use XML::Writer;
 use IO::File;
 use CErrorCorpus;
-use lib 'usr/lib/cgi-bin/spellcheck31/script';
+use lib '/usr/lib/cgi-bin/spellcheck31/script';
 use SpellCheckBase;
 #use SpellChecker;
 use CXmlDocument;
@@ -16,17 +16,36 @@ eval {
   my $squoiapath = "/usr/share/squoia";
   my $engine = "cuz_simple_foma";
   my $version = "v1.0-beta.1";
-  my $object = SpellCheckFiniteStateCmd->new(
-    FstFile => "$squoiapath/spellcheck.fst",
-    EngineName => $engine,
-    EngineVersion => $version,
+#  my $object = SpellCheckFiniteStateCmd->new(
+#    FstFile => "$squoiapath/spellcheck.fst",
+#    EngineName => $engine,
+#    EngineVersion => $version,
+#    Type => "cmd",
+#  );
+
+#  my $object = SpellCheckFiniteStateCTcp->new(
+#    FstFile => "",
+#    EngineName => "$slang",
+#    EngineVersion => "v1.0-beta.1",
+#    Type => "port",
+#    PeerHost => '127.0.0.1',
+#    PeerPort => '8888',
+#    Proto => 'tcp',
+#    );
+
+    $object = SpellCheckFiniteStateNSpell->new(
+    FstFile => "",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
     Type => "cmd",
-  );
-  #my $object = CSpellChecker->new( "$squoiapath/spellcheck.fst", $engine, $version, "cmd" );
+    Lang => "qu_EC",
+    );
+
   my $xmldoc = new CXmlDocument($object);
   my ($filename, $xmlcontent) = $xmldoc->CreateXmlFile($text);
+  print "$xmlcontent";
   $xmldoc->Add($filename, $xmlcontent);
-  #unlink "$path/$filename";
+
 };
 
 # print exception

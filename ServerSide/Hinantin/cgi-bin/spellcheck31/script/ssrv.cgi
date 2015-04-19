@@ -4,7 +4,9 @@ use File::Temp qw/ tempdir /;
 use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
 use lib '/usr/lib/cgi-bin/spellcheck31/script';
-use CSpellChecker;
+use lib '/usr/lib/cgi-bin/spellcheck31/script/ErrorCorpus';
+use lib '/usr/lib/cgi-bin/spellcheck31/script/UserDictionary';
+use SpellCheckBase;
 my $query = new CGI();
 print $query -> header(
 -type => 'text/javascript; charset=UTF-8',
@@ -32,7 +34,7 @@ if ($cmd eq "get_lang_list") {
   $customerid = $query->param('customerid');
   $run_mode = $query->param('run_mode');
   $slang = $query->param('slang');
-  print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido"},rtl: {}},verLang : 6})';
+  print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido", "bol_myspell" : "Quechua Boliviano", "ec_hunspell" : "Kichwa Ecuatoriano"},rtl: {}},verLang : 6})';
 }
 elsif ($cmd eq "getbanner") { 
   $callback = $query->param('callback');
@@ -61,21 +63,55 @@ elsif ($cmd eq "check_spelling") {
   
   @listWords = split( ',', $text );
   if ($slang eq "uni_simple_foma") {
-    $object = CSpellChecker->new( "$squoiapath/spellcheckUnificado.fst", $slang, "v1.0", "cmd" );
+    $object = SpellCheckFiniteStateCmd->new(
+    FstFile => "$squoiapath/spellcheckUnificado.fst",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "cmd",
+    );
   }
-  elsif ($slang eq "cuz_simple_foma") { # By default we use Cuzco Quechua
-    $object = CSpellChecker->new( "$squoiapath/spellcheck.fst", $slang, "v1.0", "cmd" );
+  elsif ($slang eq "cuz_simple_foma") {
+    $object = SpellCheckFiniteStateCmd->new(
+    FstFile => "$squoiapath/spellcheck.fst",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "cmd",
+    );
   }
-  else { # uni_extended_foma
-    
+  elsif ($slang eq "uni_extended_foma") {
+    $object = SpellCheckFiniteStateCTcp->new(
+    FstFile => "",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "port",
+    PeerHost => '127.0.0.1',
+    PeerPort => '8888',
+    Proto => 'tcp',
+    );
+  }
+  elsif ($slang eq "bol_myspell") {
+    $object = SpellCheckFiniteStateNSpell->new(
+    FstFile => "",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "cmd",
+    Lang => "quh_BO",
+    );
+  }
+  else { # ec_hunspell
+    $object = SpellCheckFiniteStateNSpell->new(
+    FstFile => "",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "cmd",
+    Lang => "qu_EC",
+    );
   }
   foreach $word (@listWords) {
     $word =~ s/^\s+|\s+$//g; # trimming string
     $correct = $object->SpellCheck($word);
     if (not $correct) { # the word is misspelled
-      my $suggestions = $object->Suggestions($word);
-      $suggestions = substr($suggestions , 0, length($suggestions) - 2);
-      #print $object->FormatSpellCheckOutput($sug);
+      my $suggestions = $object->getSuggestions($word);
       $suggestions = "[$suggestions]";
       my $ud = "false";
       $result = $result . "{ \"word\": \"$word\", \"ud\": \"$ud\", \"suggestions\": $suggestions}," ;
