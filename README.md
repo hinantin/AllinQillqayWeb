@@ -1,3 +1,5 @@
+![allinqillqay_localhost](https://cloud.githubusercontent.com/assets/11825981/7220572/3fb0e660-e692-11e4-9608-62f79d644dc8.png)
+
 ### Allin Qillqay 'Correct Writing'
 #### A Free On-Line Web spell checking Service for Quechua
 
