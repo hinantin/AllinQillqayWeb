@@ -15,7 +15,7 @@ try {
 
   $xmlDoc = new DOMDocument();
   $xmlDoc->load("collection.xml");
-  $doc->loadXML('<root><node/></root>');
+  //$doc->loadXML('<root><node/></root>');
 
   $proc = new XSLTProcessor();
   $proc->importStylesheet($xslDoc);
