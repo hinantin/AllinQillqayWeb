@@ -39,7 +39,7 @@ mysql>
 ```
 
 Create the *HNTUserDictionary* database and a *user* (**Note**: The 'user' 
-and 'password' can be adjausted to your preferences, change them as you may.)
+and 'password' can be adjusted to your preferences, change them as you may.)
 
 ```
 mysql> DROP DATABASE IF EXISTS `HNTUserDictionary`;
