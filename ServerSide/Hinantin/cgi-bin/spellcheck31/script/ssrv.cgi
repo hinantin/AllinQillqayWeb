@@ -43,6 +43,49 @@ elsif ($cmd eq "getbanner") {
   $format = $query->param('format');
   print $callback . '({ banner : false } )';
 }
+elsif ($cmd eq "user_dictionary") {
+  $callback = $query->param('callback');
+  $customerid = $query->param('customerid');
+  $run_mode = $query->param('run_mode');
+  $format = $query->param('format');
+  my $action = $query->param('action');
+  $user_wordlist = $query->param('user_wordlist');
+  # create
+  if ($action eq "create") {
+    my $name = $query->param('name');
+    my $wordlist = $query->param('wordlist');
+    my $object = undef;
+    $object = SpellCheckBase->new(
+      FstFile => "",
+      EngineName => "$name",
+      EngineVersion => "$v",
+      Type => "cmd",
+    );
+    # user dictionary
+    if ($wordlist ne "") {
+      my @listUserEntries = ();
+      my $entry = undef;
+      @listUserEntries = split( ',', $wordlist );
+      foreach $entry (@listUserEntries) {
+        $entry =~ s/^\s+|\s+$//g; # trimming string
+        $object->AddEntryUserDictionary($entry);
+      }
+    }
+    print $callback . "({name: \"$name\", action: \"$action\", wordlist: []})";
+  }
+  elsif ($action eq "rename") {
+    my $name = $query->param('name');
+    my $new_name = $query->param("new_name");
+    my $v = $query->param('v');
+    print $callback . "({name: \"$new_name\", action: \"$action\", wordlist: []})";
+  }
+  elsif ($action eq "delete") {
+    my $name = $query->param('name');
+    my $v = $query->param('v');
+    print $callback . "({name: \"$name\", action: \"$action\", wordlist: []})";
+  }
+  else {}
+}
 elsif ($cmd eq "check_spelling") { 
   $callback = $query->param('callback');
   $customerid = $query->param('customerid');
@@ -52,7 +95,7 @@ elsif ($cmd eq "check_spelling") {
   $slang = $query->param('slang');
   $text = $query->param('text');
   $version = $query->param('version');
-
+  $user_wordlist = $query->param('user_wordlist');
   # ########################
   # Local variables 
   # ########################
@@ -106,6 +149,16 @@ elsif ($cmd eq "check_spelling") {
     Type => "cmd",
     Lang => "qu_EC",
     );
+  }
+  # user dictionary
+  if (defined $user_wordlist and $user_wordlist ne "") {
+    my @listUserEntries = ();
+    my $entry = undef;
+    @listUserEntries = split( ',', $user_wordlist );
+    foreach $entry (@listUserEntries) {
+      $entry =~ s/^\s+|\s+$//g; # trimming string
+      $object->AddEntryUserDictionary($entry);
+    }
   }
   foreach $word (@listWords) {
     $word =~ s/^\s+|\s+$//g; # trimming string
