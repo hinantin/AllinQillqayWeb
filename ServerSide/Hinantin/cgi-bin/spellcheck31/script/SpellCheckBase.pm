@@ -7,6 +7,7 @@ use CXmlDocument;
 use lib '/usr/lib/cgi-bin/spellcheck31/script/UserDictionary';
 use CUserDictionary;
 use UserDictionaryDao;
+use IncorrectEntryDao;
 use Encode qw(encode_utf8);
 use Moose;
 
@@ -14,6 +15,26 @@ has 'FstFile' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'EngineName' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'EngineVersion' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'Type' => ( is => 'rw', isa => 'Str', required => 1 );
+
+# ################################### #
+#          Incorrect Entry            #
+# ################################### #
+sub AddIncorrectEntry {
+  my $self = shift;
+  my ($entry) = @_;
+  my $incorrectentry = new IncorrectEntryDao();
+  my $slang = $self->EngineName();
+  my $object = CIncorrectEntry->new(
+    cpIncorrectEntryId => 0,
+    cpEntry => "$entry",
+    cpIsCorrect => 0,
+    cpDate => "",
+    cpUser => "rcastro",
+    cpFrecuency => 0,
+    cpSLang => "$slang",
+  );
+  $incorrectentry->Save($object);
+}
 
 # ################################### #
 #          User Dictionary            #

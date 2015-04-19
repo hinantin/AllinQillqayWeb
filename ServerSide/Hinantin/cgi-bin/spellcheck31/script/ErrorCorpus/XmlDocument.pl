@@ -40,15 +40,16 @@ eval {
     Type => "cmd",
     Lang => "qu_EC",
     );
+   $object->AddIncorrectEntry("test");
    #$object->AddDocumentToErrorCorpus($text);
-   my $r = $object->DoesUserDictionaryContainEntry("Añay");
-   if (not $r) {
-     print "Does Not Exist... Adding it.\n";
-     $object->AddEntryUserDictionary("Añay");
-   }
-   else {
-     print "Exists\n";
-   }
+   #my $r = $object->DoesUserDictionaryContainEntry("Añay");
+   #if (not $r) {
+   #  print "Does Not Exist... Adding it.\n";
+   #  $object->AddEntryUserDictionary("Añay");
+   #}
+   #else {
+   #  print "Exists\n";
+   #}
    #$object->DeleteEntryUserDictionary("Añay");
 
 #  my $xmldoc = new CXmlDocument($object);

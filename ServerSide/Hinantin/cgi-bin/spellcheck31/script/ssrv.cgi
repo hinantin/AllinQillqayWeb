@@ -111,6 +111,7 @@ elsif ($cmd eq "check_spelling") {
     $word =~ s/^\s+|\s+$//g; # trimming string
     $correct = $object->SpellCheck($word);
     if (not $correct) { # the word is misspelled
+      $object->AddIncorrectEntry($word);
       my $suggestions = $object->getSuggestions($word);
       $suggestions = "[$suggestions]";
       my $ud = "false";
