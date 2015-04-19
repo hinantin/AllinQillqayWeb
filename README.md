@@ -24,7 +24,7 @@ See the `INSTALL.md` file.
 
 ##### Acknowledgements
 
-  * WebSpellChecker: http://http://www.webspellchecker.net/
+  * WebSpellChecker: http://www.webspellchecker.net/
   * CKEditor: http://ckeditor.com/
   * SQUOIA Project, website: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
   * Arno Teigseth, e-mail: arno AT teigseth.no, website: http://arno.homelinux.org/
