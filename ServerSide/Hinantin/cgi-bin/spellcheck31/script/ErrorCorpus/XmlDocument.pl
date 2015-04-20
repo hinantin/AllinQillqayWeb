@@ -23,24 +23,24 @@ eval {
 #    Type => "cmd",
 #  );
 
-#  my $object = SpellCheckFiniteStateCTcp->new(
-#    FstFile => "",
-#    EngineName => "$slang",
-#    EngineVersion => "v1.0-beta.1",
-#    Type => "port",
-#    PeerHost => '127.0.0.1',
-#    PeerPort => '8888',
-#    Proto => 'tcp',
-#    );
-
-    $object = SpellCheckFiniteStateNSpell->new(
+  my $object = SpellCheckFiniteStateCTcp->new(
     FstFile => "",
     EngineName => "$slang",
     EngineVersion => "v1.0-beta.1",
-    Type => "cmd",
-    Lang => "qu_EC",
+    Type => "port",
+    PeerHost => '127.0.0.1',
+    PeerPort => '8888',
+    Proto => 'tcp',
     );
-   $object->AddIncorrectEntry("test");
+
+   # $object = SpellCheckFiniteStateNSpell->new(
+   # FstFile => "",
+   # EngineName => "$slang",
+   # EngineVersion => "v1.0-beta.1",
+   # Type => "cmd",
+   # Lang => "qu_EC",
+   # );
+   #$object->AddIncorrectEntry("test");
    #$object->AddDocumentToErrorCorpus($text);
    #my $r = $object->DoesUserDictionaryContainEntry("Añay");
    #if (not $r) {

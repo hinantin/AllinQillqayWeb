@@ -8,7 +8,6 @@ use XML::Writer;
 use IO::File;
 use CErrorCorpus;
 use lib 'usr/lib/cgi-bin/spellcheck31/script';
-#use CSpellChecker;
 use SpellCheckBase;
 
 sub new {
@@ -28,16 +27,12 @@ sub CreateXmlFile {
 
   my @listWords = ();
   @listWords = split( ',', $text );
-
+  # The code name for the file is a simple timestamp
   my ($sec, $min, $hour, $mday, $mon, $year) = localtime();
   my $timestamp = sprintf("%04d%02d%02d%02d%02d%02d",$year+1900,$mon+1,$mday,$hour,$min,$sec);
   my $filename = "doc_$timestamp.xml";
-  #print "$path/$filename\n";
-  #my $output;
-  #open($output, '>', "$path/$filename") or die "Unable to open output file: $!";
-
-  #my $output = IO::File->new("$path/$filename", "w");
   my $s;
+  # We used the Perl XML Writer to create the XML structure
   my $writer = XML::Writer->new(OUTPUT => \$s);
   $writer->xmlDecl("UTF-8");
   $writer->startTag("document", "id" => "doc_$timestamp");
@@ -58,15 +53,15 @@ sub CreateXmlFile {
       $writer->startTag("length"); $writer->characters(length($word)); $writer->endTag("length");
       $writer->startTag("suggestions"); 
         my $suggestions = $self->{Sc}->getSuggestions($word);
-        #print $suggestions;
-        $suggestions = substr($suggestions , 0, length($suggestions) - 2);
+        $word =~ s/^\s+|\s+$//g; # trimming string
+        $word =~ s/,$//g; # trimming string
+        # Listing the suggestions
         my @listSuggestions = ();
         @listSuggestions = split( ',', $suggestions );
         my $suggestion = "";
         foreach $suggestion (@listSuggestions) {
           $suggestion =~ s/^\s+|\s+$//g; # trimming string
           $suggestion =~ s/"//g; # deleting the double quotes
-          #print $suggestion;
           $writer->startTag("suggestion"); $writer->characters($suggestion); $writer->endTag("suggestion");
         }
       $writer->endTag("suggestions");
@@ -81,8 +76,6 @@ sub CreateXmlFile {
   $writer->endTag("check_spelling");
   $writer->endTag("document");
   $writer->end();
-  #$output->close();
-  #print $s;
   return ($filename, $s);
 }
 

@@ -102,13 +102,13 @@ sub AddDocumentToErrorCorpus {
 
 sub SpellCheck {
   my $self = shift;
-  #print "I don't know if it is correct or not\n";
+  # I don't know if it is correct or not
   $self->maybe::next::method(@_);
 }
 
 sub getSuggestions {
   my $self = shift;
-  #print "We don't have any suggestions\n";
+  # We don't have any suggestions
   $self->maybe::next::method(@_);
 }
 
@@ -148,7 +148,6 @@ sub getSuggestions {
     system("echo \"$words\" | suggestions -l $number $fstfile");
   } => \$stdout, \$stderr;
   $stdout =~ s/,$//g; # trimming string
-  #$stdout = substr($stdout , 0, length($stdout) - 1);
   return $stdout;
 }
 
@@ -163,7 +162,7 @@ has 'PeerHost' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'PeerPort' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'Proto' => ( is => 'rw', isa => 'Str', required => 1 );
 
-sub SpellCheck {
+sub Consult {
   my $self = shift;
   my $words = undef;  
   ($words) = @_;
@@ -173,20 +172,28 @@ sub SpellCheck {
   # create a connecting socket
   my $socket = new IO::Socket::INET (PeerHost => $self->PeerHost(), PeerPort => $self->PeerPort(), Proto => $self->Proto(),);
   die "cannot connect to the server $!\n" unless $socket;
-  #print "connected to the server\n";
+  # connected to the server
   
   # data to send to a server
   my $size = $socket->send($words);
-  #print "sent data of length $size\n";
+  # sent data of length $size
   
   # notify server that request has been sent
   shutdown($socket, 1);
-   
+  
   # receive a response of up to 1024 characters from server
   my $response = "";
   $socket->recv($response, 1024);
   $socket->close();
-  #print "$response\n";
+  
+  return $response;
+}
+
+sub SpellCheck {
+  my $self = shift;
+  my $words = undef;
+  ($words) = @_;
+  my $response = $self->Consult($words);
   if ( "$response" =~ /^incorrect:\|/ ) { # the word is misspelled
     return 1;
   }
@@ -199,25 +206,7 @@ sub getSuggestions {
   my $self = shift;
   my $words = undef;  
   ($words) = @_;
-  # auto-flush on socket
-  $| = 1;
-  
-  # create a connecting socket
-  my $socket = new IO::Socket::INET (PeerHost => '127.0.0.1', PeerPort => '8888', Proto => 'tcp',);
-  die "cannot connect to the server $!\n" unless $socket;
-  #print "connected to the server\n";
-  
-  # data to send to a server
-  my $size = $socket->send($words);
-  #print "sent data of length $size\n";
-  
-  # notify server that request has been sent
-  shutdown($socket, 1);
-   
-  # receive a response of up to 1024 characters from server
-  my $response = "";
-  $socket->recv($response, 1024);
-  $socket->close();
+  my $response = $self->Consult($words);
   my @listWords = ();
   @listWords = split( '\|', $response );
   $response = $listWords[0];
