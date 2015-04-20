@@ -175,7 +175,7 @@ elsif ($cmd eq "check_spelling") {
   #        Error corpus         #
   # ########################### #
   # Uncommenting the following line will slow down the application considerably 
-  $object->AddDocumentToErrorCorpus($text);
+  # $object->AddDocumentToErrorCorpus($text);
   $result = substr($result , 0, length($result) - 1);
   print $callback . "([$result])";
 }
