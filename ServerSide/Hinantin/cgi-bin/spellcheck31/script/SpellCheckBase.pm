@@ -261,6 +261,8 @@ sub getSuggestions {
   my @listWords = ();
   @listWords = split( ':', $stdout );
   my $response = $listWords[1];
+  @listWords = split( '\n', $response );
+  $response = $listWords[0];
   $stdout =~ s/^\s+|\s+$//g; # trimming string
   @listWords = split( ',', $response );
   $response = "";
