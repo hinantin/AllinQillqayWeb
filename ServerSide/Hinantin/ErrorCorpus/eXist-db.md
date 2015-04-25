@@ -11,7 +11,7 @@ $ wget http://ufpr.dl.sourceforge.net/project/exist/Stable/2.2/eXist-db-setup-2.
 Create the folder for the program.
 
 ```
-mkdir -p /applications/eXist/
+$ sudo mkdir -p /applications/eXist/
 ```
 
 ```
