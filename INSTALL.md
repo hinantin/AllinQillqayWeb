@@ -122,7 +122,7 @@ $ sudo service apache2 restart
 ##### Step 7. Setting Up the Local Hosts
 
 ```
-$ nano /etc/hosts 
+$ sudo nano /etc/hosts 
 ```
 
 You can add the local hosts details to this file, as seen in the example below. As long as that line is there, directing your browser toward, say, allinqillqay.localhost will give you all the virtual host details for the corresponding IP address.
