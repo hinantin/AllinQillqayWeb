@@ -84,3 +84,26 @@ Installing the eXist-db Native XML Database daemon using init.d..
 
 $ sudo reboot
 ```
+
+Running th client.
+
+```
+$ cd /applications/eXist
+$ sudo bash bin/client.sh --no-gui -u admin -P hinantin01
+--no-gui -u admin -P admin
+Using locale: en_US.UTF-8
+eXist version 2.2 (master-5c5aadc), Copyright (C) 2001-2015 The eXist-db Project
+eXist-db comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions; for details read the license file.
+
+
+type help or ? for help.
+exist:/db>mkcol HNTErrorCorpus
+created collection.
+exist:/db>cd HNTErrorCorpus
+exist:/db/HNTErrorCorpus>quit
+quit.
+```
+
+
