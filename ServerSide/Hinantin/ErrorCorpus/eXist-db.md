@@ -1,3 +1,9 @@
+### Install some packages
+
+```
+$ sudo apt-get install librpc-xml-perl
+```
+
 ### Download eXist-db
 
 ```
@@ -106,4 +112,27 @@ exist:/db/HNTErrorCorpus>quit
 quit.
 ```
 
+Adding a test using Perl
 
+```
+#!/usr/bin/perl
+use RPC::XML;
+use RPC::XML::Client;
+$query = <<END;
+for \$i in 1 to 10 return <xml>Text { \$i }</xml>
+END
+$URL = "http://admin:admin\@localhost:8080/exist/xmlrpc";
+print "connecting to $URL...\n";
+$client = new RPC::XML::Client $URL;
+# Output options
+$options = RPC::XML::struct->new(
+    'indent' => 'yes', 
+    'encoding' => 'UTF-8',
+    'highlight-matches' => 'none');
+$req = RPC::XML::request->new("query", $query, 20, 1, $options);
+$response = $client->send_request($req);
+if($response->is_fault) {
+    die "An error occurred: " . $response->string . "\n";
+}
+print $response->value;
+```
