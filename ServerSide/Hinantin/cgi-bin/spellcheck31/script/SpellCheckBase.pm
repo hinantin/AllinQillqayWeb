@@ -96,6 +96,14 @@ sub AddDocumentToErrorCorpus {
   $xmldoc->Add($filename, $xmlcontent);
 }
 
+sub AddDocumentToErrorCorpuseXistdb {
+  my $self = shift;
+  my ($text, $engine) = @_;
+  my $xmldoc = new CXmlDocument($self);
+  my ($filename, $xmlcontent) = $xmldoc->CreateXmlFile($text);
+  $xmldoc->AddToeXistdbCollection($filename, $xmlcontent, $engine);
+}
+
 # ################################### #
 #          Spell Checking             #
 # ################################### #

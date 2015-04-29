@@ -44,6 +44,9 @@ elsif ($cmd eq "getbanner") {
   print $callback . '({ banner : false } )';
 }
 elsif ($cmd eq "user_dictionary") {
+  # ####################### #
+  #      User Dictionary    #
+  # ####################### #
   $callback = $query->param('callback');
   $customerid = $query->param('customerid');
   $run_mode = $query->param('run_mode');
@@ -125,7 +128,7 @@ elsif ($cmd eq "check_spelling") {
     $object = SpellCheckFiniteStateCTcp->new(
     FstFile => "",
     EngineName => "$slang",
-    EngineVersion => "v1.0-beta.1",
+    EngineVersion => "v1.0-beta.2",
     Type => "port",
     PeerHost => '127.0.0.1',
     PeerPort => '8888',
@@ -174,9 +177,11 @@ elsif ($cmd eq "check_spelling") {
   # ########################### #
   #        Error corpus         #
   # ########################### #
-  # Uncommenting the following line will slow down the application considerably 
-  # $object->AddDocumentToErrorCorpus($text);
+  # Uncommenting one of the following lines will slow down the application considerably 
+  #$object->AddDocumentToErrorCorpus($text);
+  #$object->AddDocumentToErrorCorpuseXistdb($text, $slang);
   $result = substr($result , 0, length($result) - 1);
+  # Printing the result 
   print $callback . "([$result])";
 }
 

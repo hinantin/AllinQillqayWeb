@@ -2,6 +2,7 @@
 package CErrorCorpus;
 
 use XmlDatabaseFactory;
+use eXistdb;
 
 sub new {
     my $class = shift;
@@ -25,5 +26,22 @@ sub Add {
   $session->add($filename, $xmlcontent);
   # close session
   $session->close();
+}
+
+sub AddToeXistdbCollection {
+  my ( $self, $filename, $xmlcontent, $engine ) = @_; 
+  my $Xdf = new eXistdb();
+  my $collection = $Xdf->getDatabase();
+  $query = <<END;
+xquery version "3.0";
+import module namespace xmldb="http://exist-db.org/xquery/xmldb";
+declare variable \$filename := '$filename';
+declare variable \$record := '';
+
+let \$record := fn:parse-xml('$xmlcontent')
+for \$target in ('/db/$collection/$engine')
+  return xmldb:store(\$target, \$filename, \$record)
+END
+  $Xdf->SendRequestToXmlDatabase($query);
 }
 1;

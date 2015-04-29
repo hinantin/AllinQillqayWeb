@@ -50,4 +50,5 @@ cd spellcheckUnificado_foma
 foma -f spellcheckUnificado.foma
 cp spellcheckUnificado.fst /usr/share/squoia/
 
-
+sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/allinqillqay.localhost
+sudo nano /etc/apache2/sites-available/allinqillqay.localhost

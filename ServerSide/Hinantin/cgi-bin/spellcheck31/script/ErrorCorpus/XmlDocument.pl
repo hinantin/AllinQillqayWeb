@@ -33,13 +33,19 @@ eval {
     Proto => 'tcp',
     );
 
-   # $object = SpellCheckFiniteStateNSpell->new(
-   # FstFile => "",
-   # EngineName => "$slang",
-   # EngineVersion => "v1.0-beta.1",
-   # Type => "cmd",
-   # Lang => "qu_EC",
-   # );
+    #$object = SpellCheckFiniteStateNSpell->new(
+    #FstFile => "",
+    #EngineName => "$slang",
+    #EngineVersion => "v1.0-beta.1",
+    #Type => "cmd",
+    #Lang => "qu_EC",
+    #);
+    #$object->AddDocumentToErrorCorpus($text);
+    $object->AddDocumentToErrorCorpuseXistdb($text, $engine);
+   #my $r = $object->SpellCheck("wasii");
+   #print "ppppp: $s \n";
+   #$r = $object->getSuggestions("k'intucha");
+   #print "ppppp: $s \n";
    #$object->AddIncorrectEntry("test");
    #$object->AddDocumentToErrorCorpus($text);
    #my $r = $object->DoesUserDictionaryContainEntry("Añay");

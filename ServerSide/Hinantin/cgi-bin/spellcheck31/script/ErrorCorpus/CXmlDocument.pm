@@ -85,4 +85,11 @@ sub Add
   my ( $filename, $xmlcontent ) = @_;
   $self->{Ec}->Add($filename, $xmlcontent);
 }
+
+sub AddToeXistdbCollection {
+  my $self = shift;
+  my ( $filename, $xmlcontent, $engine ) = @_;
+  $xmlcontent =~ s/'/''/g;
+  $self->{Ec}->AddToeXistdbCollection($filename, $xmlcontent, $engine);
+}
 1;
