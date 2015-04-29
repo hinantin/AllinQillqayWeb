@@ -108,6 +108,11 @@ type help or ? for help.
 exist:/db>mkcol HNTErrorCorpus
 created collection.
 exist:/db>cd HNTErrorCorpus
+exist:/db/HNTErrorCorpus>mkcol cuz_simple_foma
+exist:/db/HNTErrorCorpus>mkcol uni_simple_foma
+exist:/db/HNTErrorCorpus>mkcol uni_extended_foma
+exist:/db/HNTErrorCorpus>mkcol bol_myspell
+exist:/db/HNTErrorCorpus>mkcol ec_hunspell
 exist:/db/HNTErrorCorpus>quit
 quit.
 ```
