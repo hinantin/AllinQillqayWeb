@@ -35,9 +35,9 @@ press 1 to continue, 2 to quit, 3 to redisplay
 1
 Set Admin Password and Configure Memory
 Enter password:  [] 
-hinantin01
-Enter password:  [hinantin01] 
-hinantin01
+admin
+Enter password:  [admin] 
+admin
 ------------------------------------------
 
 Maximum memory in mb: [1024] 
@@ -95,7 +95,7 @@ Running th client.
 
 ```
 $ cd /applications/eXist
-$ sudo bash bin/client.sh --no-gui -u admin -P hinantin01
+$ sudo bash bin/client.sh --no-gui -u admin -P admin
 --no-gui -u admin -P admin
 Using locale: en_US.UTF-8
 eXist version 2.2 (master-5c5aadc), Copyright (C) 2001-2015 The eXist-db Project
