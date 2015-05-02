@@ -9,11 +9,13 @@ char *helpstring = "Applies hunspell spellcheck to words from stdin to a hunspel
 
 int main(int argc, char *argv[]) {
   int opt = 1;
-  char *affpath, *dpath;
-  /* get analyzer binary  */
+  char *affpath, *dpath, **slist;
+  int list_size, i;
+  
+  /* get analyzer binary */
   affpath = argv[optind];
   dpath = argv[optind + 1];
-  char const word[256] = "wasii";
+  char const word[256] = "ñawi";
   Hunhandle *pHunspell = Hunspell_create(affpath, dpath);
 
   if (Hunspell_spell(pHunspell, word)) {
@@ -21,6 +23,14 @@ int main(int argc, char *argv[]) {
   }
   else {
     printf("You are incorrect\n");
+    list_size = Hunspell_suggest(pHunspell, &slist, word);
+    printf("Number of suggestions: %i\n", list_size);
+    for (i = 0; i < list_size; i++)
+    {
+      printf("-%s\n", slist[i]);
+    }
   }
+  
+  Hunspell_destroy(pHunspell);
   exit(0);
 }
