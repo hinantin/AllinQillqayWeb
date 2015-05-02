@@ -52,5 +52,10 @@ Hunspell 1.3.2
 
 ```
 $ tar -zxvf hunspell-1.3.3.tar.gz
+$ cd hunspell-1.3.3
+$ rm -f tcpServer
+$ g++ -o tcpServer tcpServer.cxx .libs/libhunspell-1.3.a -lz
+$ chmod +x tcpServer
+$ ./tcpServer /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
 
 ```
