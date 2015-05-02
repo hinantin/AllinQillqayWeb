@@ -13,6 +13,14 @@ int main(int argc, char *argv[]) {
   /* get analyzer binary  */
   affpath = argv[optind];
   dpath = argv[optind + 1];
+  char const word[256] = "wasii";
+  Hunhandle *pHunspell = Hunspell_create(affpath, dpath);
 
+  if (Hunspell_spell(pHunspell, word)) {
+    printf("You are correct!\n");
+  }
+  else {
+    printf("You are incorrect\n");
+  }
   exit(0);
 }
