@@ -48,3 +48,9 @@ Hunspell 1.3.2
 
 ```
 
+# Compiling the TCP ServerSide
+
+```
+$ tar -zxvf hunspell-1.3.3.tar.gz
+
+```
