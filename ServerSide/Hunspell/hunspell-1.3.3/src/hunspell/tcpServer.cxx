@@ -8,5 +8,11 @@ char *usagestring = "Usage: tcpServer <affix file path> <dictionary file path>\n
 char *helpstring = "Applies hunspell spellcheck to words from stdin to a hunspell affix and dictionary read from a file\nOptions:\n-h\t\tprint help\n-l med_limit\tset maximum number of suggestions (default is 5)\n-c cutoff\tset maximum levenshtein distance for suggestions (default is 15)";
 
 int main(int argc, char *argv[]) {
+  int opt = 1;
+  char *affpath, *dpath;
+  /* get analyzer binary  */
+  affpath = argv[optind];
+  dpath = argv[optind + 1];
+
   exit(0);
 }
