@@ -17,14 +17,14 @@ $ wget http://ufpr.dl.sourceforge.net/project/exist/Stable/2.2/eXist-db-setup-2.
 Create the folder for the program.
 
 ```
-$ sudo mkdir -p /applications/eXist/
+$ sudo mkdir -p /usr/share/eXist/
 ```
 
 ```
 $ sudo java -jar eXist-db-setup-2.2.jar -console
 
 Select target path [/home/ubuntu/exist-db] 
-/applications/eXist/
+/usr/share/eXist/
 press 1 to continue, 2 to quit, 3 to redisplay
 1
 Set Data Directory
