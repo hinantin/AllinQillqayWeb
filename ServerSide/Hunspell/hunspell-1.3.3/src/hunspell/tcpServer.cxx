@@ -28,20 +28,18 @@ int main(int argc, char *argv[]) {
   
   while (fgets(line, LINE_LIMIT, INFILE) != NULL) {
     line[strcspn(line, "\n")] = '\0'; /* chomp */
-    printf("%s\n\n", line);
     if (Hunspell_spell(pHunspell, line)) {
-      printf("You are correct!\n");
+      printf("%s\n", line);
     }
     else {
-      printf("You are incorrect\n");
+      printf("+?\n");
       list_size = Hunspell_suggest(pHunspell, &slist, line);
       if (list_size == 0) {
         printf("???\n");
-        printf("%s\n\n", line);
       }
       else {
         for (i = 0; i < list_size; i++) {
-          printf("-%s\n", slist[i]);
+          printf("\"%s\",", slist[i]);
         }
       }
     }
