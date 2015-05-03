@@ -79,4 +79,27 @@ UTF-8
 +?
 "ñawi",
 
+$ cd ../../..
+```
+
+### Creating the Service
+
+```
+$ cd qu_EC
+$ sudo cp tcpServerquEC /etc/init.d
+$ sudo chmod +x /etc/init.d/tcpServerquEC
+$ sudo update-rc.d tcpServerquEC defaults
+ Adding system startup for /etc/init.d/tcpServerquEC ...
+   /etc/rc0.d/K20tcpServerquEC -> ../init.d/tcpServerquEC
+   /etc/rc1.d/K20tcpServerquEC -> ../init.d/tcpServerquEC
+   /etc/rc6.d/K20tcpServerquEC -> ../init.d/tcpServerquEC
+   /etc/rc2.d/S20tcpServerquEC -> ../init.d/tcpServerquEC
+   /etc/rc3.d/S20tcpServerquEC -> ../init.d/tcpServerquEC
+   /etc/rc4.d/S20tcpServerquEC -> ../init.d/tcpServerquEC
+   /etc/rc5.d/S20tcpServerquEC -> ../init.d/tcpServerquEC
+
+$ cd ../quh_BO
+$ sudo cp tcpServerquhBO /etc/init.d
+$ sudo chmod +x /etc/init.d/tcpServerquhBO
+$ sudo update-rc.d tcpServerquhBO defaults
 ```
