@@ -85,6 +85,7 @@ $ cd ../../..
 ### Creating the Service
 
 ```
+$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/Hunspell
 $ cd qu_EC
 $ sudo cp qu_EC.dic /usr/share/hunspell/
 $ sudo cp qu_EC.aff /usr/share/hunspell/
@@ -115,4 +116,11 @@ $ sudo update-rc.d tcpServerquhBO defaults
    /etc/rc4.d/S20tcpServerquhBO -> ../init.d/tcpServerquhBO
    /etc/rc5.d/S20tcpServerquhBO -> ../init.d/tcpServerquhBO
 
+```
+
+**Note**: The spellchecker versions provided here have been modified to function with a UTF-8 encoding both with Hunspell and the document encoding for the affix and dictionary files, for example:
+
+```
+SET UTF-8
+TRY esianrtolcdugmphbyfvkwzESIANRTOLCDUGMPHBYFVKWZ'
 ```
