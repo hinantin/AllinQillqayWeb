@@ -30,6 +30,7 @@ See the `INSTALL.md` file.
   * Arno Teigseth, e-mail: arno AT teigseth.no, website: http://arno.homelinux.org/
   * ILLA, website: http://www.illa-a.org/
   * BaseX - XML Database: http://basex.org/ 
+  * eXistdb - a NoSQL Document Database and Application Platform: http://exist-db.org/
 
 ##### Citing
 
