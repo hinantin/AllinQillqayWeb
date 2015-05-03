@@ -41,6 +41,7 @@ int main(int argc, char *argv[]) {
         for (i = 0; i < list_size; i++) {
           printf("\"%s\",", slist[i]);
         }
+        printf("???\n");
       }
     }
   }
