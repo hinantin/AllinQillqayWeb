@@ -124,3 +124,4 @@ $ sudo update-rc.d tcpServerquhBO defaults
 SET UTF-8
 TRY esianrtolcdugmphbyfvkwzESIANRTOLCDUGMPHBYFVKWZ'
 ```
+![document_encoding](https://cloud.githubusercontent.com/assets/11825981/7445314/1da7e53c-f173-11e4-877f-d57bc5f0c042.png)]
