@@ -48,7 +48,7 @@ Hunspell 1.3.2
 
 ```
 
-# Compiling the TCP Service
+### Compiling the TCP Service
 
 ```
 $ cd hunspell-1.3.3
