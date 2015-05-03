@@ -86,6 +86,8 @@ $ cd ../../..
 
 ```
 $ cd qu_EC
+$ sudo cp qu_EC.dic /usr/share/hunspell/
+$ sudo cp qu_EC.aff /usr/share/hunspell/
 $ sudo cp tcpServerquEC /etc/init.d
 $ sudo chmod +x /etc/init.d/tcpServerquEC
 $ sudo update-rc.d tcpServerquEC defaults
@@ -99,6 +101,8 @@ $ sudo update-rc.d tcpServerquEC defaults
    /etc/rc5.d/S20tcpServerquEC -> ../init.d/tcpServerquEC
 
 $ cd ../quh_BO
+$ sudo cp quh_BO.aff /usr/share/hunspell/
+$ sudo cp quh_BO.dic /usr/share/hunspell/
 $ sudo cp tcpServerquhBO /etc/init.d
 $ sudo chmod +x /etc/init.d/tcpServerquhBO
 $ sudo update-rc.d tcpServerquhBO defaults
