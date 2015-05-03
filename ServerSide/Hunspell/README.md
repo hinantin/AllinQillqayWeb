@@ -118,10 +118,12 @@ $ sudo update-rc.d tcpServerquhBO defaults
 
 ```
 
-**Note**: The spellchecker versions provided here have been modified to function with a UTF-8 encoding both with Hunspell and the document encoding for the affix and dictionary files, for example:
+**Note**: The spellchecker versions provided here have been modified to function with a UTF-8 encoding both with Hunspell:
 
 ```
 SET UTF-8
 TRY esianrtolcdugmphbyfvkwzESIANRTOLCDUGMPHBYFVKWZ'
 ```
-![document_encoding](https://cloud.githubusercontent.com/assets/11825981/7445314/1da7e53c-f173-11e4-877f-d57bc5f0c042.png)]
+
+And the document encoding of the affix and dictionary files:
+![document_encoding](https://cloud.githubusercontent.com/assets/11825981/7445314/1da7e53c-f173-11e4-877f-d57bc5f0c042.png)
