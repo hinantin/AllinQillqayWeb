@@ -51,11 +51,28 @@ Hunspell 1.3.2
 # Compiling the TCP ServerSide
 
 ```
-$ tar -zxvf hunspell-1.3.3.tar.gz
 $ cd hunspell-1.3.3
-$ rm -f tcpServer
-$ g++ -o tcpServer tcpServer.cxx .libs/libhunspell-1.3.a -lz
+$ rm -f tcpServer; g++ -o tcpServer tcpServer.cxx .libs/libhunspell-1.3.a -lz
 $ chmod +x tcpServer
-$ ./tcpServer /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
+$ echo "ñawi" | ./tcpServer /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
+UTF-8
+
+ñawi
+
+$ echo "ñawiiy" | ./tcpServer /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
+UTF-8
++?
+"ñawiy","ñawpiy","ñawi",
+
+$ echo "ñawi" | ./tcpServer /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
+UTF-8
+
+ñawi
+
+$ echo "ñawiiy" | ./tcpServer /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
+UTF-8
+
++?
+"ñawi",
 
 ```
