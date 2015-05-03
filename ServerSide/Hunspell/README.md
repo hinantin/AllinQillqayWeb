@@ -102,4 +102,13 @@ $ cd ../quh_BO
 $ sudo cp tcpServerquhBO /etc/init.d
 $ sudo chmod +x /etc/init.d/tcpServerquhBO
 $ sudo update-rc.d tcpServerquhBO defaults
+ Adding system startup for /etc/init.d/tcpServerquhBO ...
+   /etc/rc0.d/K20tcpServerquhBO -> ../init.d/tcpServerquhBO
+   /etc/rc1.d/K20tcpServerquhBO -> ../init.d/tcpServerquhBO
+   /etc/rc6.d/K20tcpServerquhBO -> ../init.d/tcpServerquhBO
+   /etc/rc2.d/S20tcpServerquhBO -> ../init.d/tcpServerquhBO
+   /etc/rc3.d/S20tcpServerquhBO -> ../init.d/tcpServerquhBO
+   /etc/rc4.d/S20tcpServerquhBO -> ../init.d/tcpServerquhBO
+   /etc/rc5.d/S20tcpServerquhBO -> ../init.d/tcpServerquhBO
+
 ```
