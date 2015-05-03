@@ -52,24 +52,28 @@ Hunspell 1.3.2
 
 ```
 $ cd hunspell-1.3.3
-$ rm -f tcpServer; g++ -o tcpServer tcpServer.cxx .libs/libhunspell-1.3.a -lz
-$ chmod +x tcpServer
-$ echo "ñawi" | ./tcpServer /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
+$ ./configure
+$ make
+$ cd src/hunspell
+$ rm -f tcpServerHun; g++ -o tcpServerHun tcpServerHun.cxx .libs/libhunspell-1.3.a -lz
+$ chmod +x tcpServerHun
+$ sudo cp tcpServerHun /usr/bin/
+$ echo "ñawi" | ./tcpServerHun /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
 UTF-8
 
 ñawi
 
-$ echo "ñawiiy" | ./tcpServer /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
+$ echo "ñawiiy" | ./tcpServerHun /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
 UTF-8
 +?
 "ñawiy","ñawpiy","ñawi",
 
-$ echo "ñawi" | ./tcpServer /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
+$ echo "ñawi" | ./tcpServerHun /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
 UTF-8
 
 ñawi
 
-$ echo "ñawiiy" | ./tcpServer /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
+$ echo "ñawiiy" | ./tcpServerHun /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
 UTF-8
 
 +?
