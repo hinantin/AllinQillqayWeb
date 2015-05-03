@@ -29,7 +29,7 @@ eval {
     EngineVersion => "v1.0-beta.1",
     Type => "port",
     PeerHost => '127.0.0.1',
-    PeerPort => '8888',
+    PeerPort => '8889',
     Proto => 'tcp',
     );
 
@@ -41,7 +41,7 @@ eval {
     #Lang => "qu_EC",
     #);
     #$object->AddDocumentToErrorCorpus($text);
-    $object->AddDocumentToErrorCorpuseXistdb($text, $engine);
+    #$object->AddDocumentToErrorCorpuseXistdb($text, $engine);
    #my $r = $object->SpellCheck("wasii");
    #print "ppppp: $s \n";
    #$r = $object->getSuggestions("k'intucha");

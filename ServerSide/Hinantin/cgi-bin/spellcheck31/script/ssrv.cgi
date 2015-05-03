@@ -136,21 +136,39 @@ elsif ($cmd eq "check_spelling") {
     );
   }
   elsif ($slang eq "bol_myspell") {
-    $object = SpellCheckFiniteStateNSpell->new(
+    #$object = SpellCheckFiniteStateNSpell->new(
+    #FstFile => "",
+    #EngineName => "$slang",
+    #EngineVersion => "v1.0-beta.1",
+    #Type => "cmd",
+    #Lang => "quh_BO",
+    #);
+    $object = SpellCheckFiniteStateCTcp->new(
     FstFile => "",
     EngineName => "$slang",
-    EngineVersion => "v1.0-beta.1",
-    Type => "cmd",
-    Lang => "quh_BO",
+    EngineVersion => "v1.0-beta.3",
+    Type => "port",
+    PeerHost => '127.0.0.1',
+    PeerPort => '8890',
+    Proto => 'tcp',
     );
   }
   else { # ec_hunspell
-    $object = SpellCheckFiniteStateNSpell->new(
+    #$object = SpellCheckFiniteStateNSpell->new(
+    #FstFile => "",
+    #EngineName => "$slang",
+    #EngineVersion => "v1.0-beta.1",
+    #Type => "cmd",
+    #Lang => "qu_EC",
+    #);
+    $object = SpellCheckFiniteStateCTcp->new(
     FstFile => "",
     EngineName => "$slang",
-    EngineVersion => "v1.0-beta.1",
-    Type => "cmd",
-    Lang => "qu_EC",
+    EngineVersion => "v1.0-beta.3",
+    Type => "port",
+    PeerHost => '127.0.0.1',
+    PeerPort => '8889',
+    Proto => 'tcp',
     );
   }
   # user dictionary
