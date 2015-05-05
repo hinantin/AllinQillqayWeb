@@ -16,10 +16,9 @@ See it in action at http://sc.hinantin.com/
 
 ### Platforms: Ubuntu 12.04 LTS
 
-### Installation Manual
+### User Manual
 
-Installation on Ubuntu 12.04 LTS:
-See the `INSTALL.md` file.
+For a comprehensive description of the system read the `paper_comtel2014.pdf`, currently 8 pages,  The installation manual on Ubuntu 12.04 LTS is available within the `INSTALL.md` file.
 
 Go to our download page to get the latest stable release:
 https://github.com/hinantin/AllinQillqayWeb/releases
