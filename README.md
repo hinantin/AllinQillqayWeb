@@ -2,7 +2,7 @@
 
 ### What is Allin Qillqay 'Correct Writing'?
 
-> **Allin Qillqay** is a **A Free On-Line Web spell checking system** which uses the CKEditor, a well-known HTML text processor and its 
+> **Allin Qillqay** is a **Free On-Line Web spell checking system** which uses the CKEditor, a well-known HTML text processor and its 
 > spell-check-as-you-type (SCAYT) add-on to provide access to the different spellchecking technologies that
 > have been developed for the Quechua language.
 
