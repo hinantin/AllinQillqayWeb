@@ -18,7 +18,7 @@ See it in action at http://sc.hinantin.com/
 
 ### User Manual
 
-For a comprehensive description of the system read the `paper_comtel2014.pdf`, currently 8 pages,  The installation manual on Ubuntu 12.04 LTS is available within the `INSTALL.md` file.
+For a comprehensive description of the system read the `paper_comtel2014.pdf`, currently 8 pages. The installation manual on Ubuntu 12.04 LTS is available within the `INSTALL.md` file.
 
 Go to our download page to get the latest stable release:
 https://github.com/hinantin/AllinQillqayWeb/releases
@@ -30,6 +30,7 @@ https://github.com/hinantin/AllinQillqayWeb/releases
   * SQUOIA Project: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
   * Arno Teigseth (arno AT teigseth.no): http://arno.homelinux.org/
   * Instituto de Lenguas y Literaturas Andinas-Amazónicas (ILLA): http://www.illa-a.org/
+  * Hunspell: http://hunspell.sourceforge.net/
   * BaseX - XML Database: http://basex.org/ 
   * eXistdb - a NoSQL Document Database and Application Platform: http://exist-db.org/
 
