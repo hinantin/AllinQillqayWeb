@@ -1,5 +1,27 @@
 #!/usr/bin/perl
 
+#    Allin Qillqay is a Free On-Line Web spell checking system which uses the CKEditor, 
+#    a well-known HTML text processor and its spell-check-as-you-type (SCAYT) add-on to 
+#    provide access to the different spellchecking technologies that have been developed 
+#    for the Quechua language.
+#
+#    Copyright (C) 2015  Hinantin Research Group
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    Richard Castro, e-mail: rcastro AT hinantin.com
+
+
 use File::Temp qw/ tempdir /;
 use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
