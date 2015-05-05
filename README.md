@@ -28,9 +28,9 @@ https://github.com/hinantin/AllinQillqayWeb/releases
 
   * WebSpellChecker: http://www.webspellchecker.net/
   * CKEditor: http://ckeditor.com/
-  * SQUOIA Project, website: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
-  * Arno Teigseth, e-mail: arno AT teigseth.no, website: http://arno.homelinux.org/
-  * ILLA, website: http://www.illa-a.org/
+  * SQUOIA Project: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
+  * Arno Teigseth (arno AT teigseth.no): http://arno.homelinux.org/
+  * Instituto de Lenguas y Literaturas Andinas-Amazónicas (ILLA): http://www.illa-a.org/
   * BaseX - XML Database: http://basex.org/ 
   * eXistdb - a NoSQL Document Database and Application Platform: http://exist-db.org/
 
