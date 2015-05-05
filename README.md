@@ -1,9 +1,8 @@
 ![allinqillqay_localhost](https://cloud.githubusercontent.com/assets/11825981/7220572/3fb0e660-e692-11e4-9608-62f79d644dc8.png)
 
-### Allin Qillqay 'Correct Writing'
-#### A Free On-Line Web spell checking Service for Quechua
+### What is Allin Qillqay 'Correct Writing'?
 
-> **Allin Qillqay** is a system which uses the CKEditor, a well-known HTML text processor and its 
+> **Allin Qillqay** is a **A Free On-Line Web spell checking system** which uses the CKEditor, a well-known HTML text processor and its 
 > spell-check-as-you-type (SCAYT) add-on to provide access to the different spellchecking technologies that
 > have been developed for the Quechua language.
 
