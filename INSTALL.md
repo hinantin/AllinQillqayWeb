@@ -15,6 +15,7 @@ $ sudo apt-get install libconfig-inifiles-perl
 $ sudo apt-get install libdatetime-perl
 $ sudo apt-get install libxml-writer-perl
 $ sudo apt-get install libmoose-perl
+$ sudo apt-get install librpc-xml-perl
 ```
 
 ##### Step 2. Create a New Directory
