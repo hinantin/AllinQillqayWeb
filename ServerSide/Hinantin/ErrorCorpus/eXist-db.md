@@ -75,7 +75,7 @@ Setting admin user password...
 
 Install the service.
 ```
-$ cd /applications/eXist
+$ cd /usr/share/eXist
 $ sudo tools/wrapper/bin/exist.sh install
 Detected Ubuntu or Debian:
 Installing the eXist-db Native XML Database daemon using init.d..
