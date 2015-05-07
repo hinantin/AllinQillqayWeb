@@ -1,4 +1,4 @@
-### Install some packages
+##### Step 1. Install some packages
 
 ```
 # eXistdb uses Java 7
@@ -8,7 +8,7 @@ $ sudo apt-get install openjdk-7-jdk
 $ sudo apt-get install librpc-xml-perl
 ```
 
-### Download eXist-db
+##### Step 2. Download eXist-db
 
 ```
 $ mkdir exist-db
@@ -16,7 +16,7 @@ $ cd exist-db
 $ wget http://ufpr.dl.sourceforge.net/project/exist/Stable/2.2/eXist-db-setup-2.2.jar
 ```
 
-### Install eXist-db
+##### Step 3. Install eXist-db
 
 Create the folder for the program.
 
@@ -77,7 +77,7 @@ Setting admin user password...
 [ Console installation done ]
 ```
 
-Install the service.
+##### Step 4. Install the service.
 ```
 $ cd /usr/share/eXist
 $ sudo tools/wrapper/bin/exist.sh install
@@ -95,7 +95,7 @@ Installing the eXist-db Native XML Database daemon using init.d..
 $ sudo reboot
 ```
 
-Running th client.
+##### Step 5. Running the client.
 
 ```
 $ cd /usr/share/eXist
@@ -147,3 +147,13 @@ if($response->is_fault) {
 }
 print $response->value;
 ```
+
+##### Step 6. Unccomment 
+
+Open the following file:
+```
+$ gedit /usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi
+```
+Uncomment the line that reads:
+```
+  #$object->AddDocumentToErrorCorpuseXistdb($text, $slang);
