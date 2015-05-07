@@ -98,7 +98,7 @@ $ sudo reboot
 Running th client.
 
 ```
-$ cd /applications/eXist
+$ cd /usr/share/eXist
 $ sudo bash bin/client.sh --no-gui -u admin -P admin
 --no-gui -u admin -P admin
 Using locale: en_US.UTF-8
@@ -127,6 +127,8 @@ Adding a test using Perl
 #!/usr/bin/perl
 use RPC::XML;
 use RPC::XML::Client;
+$RPC::XML::ENCODING = 'utf-8';
+
 $query = <<END;
 for \$i in 1 to 10 return <xml>Text { \$i }</xml>
 END
