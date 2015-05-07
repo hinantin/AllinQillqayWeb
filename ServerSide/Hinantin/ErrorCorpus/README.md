@@ -1,5 +1,7 @@
 ### Installing the *Error Corpora Management System* on Ubuntu 12.04
 
+You can either use eXist-db or BaseX to store the `Error Corpus`, if you want to use exist-db see the `eXist-db.md` file, or continue below to use BaseX.
+
 ##### Step 1. Install BaseX XML Database (>= 7.8)
 
 Download the necessary files (.dsc, orig.tar.gz and debian.tar.xz) from https://launchpad.net/ubuntu/+source/basex/7.9-1
