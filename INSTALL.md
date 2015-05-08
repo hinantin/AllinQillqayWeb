@@ -158,10 +158,11 @@ nano /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellche
 $ tail -f /var/log/apache2/error.log
 
 ```
-### Installing the advanced features (Optional)
 ##### Step 10. Activating User Dictionary characteristics
 
 See `AllinQillqayWeb/ServerSide/Hinantin/UserDictionary/README.md` for a detailed installation guide.
+
+### Installing the advanced features (Optional)
 
 ##### Step 11. Activating Error Corpora functionalities
 
