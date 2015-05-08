@@ -58,27 +58,6 @@ $ cd src/hunspell
 $ rm -f tcpServerHun; g++ -o tcpServerHun tcpServerHun.cxx .libs/libhunspell-1.3.a -lz
 $ chmod +x tcpServerHun
 $ sudo cp tcpServerHun /usr/bin/
-$ echo "ñawi" | ./tcpServerHun /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
-UTF-8
-
-ñawi
-
-$ echo "ñawiiy" | ./tcpServerHun /usr/share/hunspell/quh_BO.aff /usr/share/hunspell/quh_BO.dic
-UTF-8
-+?
-"ñawiy","ñawpiy","ñawi",
-
-$ echo "ñawi" | ./tcpServerHun /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
-UTF-8
-
-ñawi
-
-$ echo "ñawiiy" | ./tcpServerHun /usr/share/hunspell/qu_EC.aff /usr/share/hunspell/qu_EC.dic
-UTF-8
-
-+?
-"ñawi",
-
 $ cd ../../..
 ```
 
