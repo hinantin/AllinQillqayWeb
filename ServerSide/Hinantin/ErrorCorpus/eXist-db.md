@@ -157,5 +157,22 @@ Open the following file:
 $ gedit /usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi
 ```
 Uncomment the line that reads:
+
 ```
   #$object->AddDocumentToErrorCorpuseXistdb($text, $slang);
+```
+
+##### Making Backups
+
+```
+# Creating a backup (localhost)
+$ cd /usr/share/eXist
+$ bin/backup.sh -u admin -p admin-pass -b /db -d /var/backup/hd060501
+
+# Creating a backup (remote)
+$ bin/backup.sh -u admin -p admin-pass -b /db -d /var/backup/hd060501 -ouri=xmldb:exist://192.168.1.37:80/xmlrpc
+
+# Restore a backup (localhost)
+$ bin/backup.sh -u admin -p admin-pass -P backup-pass -r /var/backup/hd060501/db/__contents__.xml
+```
+
