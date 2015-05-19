@@ -2,7 +2,13 @@
 ### Set Up Apache Virtual Host
 
 #### Change the url `allinqillqay.localhost` if that is not the url want.
-#### Change the path `/home/richard/Documents` to the path where `AllinQillqayWeb` is located.
+
+#### `<ALLINQILLQAY_PATH>`
+
+`<ALLINQILLQAY_PATH>` is used throughout this manual to refer to 
+the path where you have downloaded AllinQillqayWeb, in my case 
+the path is `/home/richard/Documents`. You should change this to 
+adjust it to your own environment.
 
 ##### Step 1. Install Apache, and necessary programs
 
@@ -33,17 +39,17 @@ $ sudo chmod -R 755 /var/www
 ##### Step 4. Create the Page
 
 ```
-$ sudo ln -s /home/richard/Documents/AllinQillqayWeb/ClientSide/ckeditor \
+$ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
 /var/www/allinqillqay.localhost/public_html/ckeditor
 
-$ sudo ln -s /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
+$ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/allinqillqay.localhost/public_html/spellcheck31
 ```
 
 ##### Step 5. Configure cgi-bin, compile foma, and spellcheckers
 
 ```
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin 
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/cgi-bin 
 $ sudo cp -a spellcheck31 /usr/lib/cgi-bin/
 $ cd /usr/lib/cgi-bin/spellcheck31/script/
 $ sudo chmod o+x ssrv.cgi
@@ -52,7 +58,7 @@ $ sudo chmod o+x ssrv.cgi
 **Compiling Foma files**
 
 ```
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA/foma/
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA/foma/
 $ make
 $ sudo make install
 $ sudo cp suggestions /usr/bin/
@@ -68,14 +74,14 @@ $ sudo mkdir -p /usr/share/squoia/
 
 ```
 # Cuzco Quechua
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA
 $ tar -xvf squoiaSpellCheckCuzco.tar
 $ cd spellcheckCuzco_foma
 $ foma -f spellcheck.foma
 $ sudo cp spellcheck.fst /usr/share/squoia/
 
 # Southern Unified Quechua
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA
 $ tar -xvf squoiaSpellCheckUnificado.tar
 $ cd spellcheckUnificado_foma
 $ foma -f spellcheckUnificado.foma
@@ -90,7 +96,8 @@ See `AllinQillqayWeb/ServerSide/Hunspell/README.md` for a detailed installation 
 See `AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/README.md` for a detailed installation guide.
 
 
-##### Step 6. Create the New Virtual Host File
+##### Step 6. Create the New Virtual Host File (Only for Ubuntu 12.04 LTS)
+
 
 ```
 $ sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/allinqillqay.localhost
@@ -149,7 +156,7 @@ Once you have finished setting up your virtual host, you can see how it looks on
 Change the url `allinqillqay.localhost` within the file to the one you want.
 
 ```
-nano /home/richard/Documents/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31/lf/scayt3/ckscayt/ckscayt.js
+nano <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31/lf/scayt3/ckscayt/ckscayt.js
 ```
 
 ###### Note: checking last php/cgi errors
@@ -177,7 +184,7 @@ See `AllinQillqayWeb/ServerSide/Hinantin/ErrorCorpus/README.md` for a detailed i
 Change the url `allinqillqay.localhost` within the file to the one you want.
 
 ```
-nano /home/richard/Documents/AllinQillqayWeb/ClientSide/ckeditor/ckeditor.js
+nano <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor/ckeditor.js
 ```
 
 
