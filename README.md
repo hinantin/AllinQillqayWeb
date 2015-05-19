@@ -26,9 +26,11 @@ source code in the future, should we make any corrections or additions.
 Assuming that you have Git installed, from your Ubuntu terminal, you can run the 
 following to  clone(make a copy of) our repositories:
 
+```
 $ mkdir AllinQillqayWeb
 $ cd AllinQillqayWeb
 $ git clone https://github.com/hinantin/AllinQillqayWeb
+```
 
 ### User Manual
 
