@@ -16,6 +16,20 @@ See it in action at http://sc.hinantin.com/
 
 ### Platforms: Ubuntu 12.04 LTS
 
+### Getting the Source Code
+
+With either of our two GitHub repositories, to get a copy of the source code you need
+to ideally have Git installed. If you do not wish to install Git, it is also possible from
+the GitHub repositories to download a ZIP or compressed TAR file of the source
+code. However, using Git is recommended, as it will allow you to easily update the
+source code in the future, should we make any corrections or additions.
+Assuming that you have Git installed, from your Ubuntu terminal, you can run the 
+following to  clone(make a copy of) our repositories:
+
+$ mkdir AllinQillqayWeb
+$ cd AllinQillqayWeb
+$ git clone https://github.com/hinantin/AllinQillqayWeb
+
 ### User Manual
 
 For a comprehensive description of the system read the [`paper_comtel2014.pdf`](http://www.zora.uzh.ch/101905/1/paper_comtel2014.pdf "Paper COMTEL 2014"), currently 8 pages. The installation manual on Ubuntu 12.04 LTS is available within the [`INSTALL.md`](https://github.com/hinantin/AllinQillqayWeb/blob/master/INSTALL.md "Installation Guide") file.

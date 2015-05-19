@@ -6,7 +6,7 @@ Navigate to the following folder.
 Otherwise it may crashed your computer or slow it down.
 
 ```
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/
 # Download the spell checker
 $ wget http://kitt.ifi.uzh.ch/kitt/squoia/downloads/spellChecker_19-05-2014.tar
 # Or use the one included in this directory

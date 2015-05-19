@@ -17,7 +17,7 @@ of doing it later. I would recommend you find a decent password generator too
 Log into MySQL:
 
 ```
-$ cd /your/own/path/AllinQillqayWeb/ServerSide/Hinantin/UserDictionary
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/UserDictionary
 
 $ mysql -u root -p
 Enter password: 

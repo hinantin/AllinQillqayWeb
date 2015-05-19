@@ -33,7 +33,7 @@ $ sudo dpkg -i basex_7.9-1.deb
 ###### Step 2. Run BaseX Server as a *service* on Ubuntu 12.04 startup
 
 ```
-$ cd /your/own/path/AllinQillqayWeb/ServerSide/Hinantin/ErrorCorpus
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/ErrorCorpus
 
 $ sudo cp basex /etc/init.d
 $ sudo chmod +x /etc/init.d/basex

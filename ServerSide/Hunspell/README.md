@@ -11,7 +11,7 @@ $ sudo apt-get install hunspell
 Navigate to the folder where the *.oxt files are.
 
 ```
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/Hunspell
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hunspell
 # MySpell Bolivian Quechua
 $ mkdir dict-quh_BO
 $ unzip dict-quh_BO.oxt -d dict-quh_BO
@@ -64,7 +64,7 @@ $ cd ../../..
 ### Creating the Service
 
 ```
-$ cd /home/richard/Documents/AllinQillqayWeb/ServerSide/Hunspell
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hunspell
 $ cd qu_EC
 $ sudo cp qu_EC.dic /usr/share/hunspell/
 $ sudo cp qu_EC.aff /usr/share/hunspell/
