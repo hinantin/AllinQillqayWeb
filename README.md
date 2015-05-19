@@ -24,7 +24,7 @@ the GitHub repositories to download a ZIP or compressed TAR file of the source
 code. However, using Git is recommended, as it will allow you to easily update the
 source code in the future, should we make any corrections or additions.
 Assuming that you have Git installed, from your Ubuntu terminal, you can run the 
-following to  clone(make a copy of) our repositories:
+following to clone (make a copy of) our repository:
 
 ```
 $ mkdir AllinQillqayWeb
