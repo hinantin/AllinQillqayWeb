@@ -16,4 +16,15 @@ Pruébalo ahora en http://sc.hinantin.com/
 
 ### Plataformas: Ubuntu 12.04 LTS
 
+Con nuestro repositorio de GitHub, para obtener una copia del código fuente necesita idealmente tener instalado Git. 
+Si no desea instalar Git, también es posible descargar un archivo ZIP o TAR comprimido del código fuente desde los repositorios de GitHub. 
+Sin embargo, se recomienda el uso de Git, ya que le permitirá actualizar fácilmente el código fuente en el futuro, en caso que hagamos correcciones 
+o adiciones. Suponiendo que ha instalado Git, desde su terminal de Ubuntu, puede ejecutar lo siguientes comandos para clonar (hacer una copia de) 
+nuestro repositorio:
+
+```
+$ mkdir AllinQillqayWeb
+$ cd AllinQillqayWeb
+$ git clone https://github.com/hinantin/AllinQillqayWeb
+```
 
