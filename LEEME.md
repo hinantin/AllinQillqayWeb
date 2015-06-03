@@ -34,21 +34,21 @@ Para una descripción amplia del sistema lea el [`paper_comtel2014.pdf`](http://
 actualmente 8 páginas. El manual de instalación en Ubuntu 12.04 LTS está disponible en el archivo 
 [`INSTALL.md`](https://github.com/hinantin/AllinQillqayWeb/blob/master/INSTALL.md "guía de instalación").
 
-Go to our download page to get the latest stable release:
+Vaya a nuestra página de descarga para obtener la última versión estable del sistema:
 https://github.com/hinantin/AllinQillqayWeb/releases
 
-##### Acknowledgements
+##### Reconocimientos
 
   * WebSpellChecker: http://www.webspellchecker.net/
   * CKEditor: http://ckeditor.com/
-  * SQUOIA Project: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
+  * Proyecto SQUOIA: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
   * Arno Teigseth (arno AT teigseth.no): http://arno.homelinux.org/
   * Instituto de Lenguas y Literaturas Andinas-Amazónicas (ILLA): http://www.illa-a.org/
   * Hunspell: http://hunspell.sourceforge.net/
   * BaseX - XML Database: http://basex.org/ 
   * eXistdb - a NoSQL Document Database and Application Platform: http://exist-db.org/
 
-##### Citing
+##### Como citar este trabajo
 
 ```
 @article{allinqillqay2014,
