@@ -45,8 +45,8 @@ https://github.com/hinantin/AllinQillqayWeb/releases
   * Arno Teigseth (arno AT teigseth.no): http://arno.homelinux.org/
   * Instituto de Lenguas y Literaturas Andinas-Amazónicas (ILLA): http://www.illa-a.org/
   * Hunspell: http://hunspell.sourceforge.net/
-  * BaseX - XML Database: http://basex.org/ 
-  * eXistdb - a NoSQL Document Database and Application Platform: http://exist-db.org/
+  * BaseX - base de datos XML: http://basex.org/ 
+  * eXistdb - una base de datos de documentos NoSQL y plataforma de aplicaciones: http://exist-db.org/
 
 ##### Como citar este trabajo
 
