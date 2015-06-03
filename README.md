@@ -18,7 +18,7 @@ See it in action at http://sc.hinantin.com/
 
 ### Getting the Source Code
 
-With either of our two GitHub repositories, to get a copy of the source code you need
+With our GitHub repository, to get a copy of the source code you need
 to ideally have Git installed. If you do not wish to install Git, it is also possible from
 the GitHub repositories to download a ZIP or compressed TAR file of the source
 code. However, using Git is recommended, as it will allow you to easily update the
