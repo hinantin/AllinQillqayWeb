@@ -28,3 +28,4 @@ $ cd AllinQillqayWeb
 $ git clone https://github.com/hinantin/AllinQillqayWeb
 ```
 
+### Manual de usuario
