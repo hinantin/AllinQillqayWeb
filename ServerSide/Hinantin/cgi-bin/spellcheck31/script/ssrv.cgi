@@ -209,7 +209,13 @@ elsif ($cmd eq "check_spelling") {
     if (not $correct) { # the word is misspelled
       $object->AddIncorrectEntry($word);
       my $suggestions = $object->getSuggestions($word);
-      $suggestions = "[$suggestions]";
+      if ($suggestions =~ /\?\?\?/)
+      {
+        $suggestions = "[\"???\"]";
+      }
+      else {
+        $suggestions = "[$suggestions]";
+      }
       my $ud = "false";
       $result = $result . "{ \"word\": \"$word\", \"ud\": \"$ud\", \"suggestions\": $suggestions}," ;
     }
