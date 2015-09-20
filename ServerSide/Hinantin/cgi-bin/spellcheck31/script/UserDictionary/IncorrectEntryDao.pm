@@ -29,6 +29,7 @@ sub Save {
    ($oIncorrectEntry) = @_;
    $cpIncorrectEntryId = $oIncorrectEntry->cpIncorrectEntryId();
    $cpEntry = $oIncorrectEntry->cpEntry();
+   $cpEntry =~ s/'/''/g;
    $cpIsCorrect = $oIncorrectEntry->cpIsCorrect();
    $cpFrecuency = $oIncorrectEntry->cpFrecuency();
    $cpSLang = $oIncorrectEntry->cpSLang();
