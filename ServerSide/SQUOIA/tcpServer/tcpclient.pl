@@ -6,6 +6,13 @@ use 5.010;
 use IO::Socket::INET;
 use Getopt::Long qw(GetOptions);
 
+# "Acapela Heather22"
+# "Acapela Klaus22 (German)"
+# "Acapela Rosa22 (Spanish)"
+# "IVONA 2 Eric OEM"
+# "IVONA 2 Miguel OEM (Spanish)"
+
+
 my $word_to_analyze;
 GetOptions('word=s' => \$word_to_analyze) or die "Usage: $0 --word SINGLE-WORD\n";
 
@@ -15,7 +22,7 @@ if ($word_to_analyze) {
     $| = 1;
     
     # create a connecting socket
-    my $socket = new IO::Socket::INET (PeerHost => '127.0.0.1', PeerPort => '8888', Proto => 'tcp',);
+    my $socket = new IO::Socket::INET (PeerHost => '192.168.1.35', PeerPort => '13000', Proto => 'tcp',);
     die "cannot connect to the server $!\n" unless $socket;
     print "connected to the server\n";
     
