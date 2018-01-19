@@ -12,7 +12,7 @@
  
 ### DEMO
 
-See it in action at http://sc.hinantin.com/
+See it in action at https://hinant.in
 
 ### Platforms: Ubuntu 12.04 LTS
 
