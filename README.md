@@ -12,7 +12,7 @@
  
 ### DEMO
 
-See it in action at https://hinant.in
+See it in action at http://hinant.in/ckeditor/samples/api.html
 
 ### Platforms: Ubuntu 12.04 LTS
 
