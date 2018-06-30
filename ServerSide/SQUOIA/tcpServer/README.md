@@ -17,6 +17,15 @@ $ foma -f spellcheckUnificado.foma
 $ cd ../..
 $ cd spellChecker/normalizer/
 $ foma -f chain.foma
+# 
+# In case you don't have enough ram memory it will throw the following error
+# redefined OTAQ: 497 bytes. 5 states, 7 arcs, 4 paths.
+# redefined NITAQ: 1.8 kB. 6 states, 10 arcs, 32 paths.
+# redefined preWord: 5.2 MB. 39447 states, 342086 arcs, more than 9223372036854775807 paths.
+# redefined Word: 16.6 MB. 99840 states, 1090268 arcs, more than 9223372036854775807 paths.
+# Fatal error: out of memory
+# : Cannot allocate memory
+# 
 $ cd ../..
 # Creating the SQUOIA folder
 $ sudo mkdir -p /usr/share/squoia/
