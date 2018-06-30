@@ -10,7 +10,7 @@ the path where you have downloaded AllinQillqayWeb, in my case
 the path is `/home/richard/Documents`. You should change this to 
 adjust it to your own environment.
 
-##### Step 1. Install Apache, and necessary programs
+##### Step 1. Install Apache, and all the necessary programs
 
 ```
 $ sudo apt-get install apache2
