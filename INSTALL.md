@@ -22,6 +22,8 @@ $ sudo apt-get install libdatetime-perl
 $ sudo apt-get install libxml-writer-perl
 $ sudo apt-get install libmoose-perl
 $ sudo apt-get install librpc-xml-perl
+$ sudo apt-get install libdbi-perl
+$ sudo apt-get install libdbd-mysql-perl
 ```
 
 ##### Step 2. Create a New Directory
