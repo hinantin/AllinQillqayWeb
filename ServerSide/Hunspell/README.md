@@ -6,6 +6,7 @@ You need to have hunspell installed.
 
 ```
 $ sudo apt-get install hunspell
+$ sudo apt install unzip
 ```
 
 Navigate to the folder where the *.oxt files are.
