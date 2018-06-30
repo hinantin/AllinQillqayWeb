@@ -85,7 +85,7 @@ $ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA
 $ tar -xvf squoiaSpellCheckUnificado.tar
 $ cd spellcheckUnificado_foma
 $ foma -f spellcheckUnificado.foma
-$ cp spellcheckUnificado.fst /usr/share/squoia/
+$ sudo cp spellcheckUnificado.fst /usr/share/squoia/
 ```
 **Activating the Bolivia Quechua & Ecuadorian Kichwa spellcheckers**
 
