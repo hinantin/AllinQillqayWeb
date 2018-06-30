@@ -43,7 +43,7 @@ https://github.com/hinantin/AllinQillqayWeb/releases
 
   * WebSpellChecker: http://www.webspellchecker.net/
   * CKEditor: http://ckeditor.com/
-  * SQUOIA Project: http://www.cl.uzh.ch/research/maschinelleuebersetzung/hybridmt_en.html
+  * SQUOIA Project: https://pub.cl.uzh.ch/projects/squoia/spellcheck.html
   * Arno Teigseth (arno AT teigseth.no): http://arno.homelinux.org/
   * Instituto de Lenguas y Literaturas Andinas-Amazónicas (ILLA): http://www.illa-a.org/
   * Hunspell: http://hunspell.sourceforge.net/
