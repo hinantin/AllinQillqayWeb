@@ -14,7 +14,7 @@
 
 See it in action at http://hinant.in/ckeditor/samples/api.html
 
-### Platforms: Ubuntu 12.04 LTS
+### Platforms: Ubuntu 16.04 LTS
 
 ### Getting the Source Code
 
