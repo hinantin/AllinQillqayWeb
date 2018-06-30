@@ -34,7 +34,7 @@ $ git clone https://github.com/hinantin/AllinQillqayWeb
 
 ### User Manual
 
-For a comprehensive description of the system read the [`paper_comtel2014.pdf`](http://www.zora.uzh.ch/101905/1/paper_comtel2014.pdf "Paper COMTEL 2014"), currently 8 pages. The installation manual on Ubuntu 12.04 LTS is available within the [`INSTALL.md`](https://github.com/hinantin/AllinQillqayWeb/blob/master/INSTALL.md "Installation Guide") file.
+For a comprehensive description of the system read the [`paper_comtel2014.pdf`](http://www.zora.uzh.ch/101905/1/paper_comtel2014.pdf "Paper COMTEL 2014"), currently 8 pages. The installation manual on Ubuntu 16.04 LTS is available within the [`INSTALL.md`](https://github.com/hinantin/AllinQillqayWeb/blob/master/INSTALL.md "Installation Guide") file.
 
 Go to our download page to get the latest stable release:
 https://github.com/hinantin/AllinQillqayWeb/releases
