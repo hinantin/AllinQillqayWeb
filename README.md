@@ -44,7 +44,7 @@ https://github.com/hinantin/AllinQillqayWeb/releases
   * WebSpellChecker: http://www.webspellchecker.net/
   * CKEditor: http://ckeditor.com/
   * SQUOIA Project: https://pub.cl.uzh.ch/projects/squoia/spellcheck.html
-  * Arno Teigseth (arno AT teigseth.no): http://arno.homelinux.org/
+  * Arno Teigseth: arno AT teigseth.no
   * Instituto de Lenguas y Literaturas Andinas-Amazónicas (ILLA): http://www.illa-a.org/
   * Hunspell: http://hunspell.sourceforge.net/
   * BaseX - XML Database: http://basex.org/ 
