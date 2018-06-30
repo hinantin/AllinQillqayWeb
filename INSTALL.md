@@ -97,6 +97,9 @@ See `AllinQillqayWeb/ServerSide/Hunspell/README.md` for a detailed installation 
 
 See `AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/README.md` for a detailed installation guide.
 
+**Installing the MySQL Database for the User Dictionary **
+
+See `AllinQillqayWeb/ServerSide/Hinantin/UserDictionary/README.md` for a detailed installation guide.
 
 ##### Step 6. Create the New Virtual Host File (Only for Ubuntu 12.04 LTS)
 
