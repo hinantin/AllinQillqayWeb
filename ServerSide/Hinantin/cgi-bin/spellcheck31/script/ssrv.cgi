@@ -5,7 +5,7 @@
 #    provide access to the different spellchecking technologies that have been developed 
 #    for the Quechua language.
 #
-#    Copyright (C) 2015  Hinantin Research Group
+#    Copyright (C) 2018  Hinantin Software
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
