@@ -7,7 +7,7 @@
 > have been developed for the Quechua language.
 
 **Authors**
-  * Richard Castro, e-mail: rcastro AT hinantin.com
+  * Richard Castro, e-mail: rcastro AT hinant.in
   * Annette Rios, e-mail: rios AT cl.uzh.ch
  
 ### DEMO
