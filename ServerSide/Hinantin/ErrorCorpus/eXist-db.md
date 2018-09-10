@@ -3,7 +3,7 @@
 ##### Step 1. Install some packages
 
 ```
-# eXistdb uses Java 7
+# eXistdb uses Java >=7
 $ sudo apt-get install openjdk-7-jre
 $ sudo apt-get install openjdk-7-jdk
 # this package is necessary to make queries
