@@ -95,6 +95,8 @@ Installing the eXist-db Native XML Database daemon using init.d..
    /etc/rc5.d/S20eXist-db -> ../init.d/eXist-db
 
 $ sudo reboot
+# Or starting the service manually
+$ java -Xmx1024M -Djava.endorsed.dirs=lib/endorsed -jar start.jar jetty
 ```
 
 ##### Step 5. Running the client.
