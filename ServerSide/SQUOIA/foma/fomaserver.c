@@ -242,7 +242,7 @@ char *handle_line(char *s) {
     int normalized = 0;
     char *line = concat(s, "");
     outstr = "";
-    /* make sure string is not empty */
+    /* make sure the string is not empty */
     if (line[0] != '\0') {
         /* Apply analyzer.bin */
         result = apply_up(ah, line);
