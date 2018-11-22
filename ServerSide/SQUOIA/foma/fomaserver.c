@@ -118,60 +118,8 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "%s: %s\n%sprint -h for help\n", "File error", analyzername, usagestring);
         exit(EXIT_FAILURE);
     }
+
     ah = apply_init(analyzernet);
-
-    /* get chain binary  */
-    chainname = argv[optind + 1];
-    if ((fsrh = fsm_read_binary_file_multiple_init(chainname)) == NULL) {
-        fprintf(stderr, "%s: %s\n%sprint -h for help\n", "File error", chainname, usagestring);
-        exit(EXIT_FAILURE);
-    }
-
-    chain_head = chain_tail = NULL;
-
-    while ((net = fsm_read_binary_file_multiple(fsrh)) != NULL) {
-        numnets++;
-        chain_new = xxmalloc(sizeof (struct lookup_chain));
-        if (direction == DIR_UP && net->arcs_sorted_out != 1 && sortarcs) {
-            fsm_sort_arcs(net, 2);
-        }
-        chain_new->net = net;
-        chain_new->ah = apply_init(net);
-
-        if (direction == DIR_UP && index_arcs) {
-            apply_index(chain_new->ah, APPLY_INDEX_OUTPUT, index_cutoff, index_mem_limit, index_flag_states);
-        }
-
-        chain_new->next = NULL;
-        chain_new->prev = NULL;
-        if (chain_tail == NULL) {
-            chain_tail = chain_head = chain_new;
-        } else if (apply_alternates == 1) {
-            chain_tail->next = chain_new;
-            chain_new->prev = chain_tail;
-            chain_tail = chain_new;
-        } else {
-            chain_new->next = chain_head;
-            chain_head->prev = chain_new;
-            chain_head = chain_new;
-        }
-    }
-    if (numnets < 1) {
-        fprintf(stderr, "%s: %s\nprint -h for help\n", "File error", chainname);
-        exit(EXIT_FAILURE);
-    }
-
-    /* get spellchecker binary (last argument) */
-    medname = argv[optind + 2];
-    mednet = fsm_read_binary_file(medname);
-    if (mednet == NULL) {
-        fprintf(stderr, "%s: %s\n%s\nprint -h for help\n", "File error", medname, usagestring);
-        exit(EXIT_FAILURE);
-    }
-    medh = apply_med_init(mednet);
-    apply_med_set_heap_max(medh, 4194304 + 1);
-    apply_med_set_med_limit(medh, g_med_limit);
-    apply_med_set_med_cutoff(medh, g_med_cutoff);
 
     //########################################//
     int listenfd = 0, connfd = 0;
@@ -219,10 +167,7 @@ int main(int argc, char *argv[]) {
                 }
                 sendBuff[byte_count] = '\0';
                 char *line = concat(sendBuff, "");
-                corr = "|correct:";
                 char *outstr = handle_line(line);
-                outstr = concat("incorrect:", outstr);
-                outstr = concat(outstr, corr);
                 write(connfd, outstr, strlen(outstr));
             } while (byte_count > 0);
             exit(0);
@@ -249,117 +194,13 @@ char *handle_line(char *s) {
 
         /* if no result from analyzer, spell check this word with normalizer */
         if (result == NULL) {
-            indexIncorrectWords++;
-            /* apply chain.bin (normalizer) */
-            if (apply_alternates == 1) {
-                // printf("apply_alternates is true, line is %s\n",  line);
-                for (chain_pos = chain_head, tempstr = s;; chain_pos = chain_pos->next) {
-                    result = applyer(chain_pos->ah, tempstr);
-                    if (result != NULL) {
-                        results++;
-                        if (normalized == 0) {
-                            if (firstIncorrWord == 0) {
-                                outstr = concat(outstr, ",");
-                            }
-                            outstr = concat(outstr, result);
-                            firstIncorrWord = 0;
-                        } else {
-                            outstr = concat(outstr, ",");
-                            outstr = concat(outstr, result);
-                        }
-                        normalized = 1;
-                        while ((result = applyer(chain_pos->ah, NULL)) != NULL) {
-                            results++;
-                            if (normalized == 0) {
-                                if (firstIncorrWord == 0) {
-                                    outstr = concat(outstr, ",");
-                                }
-                                outstr = concat(outstr, result);
-                                firstIncorrWord = 0;
-                            } else {
-                                outstr = concat(outstr, ",");
-                                outstr = concat(outstr, result);
-                            }
-                        }
-                        break;
-                    }
-                    if (chain_pos == chain_tail) {
-                        break;
-                    }
-                }
-            } else {
-                /* Get result from chain */
-                for (chain_pos = chain_head, tempstr = s;; chain_pos = chain_pos->next) {
-                    result = applyer(chain_pos->ah, tempstr);
-                    if (result != NULL && chain_pos != chain_tail) {
-                        tempstr = result;
-                        continue;
-                    }
-                    if (result != NULL && chain_pos == chain_tail) {
-                        do {
-                            results++;
-                            //printf("%s:\n \t%s\n", line, result);
-                            //char *outstr2 = concat_outstr(line, result);
-                            //outstr = concat(outstr, outstr2);
-                            normalized = 1;
-                        } while ((result = applyer(chain_pos->ah, NULL)) != NULL);
-                    }
-                    if (result == NULL) {
-                        /* Move up */
-                        for (chain_pos = chain_pos->prev; chain_pos != NULL; chain_pos = chain_pos->prev) {
-                            result = applyer(chain_pos->ah, NULL);
-                            if (result != NULL) {
-                                tempstr = result;
-                                break;
-                            }
-                        }
-                    }
-                    if (chain_pos == NULL) {
-                        break;
-                    }
-                }
-            }
-            /* if no result from chain.bin (normalizer), use med search with spellcheckUnificado.bin */
-            if (normalized == 0) {
-                /*apply med search*/
-                result = apply_med(medh, line);
-                if (result == NULL) {
-                    if (firstIncorrWord == 0) {
-                        outstr = concat(outstr, ",");
-                    }
-                    outstr = concat(outstr, "[???]");
-                    firstIncorrWord = 0;
-                } else {
-                    if (firstIncorrWord == 0) {
-                        outstr = concat(outstr, ",");
-                    }
-                    outstr = concat(outstr, result);
-                    firstIncorrWord = 0;
-                    while ((result = apply_med(medh, NULL)) != NULL) {
-                        outstr = concat(outstr, ",");
-                        outstr = concat(outstr, result);
-                    }
-                }
-            }
+          outstr = concat(outstr, "+?");
         }            /* word was recognized by analyzer.bin */
         else {
-            indexCorrectWords++;
-            char *tmp = malloc(1 + strlen(corr));
-            if (tmp) {
-                strcpy(tmp, corr);
-            } else {
-                fprintf(stderr, "malloc failure!");
-            }
-            corr = NULL;
-            if (firstCorrWord == 1) {
-                corr = malloc(snprintf(NULL, 0, "%s%s", tmp, s) + 1);
-                sprintf(corr, "%s%s", tmp, s);
-                firstCorrWord = 0;
-            } else {
-                corr = malloc(snprintf(NULL, 0, "%s,%s", tmp, s) + 1);
-                sprintf(corr, "%s,%s", tmp, s);
-            }
-            free(tmp);
+          while ((result = apply_up(ah,NULL)) != NULL) {
+            outstr = concat(result, "\n");
+            outstr = concat(outstr, "+?");
+          }
         }
     }
     return outstr;
