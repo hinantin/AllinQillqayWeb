@@ -1,4 +1,4 @@
-## Set Up The Server Side on Ubuntu 12.04
+## Set Up The Server Side on Ubuntu 16.04
 ### Set Up Apache Virtual Host
 
 #### Change the url `allinqillqay.localhost` if that is not the url want.
@@ -10,7 +10,7 @@ the path where you have downloaded AllinQillqayWeb, in my case
 the path is `/home/richard/Documents`. You should change this to 
 adjust it to your own environment.
 
-##### Step 1. Install Apache, and necessary programs
+##### Step 1. Install Apache, and all the necessary programs
 
 ```
 $ sudo apt-get install apache2
@@ -22,28 +22,30 @@ $ sudo apt-get install libdatetime-perl
 $ sudo apt-get install libxml-writer-perl
 $ sudo apt-get install libmoose-perl
 $ sudo apt-get install librpc-xml-perl
+$ sudo apt-get install libdbi-perl
+$ sudo apt-get install libdbd-mysql-perl
 ```
 
 ##### Step 2. Create a New Directory
 
 ```
-$ sudo mkdir -p /var/www/allinqillqay.localhost/public_html
+$ sudo mkdir -p /var/www/html/allinqillqay.localhost/public_html
 ```
 
 ##### Step 3. Grant Permissions
 
 ```
-$ sudo chown -R $USER:$USER /var/www/allinqillqay.localhost/public_html
-$ sudo chmod -R 755 /var/www
+$ sudo chown -R $USER:$USER /var/www/html/allinqillqay.localhost/public_html
+$ sudo chmod -R 755 /var/www/html
 ```
 ##### Step 4. Create the Page
 
 ```
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
-/var/www/allinqillqay.localhost/public_html/ckeditor
+/var/www/html/allinqillqay.localhost/public_html/ckeditor
 
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
-/var/www/allinqillqay.localhost/public_html/spellcheck31
+/var/www/html/allinqillqay.localhost/public_html/spellcheck31
 ```
 
 ##### Step 5. Configure cgi-bin, compile foma, and spellcheckers
@@ -85,7 +87,7 @@ $ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA
 $ tar -xvf squoiaSpellCheckUnificado.tar
 $ cd spellcheckUnificado_foma
 $ foma -f spellcheckUnificado.foma
-$ cp spellcheckUnificado.fst /usr/share/squoia/
+$ sudo cp spellcheckUnificado.fst /usr/share/squoia/
 ```
 **Activating the Bolivia Quechua & Ecuadorian Kichwa spellcheckers**
 
@@ -95,6 +97,9 @@ See `AllinQillqayWeb/ServerSide/Hunspell/README.md` for a detailed installation 
 
 See `AllinQillqayWeb/ServerSide/SQUOIA/tcpServer/README.md` for a detailed installation guide.
 
+**Installing the MySQL Database for the User Dictionary **
+
+See `AllinQillqayWeb/ServerSide/Hinantin/UserDictionary/README.md` for a detailed installation guide.
 
 ##### Step 6. Create the New Virtual Host File (Only for Ubuntu 12.04 LTS)
 

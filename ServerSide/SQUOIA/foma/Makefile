@@ -106,11 +106,12 @@ regex.tab.c regex.tab.h: regex.y
 	$(YACC) $<
 
 clean:
-	$(RM) foma flookup cgflookup $(FOMAOBJS) $(LIBOBJS) flookup.o cgflookup.o regex.tab.h regex.tab.c regex.output lex.yy.c lex.lexc.c lex.interface.c lex.cmatrix.c *.so* *.dylib* *.a fmed suggestions tcpServer tcpClient 
+	$(RM) foma flookup cgflookup $(FOMAOBJS) $(LIBOBJS) flookup.o cgflookup.o regex.tab.h regex.tab.c regex.output lex.yy.c lex.lexc.c lex.interface.c lex.cmatrix.c *.so* *.dylib* *.a fmed suggestions fomaserver tcpServer tcpClient 
 
 compile:
 	$(CC) -o fmed fmed.c libfoma.a -lz 
 	$(CC) -o suggestions suggestions.c libfoma.a -lz 
+	$(CC) -o fomaserver fomaserver.c libfoma.a -lz 
 	$(CC) -o tcpServer tcpServer.c libfoma.a -lz 
 	$(CC) -o tcpClient tcpClient.c libfoma.a -lz 
 
