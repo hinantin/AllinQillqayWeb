@@ -167,8 +167,8 @@ int main(int argc, char *argv[]) {
                 }
                 sendBuff[byte_count] = '\0';
                 char *line = concat(sendBuff, "");
-                char *outstr = handle_line(line);
-                write(connfd, outstr, strlen(outstr));
+                char *outstring = handle_line(line);
+                write(connfd, outstring, strlen(outstring));
             } while (byte_count > 0);
             exit(0);
         } else {
@@ -198,8 +198,8 @@ char *handle_line(char *s) {
         }            /* word was recognized by analyzer.bin */
         else {
           while ((result = apply_up(ah,NULL)) != NULL) {
-            outstr = concat(result, "\n");
-            outstr = concat(outstr, "+?");
+            tempstr = concat(result, "\n");
+            outstr = concat(outstr, tempstr);
           }
         }
     }
