@@ -1,6 +1,10 @@
 #!/bin/sh
 ### BEGIN INIT INFO
+<<<<<<< HEAD
+# Provides: tcpServerSpellCheck
+=======
 # Provides: tcpserverspellcheck
+>>>>>>> d448cf9b12a4d3c2cfc3b7fdabf1a3265c1ac3c3
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5

