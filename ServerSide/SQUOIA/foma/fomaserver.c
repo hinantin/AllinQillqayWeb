@@ -160,7 +160,7 @@ int main(int argc, char *argv[]) {
             /* This is the client process */
             close(listenfd);
             do {
-                byte_count = recv(connfd, sendBuff, 1024, 0);
+                byte_count = recv(connfd, sendBuff, 16384, 0);
                 if (byte_count < 0) {
                     perror("ERROR reading from socket");
                     exit(1);
@@ -177,7 +177,6 @@ int main(int argc, char *argv[]) {
 
     }
 
-
     close(connfd);
     sleep(1);
 }
@@ -191,14 +190,22 @@ char *handle_line(char *s) {
     if (line[0] != '\0') {
         /* Apply analyzer.bin */
         result = apply_up(ah, line);
-
         /* if no result from analyzer, spell check this word with normalizer */
         if (result == NULL) {
           outstr = concat(outstr, "+?");
         }            /* word was recognized by analyzer.bin */
         else {
+          /*Concat first result*/
+          tempstr = concat(line, "\t");
+          tempstr = concat(tempstr, result);
+          tempstr = concat(tempstr, "\n");
+          outstr = concat(outstr, tempstr);
+          /*Concat the rest of the results (if there are more of them)*/
           while ((result = apply_up(ah,NULL)) != NULL) {
-            tempstr = concat(result, "\n");
+            printf("Result: %s\n", result);
+            tempstr = concat(line, "\t");
+            tempstr = concat(tempstr, result);
+            tempstr = concat(tempstr, "\n");
             outstr = concat(outstr, tempstr);
           }
         }

@@ -33,9 +33,9 @@ if ($word_to_analyze) {
     # notify server that request has been sent
     shutdown($socket, 1);
      
-    # receive a response of up to 1024 characters from server
+    # receive a response of up to 16384 characters from server
     my $response = "";
-    $socket->recv($response, 1024);
+    $socket->recv($response, 16384);
     print "$response\n";
     
     $socket->close();
