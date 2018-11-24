@@ -24,11 +24,11 @@ if ($word_to_analyze) {
     # create a connecting socket
     my $socket = new IO::Socket::INET (PeerHost => 'localhost', PeerPort => '8899', Proto => 'tcp',);
     die "cannot connect to the server $!\n" unless $socket;
-    print "connected to the server\n";
+    print STDERR "connected to the server\n";
     
     # data to send to a server
     my $size = $socket->send($word_to_analyze);
-    print "sent data of length $size\n";
+    print STDERR "sent data of length $size\n";
     
     # notify server that request has been sent
     shutdown($socket, 1);

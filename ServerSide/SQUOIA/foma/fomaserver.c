@@ -202,7 +202,6 @@ char *handle_line(char *s) {
           outstr = concat(outstr, tempstr);
           /*Concat the rest of the results (if there are more of them)*/
           while ((result = apply_up(ah,NULL)) != NULL) {
-            printf("Result: %s\n", result);
             tempstr = concat(line, "\t");
             tempstr = concat(tempstr, result);
             tempstr = concat(tempstr, "\n");
