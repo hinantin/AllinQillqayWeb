@@ -148,32 +148,31 @@ int main(int argc, char *argv[]) {
 
     while (1) {
         connfd = accept(listenfd, (struct sockaddr*) NULL, NULL);
-
-
         // fork child
-        int pid = fork();
-        if (pid < 0) {
-            perror("ERROR could not fork");
-            exit(1);
-        }
-        if (pid == 0) {
+        //int pid = fork();
+        //if (pid < 0) {
+        //    perror("ERROR could not fork");
+        //    exit(1);
+        //}
+        //if (pid == 0) {
             /* This is the client process */
             close(listenfd);
             do {
                 byte_count = recv(connfd, sendBuff, 16384, 0);
                 if (byte_count < 0) {
-                    perror("ERROR reading from socket");
-                    exit(1);
+                  perror("ERROR reading from socket");
+                  //exit(1);
+                } else {
+                  sendBuff[byte_count] = '\0';
+                  char *line = concat(sendBuff, "");
+                  char *outstring = handle_line(line);
+                  write(connfd, outstring, strlen(outstring));
                 }
-                sendBuff[byte_count] = '\0';
-                char *line = concat(sendBuff, "");
-                char *outstring = handle_line(line);
-                write(connfd, outstring, strlen(outstring));
             } while (byte_count > 0);
-            exit(0);
-        } else {
-            close(connfd);
-        }
+            //exit(0);
+        //} else {
+        //    close(connfd);
+        //}
 
     }
 
