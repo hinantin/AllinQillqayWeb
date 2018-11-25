@@ -156,7 +156,7 @@ int main(int argc, char *argv[]) {
         //}
         //if (pid == 0) {
             /* This is the client process */
-            close(listenfd);
+            //close(listenfd);
             do {
                 byte_count = recv(connfd, sendBuff, 16384, 0);
                 if (byte_count < 0) {
