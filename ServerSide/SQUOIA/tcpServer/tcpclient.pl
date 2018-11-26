@@ -22,7 +22,7 @@ if ($word_to_analyze) {
     $| = 1;
     
     # create a connecting socket
-    my $socket = new IO::Socket::INET (PeerHost => 'localhost', PeerPort => '8899', Proto => 'tcp',);
+    my $socket = new IO::Socket::INET (PeerHost => '54.218.109.223', PeerPort => '8899', Proto => 'tcp',);
     die "cannot connect to the server $!\n" unless $socket;
     print STDERR "connected to the server\n";
     

@@ -14,6 +14,7 @@ adjust it to your own environment.
 
 ```
 $ sudo apt-get install apache2
+$ sudo a2enmod cgi
 $ sudo apt-get install zlib1g-dev flex bison libreadline-dev
 $ sudo apt-get install hunspell
 $ sudo apt-get install libio-captureoutput-perl
