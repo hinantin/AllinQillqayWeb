@@ -41,12 +41,24 @@ $ sudo chmod -R 755 /var/www/html
 ```
 ##### Step 4. Create the Page
 
+Virtual host
+
 ```
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
 /var/www/html/allinqillqay.localhost/public_html/ckeditor
 
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/html/allinqillqay.localhost/public_html/spellcheck31
+```
+
+Not virtual host (/var/www/html/)
+
+```
+$ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
+/var/www/html/ckeditor
+
+$ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
+/var/www/html/spellcheck31
 ```
 
 ##### Step 5. Configure cgi-bin, compile foma, and spellcheckers
