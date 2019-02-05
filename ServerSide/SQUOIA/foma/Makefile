@@ -111,6 +111,7 @@ clean:
 compile:
 	$(CC) -o fmed fmed.c libfoma.a -lz 
 	$(CC) -o suggestions suggestions.c libfoma.a -lz 
+	$(CC) -o suggestionsserver suggestionsserver.c libfoma.a -lz 
 	$(CC) -o fomaserver fomaserver.c libfoma.a -lz 
 	$(CC) -o tcpServer tcpServer.c libfoma.a -lz 
 	$(CC) -o tcpClient tcpClient.c libfoma.a -lz 
