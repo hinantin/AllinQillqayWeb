@@ -22,11 +22,10 @@ $ sudo update-rc.d tcpServerErrorCorrection defaults
 # Error detection
 $ sudo cp fomaserver /usr/bin/
 $ sudo chmod +x /usr/bin/fomaserver
-# Installing the service on port 8888
-$ sudo cp tcpServerSpellCheck /etc/init.d
-$ sudo chmod +x /etc/init.d/tcpServerSpellCheck
-$ sudo update-rc.d tcpServerSpellCheck defaults
-
+# Installing the service on port 7890
+$ sudo cp <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/NEWLANGUAGE/tcpServerErrorDetection /etc/init.d
+$ sudo chmod +x /etc/init.d/tcpServerErrorDetection
+$ sudo update-rc.d tcpServerErrorDetection defaults
 
 ```
 
