@@ -44,6 +44,11 @@ static FILE *INFILE;
 static int port_number = FLOOKUP_PORT;
 struct sockaddr_in serv_addr;
 
+static char *handle_line(char *line);
+char* concat_outstr(char *s1, char *s2);
+char* concat_med(char *s1, char *s2, char *s3);
+char* concat(char *s1, char *s2);
+
 int main(int argc, char *argv[]) {
     int opt = 1;
     char *infilename, line[LINE_LIMIT], *result, *separator = "\t";
@@ -173,14 +178,12 @@ char *handle_line(char *s) {
         }            /* word was recognized by analyzer.bin */
         else {
           /*Concat first result*/
-          tempstr = concat(line, "\"");
-          tempstr = concat(tempstr, result);
+          tempstr = concat("\"", result);
           tempstr = concat(tempstr, "\", ");
           outstr = concat(outstr, tempstr);
           /*Concat the rest of the results (if there are more of them)*/
-          while ((result = apply_up(ah,NULL)) != NULL) {
-            tempstr = concat(line, "\"");
-            tempstr = concat(tempstr, result);
+          while ((result = apply_med(medh,NULL)) != NULL) {
+            tempstr = concat("\"", result);
             tempstr = concat(tempstr, "\", ");
             outstr = concat(outstr, tempstr);
           }
