@@ -2,6 +2,14 @@
 
 In this manual we assume that you have already install AllinQillqay and the binaries for your spellchecker are compiled (`error_correction.fst, error_detection.fst`).
 
+```
+# Creating the NEWLANGUAGE folder
+$ sudo mkdir -p /usr/share/NEWLANGUAGE/
+# Installing transducers
+$ sudo cp error_correction.fst /usr/share/NEWLANGUAGE/
+$ sudo cp error_detection.fst /usr/share/NEWLANGUAGE/
+```
+
 The following steps describe how to create a TCP Service for your own apellchecker.
 
 ##### INSTALLING THE TCP SERVERS
@@ -28,11 +36,3 @@ $ sudo chmod +x /etc/init.d/tcpServerErrorDetection
 $ sudo update-rc.d tcpServerErrorDetection defaults
 ```
 
-
-
-```
-# Creating the NEWLANGUAGE folder
-$ sudo mkdir -p /usr/share/NEWLANGUAGE/
-# Installing transducers
-$ sudo cp NEWLANGUAGE.bin /usr/share/NEWLANGUAGE/
-```

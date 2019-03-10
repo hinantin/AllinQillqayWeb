@@ -11,7 +11,7 @@
 ### END INIT INFO
 
 dir="/usr/bin"
-dictPath="/usr/share/hinantin"
+dictPath="/usr/share/NEWLANGUAGE"
 user="root"
 # -A: host, -P: port number
 cmd="suggestionsserver -l 15 -P 7891 $dictPath/error_correction.fst"

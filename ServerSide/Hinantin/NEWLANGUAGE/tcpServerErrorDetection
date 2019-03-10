@@ -11,7 +11,7 @@
 ### END INIT INFO
 
 dir="/usr/bin"
-dictPath="/usr/share/hinantin"
+dictPath="/usr/share/NEWLANGUAGE"
 user="root"
 # -A: host, -P: port number
 cmd="fomaserver -P 7890 $dictPath/error_detection.fst"
