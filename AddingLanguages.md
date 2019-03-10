@@ -10,9 +10,12 @@ The following steps describe how to create a TCP Service for your own apellcheck
 $ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA/foma/
 $ make
 $ sudo make install
+# Error correction 
 $ sudo cp suggestionsserver /usr/bin/
-$ sudo chmod +x /usr/bin/fomaserver
+$ sudo chmod +x /usr/bin/suggestionsserver
+# Error detection
 $ sudo cp fomaserver /usr/bin/
+$ sudo chmod +x /usr/bin/fomaserver
 ```
 
 
