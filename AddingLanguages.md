@@ -38,3 +38,7 @@ $ sudo update-rc.d tcpServerErrorDetection defaults
 $ /etc/init.d/tcpServerErrorDetection start
 ```
 
+##### TESTING
+
+[ASHANINKA SPELLCHECKER](https://hinant.in/ckeditor/samples/api.html)
+
