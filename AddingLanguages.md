@@ -26,7 +26,6 @@ $ sudo chmod +x /usr/bin/fomaserver
 $ sudo cp <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/NEWLANGUAGE/tcpServerErrorDetection /etc/init.d
 $ sudo chmod +x /etc/init.d/tcpServerErrorDetection
 $ sudo update-rc.d tcpServerErrorDetection defaults
-
 ```
 
 
