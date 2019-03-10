@@ -26,6 +26,7 @@ $ sudo chmod +x /usr/bin/suggestionsserver
 $ sudo cp <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/NEWLANGUAGE/tcpServerErrorCorrection /etc/init.d
 $ sudo chmod +x /etc/init.d/tcpServerErrorCorrection
 $ sudo update-rc.d tcpServerErrorCorrection defaults
+$ /etc/init.d/tcpServerErrorCorrection start 
 
 # Error detection
 $ sudo cp fomaserver /usr/bin/
@@ -34,5 +35,6 @@ $ sudo chmod +x /usr/bin/fomaserver
 $ sudo cp <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/Hinantin/NEWLANGUAGE/tcpServerErrorDetection /etc/init.d
 $ sudo chmod +x /etc/init.d/tcpServerErrorDetection
 $ sudo update-rc.d tcpServerErrorDetection defaults
+$ /etc/init.d/tcpServerErrorDetection start
 ```
 

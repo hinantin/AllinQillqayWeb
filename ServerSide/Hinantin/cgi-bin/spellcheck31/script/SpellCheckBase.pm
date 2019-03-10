@@ -285,4 +285,69 @@ sub getSuggestions {
 
 no Moose;
 
+package SpellCheckAshaninkaMorph;
+use IO::CaptureOutput qw/capture/;
+use IO::Socket::INET;
+use Moose;
+extends 'SpellCheckBase';
+
+has 'PeerHostErrorDetection' => ( is => 'rw', isa => 'Str', required => 1 );
+has 'PeerPortErrorDetection' => ( is => 'rw', isa => 'Str', required => 1 );
+has 'PeerHostErrorCorrection' => ( is => 'rw', isa => 'Str', required => 1 );
+has 'PeerPortErrorCorrection' => ( is => 'rw', isa => 'Str', required => 1 );
+has 'Proto' => ( is => 'rw', isa => 'Str', required => 1 );
+
+sub Consult {
+  my $self = shift;
+  my $words = undef;  
+  my $host = undef;  
+  my $port = undef;  
+  ($words, $host, $port) = @_;
+  # auto-flush on socket
+  $| = 1;
+  
+  # create a connecting socket
+  my $socket = new IO::Socket::INET (PeerHost => $host, PeerPort => $port, Proto => $self->Proto(),);
+  die "cannot connect to the server $!\n" unless $socket;
+  # connected to the server
+  
+  # data to send to a server
+  my $size = $socket->send(lc($words));
+  # sent data of length $size
+  
+  # notify server that request has been sent
+  shutdown($socket, 1);
+  
+  # receive a response of up to 1024 characters from server
+  my $response = "";
+  $socket->recv($response, 1024);
+  $socket->close();
+  
+  return $response;
+}
+
+sub SpellCheck {
+  my $self = shift;
+  my $words = undef;
+  ($words) = @_;
+  my $response = $self->Consult($words, $self->PeerHostErrorDetection(), $self->PeerPortErrorDetection());
+  if ( "$response" =~ /\+\?/ ) { # the word is misspelled
+    return 0;
+  }
+  else {
+    return 1;
+  }
+}
+
+sub getSuggestions {
+  my $self = shift;
+  my $words = undef;
+  ($words) = @_; 
+  my $response = $self->Consult($words, $self->PeerHostErrorCorrection(), $self->PeerPortErrorCorrection());
+  $response =~ s/,$//g; # trimming string
+  return $response;
+}
+
+no Moose;
+
 1;
