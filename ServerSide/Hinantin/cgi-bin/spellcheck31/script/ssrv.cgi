@@ -35,7 +35,7 @@ print $query -> header(
 );
 use Encode;
 my $squoiapath = "/usr/share/squoia";
-my $hinantinpath = "/usr/share/hinantin";
+my $hinantinpath = "/usr/share/NEWLANGUAGE";
 
 # First command
 my $cmd = $query->param('cmd');
@@ -57,7 +57,7 @@ if ($cmd eq "get_lang_list") {
   $customerid = $query->param('customerid');
   $run_mode = $query->param('run_mode');
   $slang = $query->param('slang');
-  print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido", "bol_myspell" : "Quechua Boliviano", "ec_hunspell" : "Kichwa Ecuatoriano", "prq_hnt_foma" : "Ashaninka (Elena Mihas 2010)"},rtl: {}},verLang : 6})';
+  print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido", "bol_myspell" : "Quechua Boliviano", "ec_hunspell" : "Kichwa Ecuatoriano", "newlanguage_foma" : "NEW LANGUAGE"},rtl: {}},verLang : 6})';
 }
 elsif ($cmd eq "getbanner") { 
   $callback = $query->param('callback');
@@ -176,7 +176,7 @@ elsif ($cmd eq "check_spelling") {
     Proto => 'tcp',
     );
   }
-  elsif ($slang eq "prq_hnt_foma") {
+  elsif ($slang eq "newlanguage_foma") {
     $object = SpellCheckAshaninkaMorph->new(
     FstFile => "$hinantinpath/error_correction.fst",
     EngineName => "$slang",
