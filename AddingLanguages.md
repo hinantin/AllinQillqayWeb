@@ -1,13 +1,17 @@
 ### Adding languages
 
-In this manual we assume that you have already install AllinQillqay and the binaries for your spellchecker are compiled (`error_correction.fst, error_detection.fst`).
+In this manual we assume that you have already install [AllinQillqay](https://github.com/hinantin/AllinQillqayWeb/blob/master/INSTALL.md) and the binaries for your spellchecker are compiled (`error_correction.fst, error_detection.fst`).
+
+`error_detection.fst` is a transdducer that returns the analysis of a simple entry.
+
+`error_correction.fst` is a modified version of the error_detection.fst transducer that contains the confusion matrix.
 
 ```
 # Creating the NEWLANGUAGE folder
 $ sudo mkdir -p /usr/share/NEWLANGUAGE/
 # Installing transducers
-$ sudo cp error_correction.fst /usr/share/NEWLANGUAGE/
 $ sudo cp error_detection.fst /usr/share/NEWLANGUAGE/
+$ sudo cp error_correction.fst /usr/share/NEWLANGUAGE/
 ```
 
 The following steps describe how to create a TCP Service for your own apellchecker.
