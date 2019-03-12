@@ -67,9 +67,9 @@ $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/html/spellcheck31
 
-$ <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide
 $ sudo cp -a ckeditor /var/www/html/
-$ cd WebSpellChecker
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker
 $ sudo cp -a spellcheck31 /var/www/html/
 ```
 
