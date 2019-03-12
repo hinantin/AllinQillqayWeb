@@ -42,7 +42,7 @@ $ sudo update-rc.d tcpServerErrorDetection defaults
 $ /etc/init.d/tcpServerErrorDetection start
 ```
 
-If you wish to install the binaries in another folder other than `/usr/share/NEWLANGUAGE/` or use other ports, you will ha ve to modify the variables in 
+If you wish to install the binaries in another folder other than `/usr/share/NEWLANGUAGE/` or use other ports, you will have to modify the variables in 
 `/usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi` 
 
 ```
