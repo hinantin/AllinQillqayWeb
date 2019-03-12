@@ -66,6 +66,11 @@ $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
 # Highly insecure (deprecated)
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/html/spellcheck31
+
+$ <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide
+$ sudo cp -a ckeditor /var/www/html/
+$ cd WebSpellChecker
+$ sudo cp -a spellcheck31 /var/www/html/
 ```
 
 ##### Step 5. Configure cgi-bin, compile foma, and spellcheckers
