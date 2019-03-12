@@ -19,7 +19,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#    Richard Castro, e-mail: rcastro AT hinantin.com
+#    Richard Castro, e-mail: rcastro AT hinant.in
 
 
 use File::Temp qw/ tempdir /;
