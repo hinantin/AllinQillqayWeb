@@ -44,19 +44,26 @@ $ sudo chmod -R 755 /var/www/html
 Virtual host
 
 ```
+# Highly insecure (deprecated)
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
 /var/www/html/allinqillqay.localhost/public_html/ckeditor
-
+# Highly insecure (deprecated)
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/html/allinqillqay.localhost/public_html/spellcheck31
+
+$ <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide
+$ sudo cp -a ckeditor /var/www/html/allinqillqay.localhost/public_html/
+$ cd WebSpellChecker
+$ sudo cp -a spellcheck31 /var/www/html/allinqillqay.localhost/public_html/
 ```
 
 Not virtual host (/var/www/html/)
 
 ```
+# Highly insecure (deprecated)
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ClientSide/ckeditor \
 /var/www/html/ckeditor
-
+# Highly insecure (deprecated)
 $ sudo ln -s <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/WebSpellChecker/spellcheck31 \
 /var/www/html/spellcheck31
 ```
