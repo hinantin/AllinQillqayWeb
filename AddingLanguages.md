@@ -42,6 +42,31 @@ $ sudo update-rc.d tcpServerErrorDetection defaults
 $ /etc/init.d/tcpServerErrorDetection start
 ```
 
+If you wish to install the binaries in other folder than `/usr/share/NEWLANGUAGE/` or use other ports, you will ha ve to modify the variables in 
+`/usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi` 
+
+```
+# Modifying the path 
+  my $hinantinpath = "/usr/share/NEWLANGUAGE";
+```
+
+```
+# Modifying the ports 
+  elsif ($slang eq "newlanguage_foma") {
+    $object = SpellCheckAshaninkaMorph->new(
+    FstFile => "$hinantinpath/error_correction.fst",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "cmd",
+    PeerHostErrorDetection => '127.0.0.1',
+    PeerPortErrorDetection => '7890',
+    PeerHostErrorCorrection => '127.0.0.1',
+    PeerPortErrorCorrection => '7891',
+    Proto => 'tcp',
+    );
+  }
+```
+
 ##### TESTING
 
 [ASHANINKA SPELLCHECKER](https://hinant.in/ckeditor/samples/api.html)
