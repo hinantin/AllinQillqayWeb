@@ -67,7 +67,7 @@ If you wish to install the binaries in another folder other than `/usr/share/NEW
   }
 ```
 
-In order to change the language list you will have to modify (adding or deleting elements) the JSON-formatted list within the file `/usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi` 
+In order to change the language list you will have to modify the JSON-formatted list (adding or deleting elements to it) within the file `/usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi` 
 
 ```
   print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido", "bol_myspell" : "Quechua Boliviano", "ec_hunspell" : "Kichwa Ecuatoriano", "newlanguage_foma" : "NEW LANGUAGE"},rtl: {}},verLang : 6})';
