@@ -73,6 +73,12 @@ In order to change the language list you will have to modify the JSON-formatted 
   print $callback . '({langList:{ltr: {"cuz_simple_foma" : "Quechua Cusqueño", "uni_simple_foma" : "Quechua Sureño", "uni_extended_foma" : "Quechua Sureño Extendido", "bol_myspell" : "Quechua Boliviano", "ec_hunspell" : "Kichwa Ecuatoriano", "newlanguage_foma" : "NEW LANGUAGE"},rtl: {}},verLang : 6})';
 ```
 
+The USER DICTIONARY is disable by default as it is not GDPR compliant, but if you wish to use it the comfiguration file is located in:
+
+```
+/usr/lib/cgi-bin/spellcheck31/script/ConfigFile.ini 
+```
+
 ##### TESTING
 
 [ASHANINKA SPELLCHECKER](https://hinant.in/ckeditor/samples/api.html)
