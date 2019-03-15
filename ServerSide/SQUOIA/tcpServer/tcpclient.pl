@@ -14,7 +14,14 @@ use Getopt::Long qw(GetOptions);
 
 
 my $word_to_analyze;
-GetOptions('word=s' => \$word_to_analyze) or die "Usage: $0 --word SINGLE-WORD\n";
+my $port = '7891';
+my $host = 'localhost';
+
+GetOptions(
+'word=s' => \$word_to_analyze,
+'port=s' => \$port,
+'host=s' => \$host,
+) or die "Usage: $0 --word SINGLE-WORD --host IP --port NUMBER \n";
 
 if ($word_to_analyze) {
     say $word_to_analyze;
@@ -22,7 +29,7 @@ if ($word_to_analyze) {
     $| = 1;
     
     # create a connecting socket
-    my $socket = new IO::Socket::INET (PeerHost => 'localhost', PeerPort => '7891', Proto => 'tcp',);
+    my $socket = new IO::Socket::INET (PeerHost => $host, PeerPort => $port, Proto => 'tcp',);
     die "cannot connect to the server $!\n" unless $socket;
     print STDERR "connected to the server\n";
     
@@ -41,5 +48,5 @@ if ($word_to_analyze) {
     $socket->close();
 }
 else {
-    print "Usage: $0 --word SINGLE-WORD\n";
+    print "Usage: $0 --word SINGLE-WORD --host IP --port NUMBER \n";
 }
