@@ -83,6 +83,16 @@ In order to run the spell-checker just replace the lines above in `/usr/lib/cgi-
   }
 ```
 
+Install the suggestions executable:
+
+```
+$ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA/foma/
+$ make
+$ sudo make install
+$ sudo cp suggestions /usr/bin/
+$ sudo chmod +x /usr/bin/suggestions
+```
+
 In order to change the language list you will have to modify the JSON-formatted list (adding or deleting elements to it) within the file `/usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi` 
 
 Change only "NEW LANGUAGE" to your own language:
