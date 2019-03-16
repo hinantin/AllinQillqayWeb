@@ -14,9 +14,9 @@ $ sudo cp error_detection.fst /usr/share/NEWLANGUAGE/
 $ sudo cp error_correction.fst /usr/share/NEWLANGUAGE/
 ```
 
-The following steps describe how to create a TCP Service for your own apellchecker.
-
 ##### INSTALLING THE TCP SERVERS
+
+The following steps describe how to create a TCP Service for your own apellchecker.
 
 ```
 $ cd <ALLINQILLQAY_PATH>/AllinQillqayWeb/ServerSide/SQUOIA/foma/
@@ -63,6 +63,22 @@ If you wish to install the binaries in another folder other than `/usr/share/NEW
     PeerHostErrorCorrection => '127.0.0.1',
     PeerPortErrorCorrection => '7891',
     Proto => 'tcp',
+    );
+  }
+```
+
+
+##### EXECUTING THE SPELL-CHECKER AS A TERMINAL PROCESS
+
+In order to run the spell-checker just replace the lines above in `/usr/lib/cgi-bin/spellcheck31/script/ssrv.cgi` with the ones below:
+
+```
+  elsif ($slang eq "newlanguage_foma") {
+    $object = SpellCheckFiniteStateCmd->new(
+    FstFile => "/usr/share/NEWLANGUAGE/error_correction.fst",
+    EngineName => "$slang",
+    EngineVersion => "v1.0-beta.1",
+    Type => "cmd",
     );
   }
 ```
