@@ -96,6 +96,9 @@ Installing the eXist-db Native XML Database daemon using init.d..
 
 $ sudo reboot
 # Or starting the service manually
+# 1st method
+$ /etc/init.d/eXist-db start
+# 2nd method 
 $ sudo java -Xmx1024M -Djava.endorsed.dirs=lib/endorsed -jar start.jar jetty
 ```
 
