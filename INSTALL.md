@@ -17,6 +17,7 @@ $ sudo apt-get install apache2
 $ sudo a2enmod cgi
 $ sudo apt-get install zlib1g-dev flex bison libreadline-dev
 $ sudo apt-get install hunspell
+$ sudo apt-get install libcgi-session-perl
 $ sudo apt-get install libio-captureoutput-perl
 $ sudo apt-get install libconfig-inifiles-perl
 $ sudo apt-get install libdatetime-perl
