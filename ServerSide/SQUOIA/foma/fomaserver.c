@@ -17,6 +17,7 @@
 #define FLOOKUP_PORT 8888
 #define DIR_UP 1
 #define UDP_MAX 65535
+#define LINE_MAX_LENGTH 6000
 
 
 char *usagestring = "Usage: FomaServer [-l med_limit] [-c cutoff] [-P port number] <analyzer.bin> <chain.bin> <spellcheckUnificado.bin>\n";
@@ -191,7 +192,7 @@ char *handle_line(char *s) {
         result = apply_up(ah, line);
         /* if no result from analyzer, spell check this word with normalizer */
         if (result == NULL) {
-          outstr = concat(outstr, "+?");
+          outstr = concat(line, "\t+?");
         }            /* word was recognized by analyzer.bin */
         else {
           /*Concat first result*/
@@ -200,7 +201,7 @@ char *handle_line(char *s) {
           tempstr = concat(tempstr, "\n");
           outstr = concat(outstr, tempstr);
           /*Concat the rest of the results (if there are more of them)*/
-          while ((result = apply_up(ah,NULL)) != NULL) {
+          while ((result = apply_up(ah,NULL)) != NULL && strlen(outstr) < LINE_MAX_LENGTH) {
             tempstr = concat(line, "\t");
             tempstr = concat(tempstr, result);
             tempstr = concat(tempstr, "\n");
@@ -208,6 +209,7 @@ char *handle_line(char *s) {
           }
         }
     }
+    printf("%d \n", strlen(outstr));
     return outstr;
 }
 
@@ -370,7 +372,6 @@ char* concat(char *s1, char *s2) {
     memcpy(result + len1, s2, len2 + 1); //+1 to copy the null-terminator
     return result;
 }
-
 
 
 
